@@ -1,0 +1,36 @@
+:root {
+  /* color */
+  --main-green: #6f843b;
+  --main-blue: #02276b;
+
+  /* sub color */
+  --sub-green-700: #2f3819;
+  --sub-green-600: #4f5e2a;
+  --sub-green-500: #6f843b;
+  --sub-green-400: #8ea84c;
+  --sub-green-300: #a8bc74;
+  --sub-green-200: #c2d09c;
+  --sub-green-100: #dce4c4;
+
+  --sub-blue-700: #000919;
+  --sub-blue-600: #011842;
+  --sub-blue-500: #02276b;
+  --sub-blue-400: #023793;
+  --sub-blue-300: #4e74b7;
+  --sub-blue-200: #9ab1db;
+  --sub-blue-100: #e6efff;
+
+  /* text */
+  --text-gray-700: #263238;
+  --text-gray-600: #434e53;
+  --text-gray-500: #606a6e;
+  --text-gray-400: #7d8689;
+  --text-gray-300: #9aa2a4;
+  --text-gray-200: #b7bebf;
+  --text-gray-100: #d4dada;
+
+  /* padding & margin */
+  --base-space: 8px;
+
+  /* 그림자 색, 각종 테마 색 */
+}
