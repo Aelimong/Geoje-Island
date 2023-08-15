@@ -4,18 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>가을의 거제도</title>
+    <script src="../js/includeHTML.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
     <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
-    <!-- <link rel="stylesheet" href="../css/autumn.css" /> -->
+    <link rel="stylesheet" href="../css/autumn.css" />
   </head>
   <body>
     <main>
       <!-- 메뉴 자리 시작 -->
-      <nav></nav>
+      <nav>
+        <div class="static">
+          <!-- header start -->
+          <div class="header">
+            <header include-html="./header.html"></header>
+          </div>
+          <!-- header end -->
+          <div class="contents">
+            <h1>거제도 여름 페이지입니다</h1>
+          </div>
+        </div>
+      </nav>
       <!-- 메뉴 자리 끝 -->
-      <section>
-        <h1>거제도 가을 페이지입니다</h1>
+      <section class="page1">
+        <!-- <h1>거제도 가을 페이지입니다</h1> -->
+        <!-- <div class="mainContainer">
+          <div class="mainImg"></div>
+          <div class="line"></div>
+          <p>
+            차가운 겨울, 그 안에서 느껴지는 따뜻함. 바다와 함께하는 특별한 여정<br/>
+            차가운 겨울, 그 안에서 느껴지는 따뜻함. 바다와 함께하는 특별한 여정<br/>
+            차가운 겨울, 그 안에서 느껴지는 따뜻함. 바다와 함께하는 특별한 여정<br/>
+          </p>
+        </div> -->
+        <section class="page3">
+          <div class="cableCar">
+            <p id="titleTxt">거제 파노라마 케이블카</p>
+            <div class="locationbox">
+              <img
+                src="../img/autumn/pin.png"
+                alt="pin;"
+                style="width: 13px; height: 17px"
+              />
+              <p id="locationTxt">경남 거제시 동부면 거제중앙로 288</p>
+            </div>
+            <div class="imgbox">
+              <img
+                src="../img/autumn/autPage3-01.png"
+                alt="cableCar1"
+                style="width: 400px; height: 228px"
+              />
+              <img
+                src="../img/autumn/autPage3-02.png"
+                alt="cableCar2"
+                style="width: 400px; height: 228px"
+              />
+              <p>
+                거제의 산과 노을, 숲과 바다, 경계 없는 자연 속으로 끝없이
+                펼쳐지는 천혜의 절경을 감상할 수 있는 케이블카입니다.
+                전망대에서는 노자산과 다도해 전경을 경계 없이 360도로 접할 수
+                있으며 케이블카를 타며 노자산 숲길을 걷는 듯한 느낌을 받을 수
+                있습니다.
+              </p>
+            </div>
+            <div class="buttonBox">
+              <button>주변관광지</button>
+              <button>외도보타니아</button>
+              <button>외도보타니아</button>
+              <button>외도보타니아</button>
+            </div>
+          </div>
+          <div class="cableCarSub">
+            <p>운영 시간 09:00~20:30 (매표 마감 19:30)</p>
+            <img
+              src="../img/autumn/autPage3-03.png"
+              alt="cableCar3"
+              style="width: 816px; height: 473px"
+            />
+          </div>
+        </section>
       </section>
     </main>
+    <div class="footer">
+      <footer include-html="./footer.html"></footer>
+    </div>
   </body>
+  <script>
+    includeHTML();
+  </script>
 </html>
