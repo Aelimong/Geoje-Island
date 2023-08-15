@@ -84,3 +84,33 @@ section .pin .hm {
   font-size: 16px;
   padding: 5px 40px;
 }
+
+/* 양지암 조각 공원 */
+body #ygPage {
+  display: flex;
+}
+
+body #ygPage .yg-left {
+  background-color: aliceblue;
+  width: 327px;
+}
+
+#ygPage .yg-left .where {
+  display: flex;
+}
+#ygPage .yg-left .where i {
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+#ygPage .yg-left h2 {
+  color: #02276b;
+}
+
+#ygPage .yg-left P {
+  color: #02276b;
+}
+
+body #ygPage .yg-right {
+  background-color: bisque;
+}
