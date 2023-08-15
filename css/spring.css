@@ -1,0 +1,55 @@
+li {
+  list-style: none;
+}
+
+/* 지도 페이지 만들기*/
+main .mapPage {
+  margin-right: 744px;
+
+  margin-left: 384px;
+}
+/* 핀꼽기 */
+body section .pin {
+  background-color: red;
+  position: relative;
+}
+
+body section .pin i {
+  position: absolute;
+  font-size: 51px;
+  color: #023793;
+  z-index: 10;
+}
+section .pin .yg {
+  color: red;
+  left: 605px;
+  bottom: 347px;
+}
+
+section .pin .gg {
+  bottom: 300px;
+  color: orange;
+  left: 604px;
+  bottom: 198px;
+}
+
+section .pin .hd {
+  bottom: 200px;
+  color: yellow;
+}
+
+section .pin .hm {
+  bottom: 100px;
+}
+
+/* 하단메뉴생성 */
+
+.mapButton li {
+  width: 193px;
+  height: 51px;
+  border-radius: 15px;
+  background-color: #023793;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
