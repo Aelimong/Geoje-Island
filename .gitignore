@@ -1,2 +1,9 @@
 .vscode
+
 .DS_Store
+
+/test.html
+
+/css/test.css
+
+/js/test.js
