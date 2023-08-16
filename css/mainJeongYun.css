@@ -6,7 +6,8 @@
 } */
 
 /* 임시로 첫번째 메인 화면 만들기 */
-#ment {
+#ment,
+#ment2 {
   width: 100%;
   height: 100vh;
   left: 0;
