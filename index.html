@@ -11,9 +11,43 @@
     <script defer src="./js/mainAeLim.js"></script>
     <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
     <!-- <link rel="stylesheet" href="../css/spring.css" /> -->
+    <!-- main 1번째 css -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 날씨 api java -->
+    <script src="/js/weatherAPI.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/7226852946.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main class="container">
+      <header>
+        <ul>
+          <li class="weather"></li>
+          <li>
+            <i class="fa-solid fa-sun fa-spin fa-lg" style="color: #023793"></i>
+          </li>
+          <li class="temp"></li>
+        </ul>
+      </header>
+      <div class="bg-video">
+        <video class="bg-video" autoplay muted loop>
+          <source src="/video/windmill.mp4" />
+        </video>
+        <img src="/img/logo.svg" alt="logo.svg" />
+        <div class="footer">
+          <div class="menu">MENU</div>
+          <p class="scroll">SCROLL</p>
+        </div>
+      </div>
       <article id="ment">
         <h1>안녕하세요. 따사온섬 메인 페이지입니다.</h1>
         <h2>안녕하세요. 따사온섬 메인 페이지입니다.</h2>
