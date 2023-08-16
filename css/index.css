@@ -12,13 +12,11 @@ header {
   z-index: 3;
 }
 
-ul {
+
+.apis {
   display: flex;
   justify-content: space-between;
-}
-
-ul li {
-  position: relative;
+   position: relative;
   top: 3vh;
   color: #023793;
   font-size: 20px;
