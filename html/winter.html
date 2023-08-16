@@ -4,18 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>겨울의 거제도</title>
+    <script src="../js/includeHTML.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
     <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
-    <!-- <link rel="stylesheet" href="../css/winter.css" /> -->
+    <link rel="stylesheet" href="../css/winter.css" />
+    <script
+      src="https://kit.fontawesome.com/7226852946.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <main>
-      <!-- 메뉴 자리 시작 -->
-      <nav></nav>
-      <!-- 메뉴 자리 끝 -->
-      <section>
-        <h1>거제도 겨울 페이지입니다</h1>
-      </section>
+    <main class="container">
+      <div class="static">
+        <!-- header start -->
+        <div class="header">
+          <header include-html="./header.html"></header>
+        </div>
+        <!-- header end -->
+        <div class="contents">
+          <!-- page 1: main -->
+          <div class="main">
+            <p class="text top">거제도의,</p>
+            <img src="/img/camelia.png" alt="camelia.png" />
+            <p class="text middle">冬</p>
+            <p class="text bottom">
+              차가운 겨울, 그 안에서 느껴지는 따뜻함. 거제와 함께하는 특별한
+              여정
+            </p>
+          </div>
+          <!-- page 2: 지도 -->
+          <div class="main">
+            <div class="location">추천명소</div>
+            <img class="map" src="/img/map.png" alt="map.png" />
+
+            <i
+              class="fa-solid fa-location-dot fa-3x first"
+              style="color: #023793"
+            ></i>
+
+            <i
+              class="fa-solid fa-location-dot fa-3x second"
+              style="color: #023793"
+            ></i>
+
+            <i
+              class="fa-solid fa-location-dot fa-3x third"
+              style="color: #023793"
+            ></i>
+
+            <i
+              class="fa-solid fa-location-dot fa-3x fourth"
+              style="color: #023793"
+            ></i>
+
+            <div class="buttons">
+              <div class="button">거제 식물원</div>
+              <div class="button">거제 포로수용소</div>
+              <div class="button">고현시장</div>
+              <div class="button">지심도</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer start -->
+      <div class="footer">
+        <footer include-html="./footer.html"></footer>
+      </div>
+      <!-- footer end -->
     </main>
   </body>
+  <script>
+    includeHTML();
+  </script>
 </html>
