@@ -1,0 +1,76 @@
+* {
+  cursor: pointer;
+}
+
+/* page 1 */
+
+.main > .text {
+  line-height: 130%;
+  font-size: 70px;
+  color: #011842;
+  position: relative;
+}
+
+.main > .top {
+  left: 35vw;
+  top: 15vh;
+}
+
+.main > .middle {
+  left: 3vw;
+  bottom: 17vh;
+}
+
+.main > .bottom {
+  font-size: 16px;
+  text-decoration: overline;
+  text-align: right;
+  bottom: 10vh;
+}
+
+/* page 2 */
+
+/* 추천명소 */
+.location {
+  width: 158px;
+  height: 45px;
+  background-color: #02276b;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  color: white;
+}
+
+/* 지도 핑 아이콘 */
+i {
+  position: relative;
+  bottom: 10px;
+  z-index: 222;
+}
+i:hover {
+  transform: scale(1.5);
+}
+
+/* 핑 위치 */
+/* 거제식물원 */
+/* 거제 포로수용소 */
+/* 고현시장 */
+/* 지심도 */
+
+/* 지도 밑에 버튼 */
+.buttons {
+  display: flex;
+  align-content: space-between;
+}
+
+.buttons .button {
+  height: 6vh;
+  width: 10vw;
+  background-color: #023793;
+  text-align: center;
+  line-height: 6vh;
+  color: white;
+  border-radius: 15px;
+  font-size: 1vw;
+}
