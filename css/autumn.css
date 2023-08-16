@@ -78,6 +78,84 @@ section {
   margin-bottom: 10px;
 }
 
+.page1 img {
+  position: relative;
+  left: 50px;
+  width: 827px;
+}
+
+.page1 .blackBar {
+  border: 0.5px solid black;
+  margin-bottom: 15px;
+  width: 554px;
+}
+
+.page1 .txtBox {
+  position: relative;
+  left: 260px;
+  width: 555px;
+  text-align: right;
+  /* background-color: red; */
+}
+
+.page1 p {
+  line-height: 150%;
+}
+
+/*  */
+.page2 .map:first-child {
+  width: 816px;
+  height: 532px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aqua;
+}
+
+.page2 .imgContainer {
+  width: 760px;
+  height: 532px;
+ overflow-y: scroll;
+ background-color: blue;
+ 
+
+}
+
+.page2 .pin1 {
+  position: relative;
+  bottom: 330px;
+  left: 350px;
+  background-color: yellow;
+}
+.page2 .pin2 {
+  position: relative;
+  bottom: 280px;
+  left: 375px;
+  background-color: pink;
+}
+
+.page2 .pin3{
+  position: relative;
+  bottom: 230px;
+  left: 450px;
+}
+
+.page2 .pin4{
+  position: relative;
+  bottom: 1000px;
+  left: 530px;
+  
+}
+
+.page2 .buttonContainer {
+  width: 760px;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.page2 .mainButton {
+  background-color: #02276b;
+}
+/*  */
 .page3 .imgBox {
   margin-bottom: 20px;
 }
@@ -131,10 +209,9 @@ section {
 
 /*  */
 
-.page6 #place #locationTxt{
-    line-height: 150%;
+.page6 #place #locationTxt {
+  line-height: 150%;
 }
-
 
 /*  */
 
