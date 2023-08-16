@@ -1,5 +1,6 @@
 let tl = gsap.timeline({
-    scrollTriger:{
-        trigger:".page1"
-    }
-})
+  scrollTriger: {
+    trigger: ".page1",
+  },
+});
+//
