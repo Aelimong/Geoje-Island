@@ -24,6 +24,10 @@ main .mapPage {
   left: 39px;
 }
 
+.mapPage .pin img {
+  width: 760px;
+  height: 500px;
+}
 /* 핀꼽기 */
 body section .pin {
   margin-top: 32px;
@@ -81,6 +85,7 @@ section .pin .hm {
   /* margin: auto; */
 }
 .mapButton div p {
+  color: white;
   font-size: 16px;
   padding: 5px 40px;
 }
