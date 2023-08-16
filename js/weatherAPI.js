@@ -9,6 +9,23 @@ $.getJSON(
 
     let item = data.response.body.items.item[18];
     let content = "WEATHER " + item.fcstValue;
+    let content2 =
+      'WEATHER <i class="fa-solid fa-sun fa-spin fa-lg" style="color: #023793"></i>';
+    let content3 =
+      'WEATHER <i class="fa-solid fa-cloud-sun fa-fade fa-lg" style="color: #023793;"></i>';
+    let content4 =
+      'WEATHER <i class="fa-solid fa-cloud fa-fade fa-lg" style="color: #023793;"></i>';
+    let content5 =
+      '<i class="fa-solid fa-cloud-showers-heavy fa-fade fa-lg" style="color: #023793;"></i>';
+    if (content == 1) {
+      content2;
+    } else if (content == 3) {
+      content3;
+    } else if (content == 4) {
+      content4;
+    } else {
+      content5;
+    }
     $(".weather").text(content);
   }
 );
