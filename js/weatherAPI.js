@@ -9,24 +9,28 @@ $.getJSON(
 
     let item = data.response.body.items.item[18];
     let content = "WEATHER " + item.fcstValue;
-    let content2 =
+
+    // 숫자를 아이콘으로
+    let sunny =
       'WEATHER <i class="fa-solid fa-sun fa-spin fa-lg" style="color: #023793"></i>';
-    let content3 =
+    let cloudy =
       'WEATHER <i class="fa-solid fa-cloud-sun fa-fade fa-lg" style="color: #023793;"></i>';
-    let content4 =
+    let cloudy2 =
       'WEATHER <i class="fa-solid fa-cloud fa-fade fa-lg" style="color: #023793;"></i>';
-    let content5 =
-      '<i class="fa-solid fa-cloud-showers-heavy fa-fade fa-lg" style="color: #023793;"></i>';
-    if (content == 1) {
-      content2;
-    } else if (content == 3) {
-      content3;
-    } else if (content == 4) {
-      content4;
+    let rainy =
+      'WEATHER <i class="fa-solid fa-cloud-showers-heavy fa-fade fa-lg" style="color: #023793;"></i>';
+
+    $(".weather").html(content);
+
+    if (content == "WEATHER 1") {
+      $(".weather").html(sunny);
+    } else if (content == "WEATHER 3") {
+      $(".weather").html(cloudy);
+    } else if (content == "WEATHER 4") {
+      $(".weather").html(cloudy2);
     } else {
-      content5;
+      $(".weather").html(rainy);
     }
-    $(".weather").text(content);
   }
 );
 
