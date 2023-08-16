@@ -10,16 +10,16 @@ header {
   width: 100vw;
   z-index: 3;
 }
-ul {
+
+.apis {
   display: flex;
   justify-content: space-between;
-}
-ul li {
   position: relative;
   top: 3vh;
   color: #023793;
   font-size: 20px;
 }
+
 /* 비디오 설정 */
 .bg-video {
   opacity: 85%;
