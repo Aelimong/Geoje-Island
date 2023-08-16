@@ -1,0 +1,121 @@
+li {
+  list-style: none;
+}
+
+/* 지도 페이지 만들기*/
+main .mapPage {
+  margin-right: 744px;
+  margin-left: 384px;
+  position: relative;
+}
+
+/* 추천코스 */
+.mapPage #best {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  top: -32px;
+}
+
+.mapPage #best p {
+  position: absolute;
+  color: white;
+  top: 4px;
+  left: 39px;
+}
+
+.mapPage .pin img {
+  width: 760px;
+  height: 500px;
+}
+/* 핀꼽기 */
+body section .pin {
+  margin-top: 32px;
+  position: relative;
+}
+
+body section .pin i {
+  position: absolute;
+  font-size: 32px;
+  color: #023793;
+  z-index: 10;
+}
+section .pin .yg {
+  left: 630px;
+  top: 130px;
+}
+
+section .pin .gg {
+  bottom: 300px;
+  left: 620px;
+  top: 270px;
+}
+
+section .pin .hd {
+  bottom: 200px;
+  left: 430px;
+  top: 320px;
+}
+
+section .pin .hm {
+  top: 390px;
+  left: 460px;
+}
+
+/* 하단메뉴생성 */
+.mapPage .mapButton {
+  /* background-color: red; */
+  width: 760px;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.mapButton div {
+  /* width: 193px; */
+  background-color: #02276b;
+  color: white;
+  height: 51px;
+  border-radius: 15px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  /* margin: auto; */
+}
+.mapButton div p {
+  color: white;
+  font-size: 16px;
+  padding: 5px 40px;
+}
+
+/* 양지암 조각 공원 */
+body #ygPage {
+  display: flex;
+}
+
+body #ygPage .yg-left {
+  background-color: aliceblue;
+  width: 327px;
+}
+
+#ygPage .yg-left .where {
+  display: flex;
+}
+#ygPage .yg-left .where i {
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+#ygPage .yg-left h2 {
+  color: #02276b;
+}
+
+#ygPage .yg-left P {
+  color: #02276b;
+}
+
+body #ygPage .yg-right {
+  background-color: bisque;
+}
