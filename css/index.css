@@ -3,22 +3,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: pointer;
 }
+
 /* header: 날씨 + 온도 */
 header {
   position: absolute;
   width: 100vw;
   z-index: 3;
 }
+
 ul {
   display: flex;
   justify-content: space-between;
 }
+
 ul li {
   color: #023793;
   font-size: 20px;
 }
+
 /* 비디오 설정 */
 .bg-video {
   opacity: 85%;
@@ -32,7 +35,7 @@ ul li {
 }
 
 /* 로고 설정 */
-img {
+.logo {
   position: absolute;
   z-index: 2;
   width: 50vw;
@@ -40,7 +43,6 @@ img {
 }
 
 /* menu+scroll 위치 */
-
 .bg-video > div {
   width: 100%;
   position: absolute;
