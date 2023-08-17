@@ -2,11 +2,17 @@ li {
   list-style: none;
 }
 
+.contents .four-section .four-img {
+  background-image: url(../img/spring/0a54199c-5131-4361-9ec1-094cba0098d6.jpg);
+}
+
 /* 지도 페이지 만들기*/
 main .mapPage {
-  margin-right: 744px;
-  margin-left: 384px;
+  /* margin-right: 744px; */
+  /* margin-left: 384px; */
+  margin: auto;
   position: relative;
+  /* justify-content: center; */
 }
 
 /* 추천코스 */
