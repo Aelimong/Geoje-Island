@@ -326,4 +326,158 @@ li {
 }
 
 /* 제철 음식 */
+/* 403*25 */
+#food {
+  margin: 25rem 0;
+}
+
+#food .title h1 {
+  color: #011842;
+  text-align: end;
+  position: relative;
+  z-index: 10;
+}
+
+#food .title img {
+  width: 403px;
+  height: 25px;
+  position: relative;
+  left: 423px;
+  bottom: 12px;
+}
+
+#food .title p {
+  color: #02276b;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -4%;
+  font-size: 16px;
+  text-align: end;
+}
+/*  */
+#food .food1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+}
+
+#food .food1 div {
+  width: 42px;
+  height: 449px;
+  border-radius: 15px;
+  background-color: #8ea84c;
+  color: white;
+  font-size: 18px;
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#food .food1 img {
+  width: 449px;
+  height: 449px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+#food .food1 dl {
+  width: 254px;
+  height: 299px;
+  margin: 105px 0 0 10px;
+  display: inline-block;
+  justify-content: end;
+}
+
+#food .food1 dt {
+  width: 58px;
+  height: 25px;
+  background-color: #02276b;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#food .food1 dt:nth-of-type(2) {
+  width: 80px;
+}
+
+#food .food1 dd {
+  color: #02276b;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -4%;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/*  */
+#food .food2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+  flex-direction: row-reverse;
+}
+
+#food .food2 div {
+  width: 42px;
+  height: 449px;
+  border-radius: 15px;
+  background-color: #8ea84c;
+  color: white;
+  font-size: 18px;
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#food .food2 img {
+  margin-right: 10px;
+  width: 449px;
+  height: 449px;
+  border-radius: 15px;
+}
+
+#food .food2 dl {
+  width: 275px;
+  height: 350px;
+  margin: 132px 0 0 10px;
+}
+
+#food .food2 dt {
+  width: 58px;
+  height: 25px;
+  background-color: #02276b;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#food .food2 dt:nth-of-type(2) {
+  width: 80px;
+}
+
+#food .food2 dd {
+  color: #02276b;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -4%;
+  font-size: 16px;
+  margin: 5px 5px;
+  text-align: end;
+}
+
 /* 봄 축제 */
