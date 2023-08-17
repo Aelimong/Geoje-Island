@@ -1,0 +1,116 @@
+/* ----------------------------------------------
+ * Animation
+ * ---------------------------------------------- */
+
+@-webkit-keyframes rotate-10-left {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes rotate-10-left {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+}
+
+@-webkit-keyframes rotate-10-right {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes rotate-10-right {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+
+.rotate-10-left {
+  -webkit-animation: rotate-10-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-10-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.rotate-10-right {
+  -webkit-animation: rotate-10-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: rotate-10-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* ticket css */
+.container .ticket {
+  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/img/main/main-spring-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container .ticket h1 {
+  color: var(--sub-blue-700);
+  text-align: center;
+  font-size: 6em;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+.container .ticket-area {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+/* 왼쪽 티켓 */
+.container .ticket .ticket-area .ticket-info {
+  position: relative;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.container .ticket .ticket-area .ticket-info img {
+}
+
+/* 오른쪽 티켓 */
+.container .ticket .ticket-area .ticket-flower {
+  cursor: pointer;
+}
+
+/* 티켓 Info */
+.container .ticket .ticket-area .ticket-info .ticket-info-text {
+  position: absolute;
+  z-index: 99;
+  top: 43%;
+  left: 64%;
+}
+
+.container .ticket .ticket-area .ticket-info .ticket-info-text .ticket-text {
+  font-size: 1.8em;
+  margin-bottom: 32px;
+  color: var(--text-gray-400);
+}
+
+.container .ticket .ticket-area .ticket-info .ticket-info-text #currentTime {
+  padding-left: 34px;
+}
