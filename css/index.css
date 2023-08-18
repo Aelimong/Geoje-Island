@@ -7,7 +7,7 @@
 /* header: 날씨 + 온도 */
 header {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 3;
 }
 
@@ -43,7 +43,6 @@ header {
 /* menu+scroll 위치 */
 
 .bg-video > div {
-  width: 100%;
   position: absolute;
   bottom: 0;
   display: flex;

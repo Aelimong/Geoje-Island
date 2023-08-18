@@ -115,10 +115,8 @@ section {
 .page2 .imgContainer {
   width: 760px;
   height: 532px;
- overflow-y: scroll;
- background-color: blue;
- 
-
+  overflow-y: scroll;
+  background-color: blue;
 }
 
 .page2 .pin1 {
@@ -134,17 +132,16 @@ section {
   background-color: pink;
 }
 
-.page2 .pin3{
+.page2 .pin3 {
   position: relative;
   bottom: 230px;
   left: 450px;
 }
 
-.page2 .pin4{
+.page2 .pin4 {
   position: relative;
   bottom: 1000px;
   left: 530px;
-  
 }
 
 .page2 .buttonContainer {
@@ -186,6 +183,7 @@ section {
 
 /*  */
 .page4 .imgBox {
+  position: relative;
   display: flex;
   width: 816px;
   justify-content: space-between;
