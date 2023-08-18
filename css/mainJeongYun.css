@@ -43,7 +43,7 @@ img {
 
 body article#move {
   height: 100vh;
-  width: 150%;
+  width: 200%;
   /* section의 가로너비 body 사이즈보다 크도록 설정, */
 }
 
