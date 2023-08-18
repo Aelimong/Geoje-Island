@@ -98,6 +98,11 @@ p {
   max-width: 1200px;
 }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* 사계절 공통 css ======================================*/
 .static {
   display: flex;
