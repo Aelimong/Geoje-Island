@@ -95,7 +95,11 @@ p {
 /* 전체 너비 */
 .container {
   width: 100%;
-  max-width: 1200px;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -216,7 +220,7 @@ p {
   overflow: hidden;
   z-index: 0;
   width: 60vw;
-  height: 78vh;
+  height: 60vh;
   background-image: url(../img/summer/summer-main.jpg);
   background-position: center center;
   background-repeat: no-repeat;

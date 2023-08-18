@@ -5,13 +5,17 @@
   box-sizing: border-box;
 }
 
+/* 전체 배경 - 종이질감 */
+body#index-bg-paper {
+  background-image: url("../img/paper-bg.jpg");
+}
+
 /* header: 날씨 + 온도 */
 header {
   position: absolute;
   width: 100%;
   z-index: 3;
 }
-
 
 .apis {
   display: flex;
@@ -34,7 +38,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 
 /* 로고 이미지 설정 */
 .logo {
@@ -62,6 +65,7 @@ header {
   text-align: center;
   line-height: 8vh;
 }
+
 .scroll {
   color: white;
   font-size: 20px;
