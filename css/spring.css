@@ -1,55 +1,483 @@
+* {
+  line-height: 150%;
+  letter-spacing: -4%;
+}
+
 li {
   list-style: none;
 }
 
+.contents .four-section .four-img {
+  background-image: url(../img/spring/0a54199c-5131-4361-9ec1-094cba0098d6.jpg);
+}
+
+.txtBox {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  text-align: right;
+  margin: 42px;
+}
+
+.txtBox .blackBar {
+  background-color: #001842;
+  height: 2px;
+  width: 554px;
+  margin-bottom: 10px;
+}
+
+.txtBox p {
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -4%;
+}
+
 /* 지도 페이지 만들기*/
-main .mapPage {
-  margin-right: 744px;
-
-  margin-left: 384px;
-}
-/* 핀꼽기 */
-body section .pin {
-  background-color: red;
+.mapPage {
+  width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
+  margin: 20% auto;
 }
 
-body section .pin i {
+.mapPage #best {
+  width: 100%;
+  height: 45px;
+}
+
+.mapPage #best img {
+  width: 158px;
+  height: 45px;
+}
+.mapPage #best div {
   position: absolute;
-  font-size: 51px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 10px;
+  top: 13px;
+  color: white;
+  font-size: 16px;
+  width: 158px;
+  height: 45px;
+  background-image: url(../img/spring/Rectangle\ 127.png);
+}
+
+.mapPage img {
+  width: 760px;
+  height: 500px;
+  margin: 0, auto;
+  /* position: relative; */
+  z-index: 1;
+}
+
+.mapPage i {
+  position: absolute;
+  font-size: 32px;
   color: #023793;
   z-index: 10;
 }
-section .pin .yg {
-  color: red;
-  left: 605px;
-  bottom: 347px;
+
+/* .mapPage i:hover {
+  color: #8ea84c;
+  font-size: 50px;
 }
 
-section .pin .gg {
-  bottom: 300px;
-  color: orange;
-  left: 604px;
-  bottom: 198px;
+.mapPage .pin1:hover {
+  top: 155px;
+  left: 620px;
+  transition: 0.3s;
+} */
+
+.mapPage .pin1 {
+  top: 180px;
+  left: 630px;
+  position: absolute;
 }
 
-section .pin .hd {
-  bottom: 200px;
-  color: yellow;
+.mapPage .pin2 {
+  top: 315px;
+  left: 620px;
 }
 
-section .pin .hm {
-  bottom: 100px;
+.mapPage .pin3 {
+  top: 360px;
+  left: 440px;
 }
 
-/* 하단메뉴생성 */
+.mapPage .pin4 {
+  top: 440px;
+  left: 460px;
+}
 
-.mapButton li {
-  width: 193px;
-  height: 51px;
+.mapPage .mapButton {
+  width: 760px;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.mapPage .mapButton div {
+  background-color: #02276b;
   border-radius: 15px;
-  background-color: #023793;
+  width: 170px;
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   color: white;
   font-size: 16px;
+}
+
+/* 양지암 조각 공원 */
+#ygPage {
+  display: flex;
+  margin: 30% auto;
+}
+
+#ygPage .yg-left {
+  width: 327px;
+  margin-right: 20px;
+}
+
+#ygPage .yg-left img {
+  margin-bottom: 20px;
+}
+
+#ygPage .yg-left h1 {
+  margin-bottom: 10px;
+}
+
+#ygPage .yg-left .where {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#ygPage .yg-left .where i {
+  font-size: 17px;
+  margin-top: 3px;
+}
+/*  */
+#ygPage .yg-left h1 {
+  color: #011842;
+}
+
+#ygPage .yg-left h2 {
+  color: #02276b;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+#ygPage .yg-left P {
+  color: #02276b;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -4%;
+}
+
+#ygPage .yg-right img {
+  height: 911px;
+}
+
+/* 공곶이 수목원 */
+#ggPage {
+  width: 100%;
+  margin: 30rem 0;
+}
+
+#ggPage h1 {
+  margin-bottom: 10px;
+  color: #011842;
   text-align: center;
 }
+
+#ggPage .where {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+#ggPage .where i {
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+#ggPage .where h2 {
+  color: #02276b;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+#ggPage img {
+  width: 840px;
+  height: 370px;
+}
+
+#ggPage p {
+  margin-top: 1rem;
+  width: 860px;
+  color: #02276b;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -4%;
+  font-size: 16px;
+}
+
+/*  */
+
+#ggPage .flower {
+  width: 100%;
+  margin-top: 10rem;
+}
+
+#ggPage .flower h1 {
+  text-align: start;
+}
+
+#ggPage .flower .flowerImg {
+  display: flex;
+  margin: 10px 0;
+}
+
+#ggPage .flower img {
+  width: 263px;
+  height: 247px;
+}
+
+#ggPage .flower img:nth-of-type(2) {
+  margin: 0 25px;
+}
+
+#ggPage .flowerButton {
+  display: flex;
+  flex-wrap: wrap;
+  width: 110%;
+}
+
+#ggPage .flowerButton div {
+  width: 260px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #02276b;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#ggPage .flowerButton div:nth-of-type(2) {
+  margin: 0 30px;
+}
+
+/* 학동 유채꽃밭 */
+
+#hgPage {
+  width: 100%;
+  margin: 30rem 0;
+}
+
+#hdPage img {
+  width: 688px;
+  height: 721px;
+}
+
+#hdPage h1 {
+  margin: 10px 0;
+  color: #011842;
+}
+
+#hdPage .where {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  /* justify-content: center; */
+}
+
+#hdPage .where i {
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+#hdPage .where h2 {
+  color: #02276b;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+#hdPage p {
+  margin-top: 1rem;
+  color: #02276b;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -4%;
+  font-size: 16px;
+}
+
+/* 제철 음식 */
+/* 403*25 */
+#food {
+  margin: 25rem 0;
+}
+
+#food .title h1 {
+  color: #011842;
+  text-align: end;
+  position: relative;
+  z-index: 10;
+}
+
+#food .title img {
+  width: 403px;
+  height: 25px;
+  position: relative;
+  left: 423px;
+  bottom: 12px;
+}
+
+#food .title p {
+  color: #02276b;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -4%;
+  font-size: 16px;
+  text-align: end;
+}
+/*  */
+#food .food1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+}
+
+#food .food1 div {
+  width: 42px;
+  height: 449px;
+  border-radius: 15px;
+  background-color: #8ea84c;
+  color: white;
+  font-size: 18px;
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#food .food1 img {
+  width: 449px;
+  height: 449px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+#food .food1 dl {
+  width: 254px;
+  height: 299px;
+  margin: 105px 0 0 10px;
+  display: inline-block;
+  justify-content: end;
+}
+
+#food .food1 dt {
+  width: 58px;
+  height: 25px;
+  background-color: #02276b;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#food .food1 dt:nth-of-type(2) {
+  width: 80px;
+}
+
+#food .food1 dd {
+  color: #02276b;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -4%;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/*  */
+#food .food2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+  flex-direction: row-reverse;
+}
+
+#food .food2 div {
+  width: 42px;
+  height: 449px;
+  border-radius: 15px;
+  background-color: #8ea84c;
+  color: white;
+  font-size: 18px;
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#food .food2 img {
+  margin-right: 10px;
+  width: 449px;
+  height: 449px;
+  border-radius: 15px;
+}
+
+#food .food2 dl {
+  width: 275px;
+  height: 350px;
+  margin: 132px 0 0 10px;
+}
+
+#food .food2 dt {
+  width: 58px;
+  height: 25px;
+  background-color: #02276b;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#food .food2 dt:nth-of-type(2) {
+  width: 80px;
+}
+
+#food .food2 dd {
+  color: #02276b;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -4%;
+  font-size: 16px;
+  margin: 5px 5px;
+  text-align: end;
+}
+
+/* 봄 축제 */

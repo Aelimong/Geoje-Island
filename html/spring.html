@@ -4,52 +4,199 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>봄의 거제도</title>
+    <script src="../js/includeHTML.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
     <link rel="stylesheet" href="../css/spring.css" />
-    <!-- <script defer src="../js/"></script> -->
+    <script src="../js/spring.js"></script>
+    <!-- font awsome -->
     <script
       src="https://kit.fontawesome.com/d905bc4a07.js"
       crossorigin="anonymous"
     ></script>
-    <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
-    <!-- <link rel="stylesheet" href="../css/spring.css" /> -->
   </head>
   <body>
-    <main>
-      <!-- 메뉴 자리 시작 -->
-      <nav></nav>
-      <!-- 메뉴 자리 끝 -->
-      <section class="mapPage">
-        <h1>거제도 봄 페이지입니다</h1>
-        <div>
-          <img src="../img/spring/Rectangle 127.png" alt="추천코스" />
+    <main class="container">
+      <div class="static">
+        <!-- header start -->
+        <div class="header">
+          <header include-html="./header.html"></header>
         </div>
-        <div class="pin">
-          <img src="../img/spring/지도.png" alt="봄 추천코스 지도" />
-          <a
-            href="https://map.naver.com/v5/directions/-/14331063.878830526,4147636.56597919,%EC%96%91%EC%A7%80%EC%95%94%EC%A1%B0%EA%B0%81%EA%B3%B5%EC%9B%90,1858076250,PLACE_POI/-/transit?c=15,0,0,0,dh"
-            ><i class="fa-solid fa-location-dot yg"></i
-          ></a>
-          <a
-            href="https://map.naver.com/v5/directions/-/14328408.842131447,4136039.416760478,%EA%B3%B5%EA%B3%B6%EC%9D%B4,15847443,PLACE_POI/-/transit?c=15,0,0,0,dh"
-            ><i class="fa-solid fa-location-dot gg"></i
-          ></a>
-          <a
-            href="https://map.naver.com/v5/directions/-/14319687.950771261,4132201.7370453347,%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84%20%EA%B1%B0%EC%A0%9C%EC%8B%9C%20%EB%8F%99%EB%B6%80%EB%A9%B4%20%ED%95%99%EB%8F%99%EB%A6%AC%20621-4,0331032028,ADDRESS_POI/-/transit?c=14,0,0,0,dh"
-            ><i class="fa-solid fa-location-dot hd"></i
-          ></a>
-          <a
-            href="https://map.naver.com/v5/directions/-/14321558.85292523,4128570.9828696717,%ED%95%A8%EB%AA%A9%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5,13491646,PLACE_POI/-/transit?c=12.03,0,0,0,dh"
-            ><i class="fa-solid fa-location-dot hm"></i
-          ></a>
+        <!-- contents start -->
+        <div class="contents">
+          <!-- 사계절 공통 섹션 -->
+          <section class="four-section">
+            <div class="four-img"></div>
+            <div class="four-geoje-bg"></div>
+            <div class="four-geoje-text">
+              <span>거제도의</span>
+            </div>
+            <div class="four-chinese-bg"></div>
+            <div class="four-chinese-text">
+              <span>春</span>
+            </div>
+          </section>
+          <div class="txtBox">
+            <div class="blackBar"></div>
+            <p>
+              꽃봉오리가 수줍게 고개를 내미는 계절 봄,<br />
+              바람을 타고 꽃 향기가 살랑살랑 스치고 지나가는 날<br />
+              따스한 햇살과 푸른 바다가 있는 거제로 당신을 초대합니다<br />
+            </p>
+          </div>
+          <section class="mapPage">
+            <div class="mapPageInnerContainer">
+              <div id="best">
+                <div>추천명소</div>
+              </div>
+              <img src="../img/spring/지도.png" alt="봄 추천코스 지도" />
+              <a
+                href="https://map.naver.com/v5/directions/-/14331063.878830526,4147636.56597919,%EC%96%91%EC%A7%80%EC%95%94%EC%A1%B0%EA%B0%81%EA%B3%B5%EC%9B%90,1858076250,PLACE_POI/-/transit?c=15,0,0,0,dh"
+                ><i class="fa-solid fa-location-dot pin1"></i
+              ></a>
+              <a
+                href="https://map.naver.com/v5/directions/-/14328408.842131447,4136039.416760478,%EA%B3%B5%EA%B3%B6%EC%9D%B4,15847443,PLACE_POI/-/transit?c=15,0,0,0,dh"
+                ><i class="fa-solid fa-location-dot pin2"></i
+              ></a>
+              <a
+                href="https://map.naver.com/v5/directions/-/14319687.950771261,4132201.7370453347,%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84%20%EA%B1%B0%EC%A0%9C%EC%8B%9C%20%EB%8F%99%EB%B6%80%EB%A9%B4%20%ED%95%99%EB%8F%99%EB%A6%AC%20621-4,0331032028,ADDRESS_POI/-/transit?c=14,0,0,0,dh"
+                ><i class="fa-solid fa-location-dot pin3"></i
+              ></a>
+              <a
+                href="https://map.naver.com/v5/directions/-/14321558.85292523,4128570.9828696717,%ED%95%A8%EB%AA%A9%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5,13491646,PLACE_POI/-/transit?c=12.03,0,0,0,dh"
+                ><i class="fa-solid fa-location-dot pin4"></i
+              ></a>
+              <div class="mapButton">
+                <div>양지암 조각 공원</div>
+                <div>공곶이 수목원</div>
+                <div>학동 유채꽃밭</div>
+                <div>함목 해수욕장</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 양지암 조각 공원-->
+          <section id="ygPage">
+            <div class="yg-left">
+              <img
+                src="../img/spring/Rectangle 149조각공원1.png"
+                alt="물고기조각"
+              />
+              <img src="../img/spring/Rectangle 147조각공원2.png" alt="공원" />
+              <h1>양지암 조각 공원</h1>
+              <div class="where">
+                <i class="fa-solid fa-location-dot hd"></i>
+                <h2>경남 거제시 일운면 와현리 87</h2>
+              </div>
+              <p>
+                양지암 조각 공원은 전국 유명 조각가의 작품을 전시하는
+                예술공원입니다. 총 40여점의 작품을 4개의 테마를 정해 교감,
+                하늘,영상, 바다 정원으로 구성하여 격조 높은 문화공간으로
+                이루어져 있습니다. 또한 계절마다 철쭉, 튤립, 양귀비 장미, 등이
+                만개하여 꽃구경 겸 봄 소풍을 즐길 수 있습니다.
+              </p>
+            </div>
+            <div class="yg-right">
+              <img
+                src="../img/spring/Rectangle 148조각공원3.png"
+                alt="뾰족한조각"
+              />
+            </div>
+          </section>
+
+          <!-- 공곶이 수목원 -->
+          <section id="ggPage">
+            <h1>공곶이 수목원</h1>
+            <div class="where">
+              <i class="fa-solid fa-location-dot hd"></i>
+              <h2>경남 거제시 일운면 와현리</h2>
+            </div>
+            <img src="../img/spring/공곶이_수정.png" alt="공곶이 수목원" />
+            <p>
+              공곳이는 지형이 궁둥이처럼 튀어 나왔다고 해서 거룻배 공과 땅이
+              바다로 툭 튀어나온 곶의 두 단어를 합쳐서 공곶이라고
+              불립니다.강명식, 지상악 부부가 1969년 공곶이에 정착하여 꽃과
+              나무를 심기 시작하면서 공곶이는 척박한 땅이 아닌 꽃들의 천국으로
+              <br />변했습니다.공곶이는 계다식 다랭이 농원으로 333개로 이루어진
+              천국의 계단을 내려가다 보면 아름다운 꽃들을 만날 수 있습니다.
+            </p>
+
+            <div class="flower">
+              <h1>공곶이에서 볼 수 있는 꽃들</h1>
+              <div class="flowerImg">
+              <img src="../img/spring/동백꽃_수정.png" alt="동백꽃">
+              <img src="../img/spring/수선화_수정.png" alt="수선화">
+              <img src="../img/spring/목련.png" alt="목련">
+            </div>
+              <div class="flowerButton">
+              <div>동백꽃</div>
+              <div>수선화</div>
+              <div>목련</div>
+            </div>
+          </section>
+          <!-- 학동 유채꽃밭-->
+          <section id="hdPage">
+            <img src="../img/spring/학동 유채꽃_수정.png" alt="학동 유채꽃밭" />
+            <h1>학동 유채꽃밭</h1>
+            <div class="where">
+              <i class="fa-solid fa-location-dot hd"></i>
+              <h2>경남 거제시 동부면 학동리 621-4</h2>
+            </div>
+            <p>
+              거제도를 노랑 물결로 가득 채우는 꽃은 수선화 뿐만 아니라 유채꽃도
+              있습니다.<br/>날씨가 맑은 날이면 푸른 바다, 하늘과 유채가 어우러져 한
+              폭의 풍경화를 연출합니다.<br/>넓은 노랑 유채꽃 밭 속에는 소나무 두
+              그루가 서있는데 ‘부부송‘이라고 불립니다.<br/>노란 유채밭 속 포인트가
+              되는 부부송 아래에는 벤치가 있어 앉아서 바다 배경으로 사진을 찍는
+              것을 추천합니다.
+            </p>
+          </section>
+          <!-- 제철 음식 -->
+          <section id="food">
+            <div class="title">
+              <h1>봄에 먹으면 더 맛있다!</h1>
+              <h1>거제도의 도다리 쑥국과 멸치찌개</h1>
+              <img src="../img/spring/음식파트 밑줄.png" alt="음식 파트 밑줄">
+              <P>봄에 먹으면 더욱더 맛있는 거제도의 제철음식을 소개합니다!</P>
+            </div>
+
+          <div class="food1">
+            <div>도다리 쑥국</div>
+            <img src="../img/spring/도다리쑥국_수정.png" alt="도다리 쑥국">
+          <dl>
+            <dt>제철</dt>
+            <dd>3월 ~ 5월</dd>
+            <dt>맛과 영양</dt>
+            <dd>도다리 속에 풍부한 비타민 B은 각기병을 막아주고, 비타민 E는 노화를 방지해 젊음을 유지해준다.</dd>
+            <dt>유래</dt>
+            <dd>도다리쑥국은 해안가 지역을 중심으로 겨우내 먹거리 부족으로 생긴 영양결핍을 보충하기 위해 살이오른 도다리에 입맛을 돋우기 위해 쑥을 넣은 것이 시초가 되어 지금 계절음식으로 자리 잡았다.</dd>
+          </dl>
+          </div>
+          <div class="food2">
+            <div>멸치 찌개</div>
+            <img src="../img/spring/멸치찌개_수정.png" alt="멸치찌개">
+          <dl>
+            <dt>제철</dt>
+            <dd>4월 ~ 6월초</dd>
+            <dt>맛과 영양</dt>
+            <dd>봄철 멸치는 성인병 예방에 좋은 불포화 지방이 들어있으며 단백질과 비타민B1,비타민B2,무기질이 풍부하다</dd>
+            <dt>유래</dt>
+            <dd>봄의 거제도 외포항에서는 몸길이가 10cm~15cm에 이르는 특대멸치 즉 “대멸”이 잡힌다. 생멸치와 채소에 물을 부어 얼큰하고 자작하게 끓이는 찌개는 거제도의 향토음식이 되었다. </dd>
+          </dl>
+          </div>
+
+
+          </section>
+          <!-- 봄 축제 -->
+          <!-- footer start -->
+          <div class="footer">
+            <footer include-html="./footer.html"></footer>
+          </div>
         </div>
-        <ul class="mapButton">
-          <li>양지암 조각 공원</li>
-          <li>공곶이 수목원</li>
-          <li>학동 유채꽃밭</li>
-          <li>함목 해수욕장</li>
-        </ul>
-      </section>
+      </div>
     </main>
   </body>
+  <script>
+    includeHTML();
+  </script>
 </html>

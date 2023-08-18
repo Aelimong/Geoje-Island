@@ -4,23 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>따스한 사계절 온기 넘치는 섬</title>
+    <link rel="icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="./css/mianJeongYun.css" />
-    <link rel="stylesheet" href="./css/mianAelim.css" />
-    <script defer src="./js/mainJungYun.js"></script>
-    <script defer src="./js/mainAeLim.js"></script>
+
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="./css/mainJeongYun.css" />
+
+    <!-- 가로스크롤 js -->
+    <!-- <script defer src="./js/mainJungYun.js"></script> -->
+
     <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
     <!-- <link rel="stylesheet" href="../css/spring.css" /> -->
-    <!-- main 1번째 css -->
-    <link rel="stylesheet" href="/css/index.css" />
+
+  
+    <link rel="stylesheet" href="./css/mainAelim.css" />
+
+    <!-- <script defer src="./js/mainJeongYun.js"></script> -->
+    <script defer src="./js/mainAeLim.js"></script>
+
     <!-- jquery -->
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
+
     <!-- 날씨 api java -->
     <script src="/js/weatherAPI.js"></script>
+
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/7226852946.js"
@@ -29,12 +40,11 @@
   </head>
   <body>
     <main class="container">
+      <!-- 1번째 섹션 (창용) -->
+      <article class="main-section">
       <header>
-        <ul>
+        <ul class="apis">
           <li class="weather"></li>
-          <li>
-            <i class="fa-solid fa-sun fa-spin fa-lg" style="color: #023793"></i>
-          </li>
           <li class="temp"></li>
         </ul>
       </header>
@@ -42,33 +52,33 @@
         <video class="bg-video" autoplay muted loop>
           <source src="/video/windmill.mp4" />
         </video>
-        <img src="/img/logo.svg" alt="logo.svg" />
-        <div class="footer">
-          <div class="menu">MENU</div>
+        <img class="logo"src="/img/logo.svg" alt="logo.svg" />
+        <div class=" bottom">
           <p class="scroll">SCROLL</p>
         </div>
       </div>
-      <article id="ment">
-        <h1>안녕하세요. 따사온섬 메인 페이지입니다.</h1>
-        <h2>안녕하세요. 따사온섬 메인 페이지입니다.</h2>
-        <p>안녕하세요. 따사온섬 메인 페이지입니다.</p>
-      </article>
-      <!-- 2번째 페이지 -->
+    </article>
+      
+
+  
+
+
+      <!-- 2번째 섹션 (정윤) -->
       <article id="move">
         <div id="slider">
           <div id="photo1">1</div>
           <div id="photo2">2</div>
-          <img src="./img/Web/테두리.png" alt="두번째 이미지 테두리" />
+          <img src="./img/main/테두리2.png" alt="두번째 이미지 테두리" />
           <div id="photo3">3</div>
           <div id="photo4">4</div>
-          <img src="./img/Web/테두리.png" alt="네번째 이미지 테두리" />
+          <img src="./img/main/테두리.png" alt="네번째 이미지 테두리" />
           <div id="photo5">5</div>
           <div id="photo6">6</div>
-          <img src="./img/Web/테두리.png" alt="여섯번째 이미지 테두리" />
+          <img src="./img/main/테두리.png" alt="여섯번째 이미지 테두리" />
           <div id="photo7">7</div>
-        </div>
       </article>
-      <!-- ticket section -->
+
+      <!-- 티켓 섹션 (애림) -->
       <article class="ticket">
         <h1>Ticket</h1>
         <div class="ticket-area">
@@ -80,7 +90,7 @@
               <p id="currentTime" class="ticket-text"></p>
             </div>
           </div>
-          <div class="ticket-flower rotate-10-right">
+          <div class="ticket-flower rotate-10-rigsht">
             <img
               class="default-ticket"
               src="./img/main/no-ticket.png"

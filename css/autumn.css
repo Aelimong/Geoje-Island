@@ -170,6 +170,7 @@ a {
 
 /*  */
 .page4 .imgBox {
+  position: relative;
   display: flex;
   width: 816px;
   justify-content: space-between;
