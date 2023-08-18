@@ -1,48 +1,79 @@
-* {
-  cursor: pointer;
+section {
+  margin-bottom: 50px;
+}
+
+.page {
+  border: 3px solid red;
+  height: 1000px;
+  width: 100%;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.button {
+  height: 6vh;
+  width: 10vw;
+  background-color: #023793;
+  text-align: center;
+  line-height: 6vh;
+  color: white;
+  border-radius: 15px;
+  font-size: 1vw;
+}
+
+.subButton {
+  height: 6vh;
+  width: 10vw;
+  background-color: #6f843b;
+  text-align: center;
+  line-height: 6vh;
+  color: white;
+  border-radius: 15px;
+  font-size: 1vw;
+}
+.container {
+  display: flex;
+  margin-bottom: 10px;
 }
 
 /* page 1 */
-
-.main > .text {
-  line-height: 130%;
-  font-size: 70px;
-  color: #011842;
-  position: relative;
+.text {
+  position: absolute;
+  color: #02276b;
+  font-weight: bold;
+  z-index: 3;
 }
 
-.main > .top {
-  left: 35vw;
-  top: 15vh;
+.text1 {
+  left: 55vw;
+  top: 2vh;
+  font-size: 10vh;
 }
 
-.main > .middle {
-  left: 3vw;
-  bottom: 17vh;
+.text2 {
+  left: 25vw;
+  top: 55vh;
+  font-size: 15vh;
 }
 
-.main > .bottom {
-  font-size: 16px;
+.text3 {
   text-decoration: overline;
-  text-align: right;
-  bottom: 10vh;
+  font-size: 16px;
+  left: 48%;
 }
 
-/* page 2 */
-
-/* 추천명소 */
-.location {
-  width: 158px;
-  height: 45px;
-  background-color: #02276b;
-  border-radius: 15px;
-  text-align: center;
-  line-height: 45px;
-  font-size: 20px;
-  color: white;
+.image {
 }
 
-/* 지도 핑 아이콘 */
+/* page2: map  */
+/* ping */
 i {
   position: relative;
   bottom: 10px;
@@ -52,25 +83,58 @@ i:hover {
   transform: scale(1.5);
 }
 
-/* 핑 위치 */
-/* 거제식물원 */
-/* 거제 포로수용소 */
-/* 고현시장 */
-/* 지심도 */
-
-/* 지도 밑에 버튼 */
-.buttons {
+.buttonContainer {
   display: flex;
-  align-content: space-between;
+  justify-content: space-between;
 }
 
-.buttons .button {
-  height: 6vh;
-  width: 10vw;
-  background-color: #023793;
-  text-align: center;
-  line-height: 6vh;
-  color: white;
-  border-radius: 15px;
-  font-size: 1vw;
+.button1 {
+  background-color: #8ea84c;
+}
+
+.button2 {
+  background-color: #6f843b;
+}
+
+.button3 {
+  background-color: #4f5e2a;
+}
+
+.button4 {
+  background-color: #2f3819;
+}
+
+/* page 3: 거제 식물원 */
+.page3 .imgBox {
+  position: relative;
+  display: flex;
+  width: 55vw;
+  justify-content: space-between;
+}
+.page3 .leftimages {
+  width: 25vw;
+  height: 50vh;
+}
+.page3 .rightimages {
+  width: 25vw;
+  height: 50vh;
+}
+
+.page3 p {
+  line-height: 150%;
+}
+
+.page3 .buttonBox .boxContainer {
+  display: flex;
+}
+
+/* page 4: 포로수용소 */
+.page4 .buttonContainer {
+  flex-direction: column;
+}
+.page4 .subButton {
+}
+
+.page4 .subButtonBox {
+  border: 3px solid #4f5e2a;
 }

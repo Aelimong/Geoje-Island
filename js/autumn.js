@@ -30,6 +30,7 @@ const buttons = document.querySelectorAll(".mainButton");
 
 function hoverIn(event) {
   gsap.to(event.target, { opacity: 0.65, duration: 0.3 });
+  console.log(event);
 }
 
 function hoverOut(event) {
@@ -37,20 +38,21 @@ function hoverOut(event) {
 }
 
 pins.forEach((pin) => {
-  for (let button of buttons) {
-    pin.addEventListener("mouseover", hoverIn);
-    pin.addEventListener("mouseover", () => {
-      button.addEventListener("mouseover", hoverIn);
-    });
+  pin.addEventListener("mouseover", hoverIn);
 
-    pin.addEventListener("mouseover", hoverOut);
-    pin.addEventListener("mouseover", () => {
-      button.addEventListener("mouseover", hoverOut);
-    });
+  for (let button of buttons) {
+    // pin.addEventListener("mouseover", () => {
+    //   button.mouseover();
+    //   // button.addEventListener("mouseover", hoverIn);
+    // });
+    // pin.addEventListener("mouseover", hoverOut);
+    // pin.addEventListener("mouseover", () => {
+    //   // button.addEventListener("mouseover", hoverOut);
+    // });
   }
 });
 
-
+// pins.forEach((pin)
 
 // pins.forEach((pin, index) => {
 
