@@ -489,6 +489,20 @@ li {
 }
 
 /* 봄 축제 */
+#swiper h1 {
+  color: #011842;
+  background-color: red;
+}
+
+#springFestival p {
+  margin-top: 1rem;
+  color: #02276b;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -4%;
+  font-size: 16px;
+}
+
 /* #springFestival .imgContainer1 {
   width: 1200px;
   height: 275px;
