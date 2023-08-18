@@ -1,57 +1,34 @@
-/* 
-.page1 {
-  position: absolute;
-  width: 1200px;
-  height: 8000x;
-  left: calc(50% - 1200px / 2);
-  top: 0px;
-  background: #d9d9d9;
-} */
-/* 
-.mainContainer {
-  position: absolute;
-  width: 760px;
-  height: 720px;
-  right: 58px;
-  top: 232px;
-
-  background-color: pink;
-}
-
-.mainContainer .mainImg {
-  width: 760px;
-  height: 477px;
-  background: red;
-}
-.mainContainer .line {
-  width: 554px;
-  border: 1px solid #011842;
-}
-
-.mainContainer p {
-  text-align: right;
-  line-height: 150%;
-  font-size: 16px;
-  --text-gray-700: #263238;
-} */
-
 section {
   margin-bottom: 50px;
 }
 .placeName {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
-
+p {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
 .location {
   display: flex;
   align-items: center;
 }
 
+#locationTxt {
+  margin-bottom: 10px;
+}
 .buttonContainer {
   display: flex;
 }
 
+a {
+  width: 0;
+  height: 0;
+  margin: 0;
+  width: 24px;
+  height: 32px;
+}
 .button {
   width: 170px;
   height: 51px;
@@ -78,22 +55,20 @@ section {
   margin-bottom: 10px;
 }
 
-.page1 img {
-  position: relative;
-  left: 50px;
-  width: 827px;
-}
+/*  */
 
 .page1 .blackBar {
   border: 0.5px solid black;
+  margin-top: 15px;
   margin-bottom: 15px;
-  width: 554px;
+  width: 550px;
+  position: relative;
+  left: 260px;
 }
 
 .page1 .txtBox {
   position: relative;
-  left: 260px;
-  width: 555px;
+  width: 816px;
   text-align: right;
   /* background-color: red; */
 }
@@ -103,27 +78,47 @@ section {
 }
 
 /*  */
+
 .page2 .map:first-child {
   width: 816px;
-  height: 532px;
+  height: 700px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: aqua;
+  /* align-items: center; */
+  /* background-color: aqua; */
 }
 
 .page2 .imgContainer {
-  width: 760px;
-  height: 532px;
+  width: 816px;
+  /* height: 100%; */
   overflow-y: scroll;
+  border: 1px solid #02276b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
   background-color: blue;
+  position: relative;
 }
 
+.page2 .buttonContainer {
+  width: 816px;
+  margin-top: 15px;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.page2 .map .title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.page2 .mainButton {
+  background-color: #02276b;
+}
 .page2 .pin1 {
   position: relative;
   bottom: 330px;
   left: 350px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .page2 .pin2 {
   position: relative;
@@ -144,14 +139,6 @@ section {
   left: 530px;
 }
 
-.page2 .buttonContainer {
-  width: 760px;
-  margin-top: 15px;
-  justify-content: space-between;
-}
-.page2 .mainButton {
-  background-color: #02276b;
-}
 /*  */
 .page3 .imgBox {
   margin-bottom: 20px;
@@ -267,3 +254,7 @@ section {
   background-color: #d4dada;
   margin: 0;
 }
+
+
+
+
