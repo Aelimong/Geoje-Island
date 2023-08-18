@@ -7,6 +7,16 @@
 /* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;300;400;500;700;900&display=swap");
 
+/* 에필로그 폰트 */
+@font-face {
+  font-family: "epilogue-Bold";
+  src: url("../font/210-epilogue-B.otf");
+}
+
+.epilogue-font {
+  font-family: "epilogue-Bold", "serif";
+}
+
 /* 기준 폰트 사이즈 1em */
 html {
   font-size: 10px;
@@ -102,11 +112,6 @@ p {
   margin: 0 auto;
 }
 
-.wrapper {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 /* 사계절 공통 css ======================================*/
 .static {
   display: flex;
@@ -181,34 +186,24 @@ p {
   border-radius: 10px;
 }
 
-.header header nav ul.nav-main li a.active {
-  background-color: #f64c72;
-}
-
 .header header p {
   text-align: center;
   border-bottom: solid 3px var(--main-blue);
   padding-bottom: 20px;
 }
 
-.contents {
-  width: calc(100% - 278px);
-  padding: 0 20px;
-  /* height: 2000px; */
-}
 
 /* 사계절 주요 콘텐츠 */
 .contents {
   width: calc(100% - 278px);
   padding: 0 48px;
-  height: 2000px;
 }
 
 /* 사계절 공통 섹션 */
 .contents .four-section {
   width: 100%;
-  padding: 2vw;
-  margin: 5vh 0;
+  padding: 20px;
+  margin: 20px 0;
   position: relative;
   display: flex;
   justify-content: center;
@@ -219,9 +214,33 @@ p {
   border-radius: 15px;
   overflow: hidden;
   z-index: 0;
-  width: 60vw;
-  height: 60vh;
+  width: 800px;
+  height: 500px;
+}
+
+.contents .four-section .four-img-spring {
+  background-image: url(../img/spring/0a54199c-5131-4361-9ec1-094cba0098d6.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contents .four-section .four-img-summer {
   background-image: url(../img/summer/summer-main.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contents .four-section .four-img-autumn {
+  background-image: url(../img/autumn.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contents .four-section .four-img-winter {
+  background-image: url(../img/winter.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -232,7 +251,7 @@ p {
   z-index: 1;
   top: 0;
   right: 0;
-  padding: 8vw 20vw 0 0;
+  padding: 96px 270px 0 0;
   background-color: #fafafa;
   border-bottom-left-radius: 15px;
   max-width: 80%;
@@ -241,16 +260,29 @@ p {
 .contents .four-section .four-geoje-text {
   position: absolute;
   z-index: 1;
-  top: 6vh;
-  right: 6vw;
+  top: 46px;
+  left: -110px;
+  width: 100%;
 }
 
-.contents .four-section .four-geoje-text span {
+.contents .four-section .four-geoje-text span.up-geoje {
   color: #909495;
-  font-size: 7em;
+  font-size: 10em;
   font-weight: 500;
-  text-shadow: -2px -2px 0 #f8f8f8, 2px -2px 0 #f8f8f8, -2px 2px 0 #f8f8f8,
-    2px 2px 0 #f8f8f8;
+  z-index: 14;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.contents .four-section .four-geoje-text span.behind-geoje {
+  color: #ffffff;
+  font-size: 10em;
+  font-weight: 500;
+  -webkit-text-stroke: 10px #ffffff;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .contents .four-section .four-chinese-bg {
@@ -258,7 +290,7 @@ p {
   z-index: 2;
   bottom: 0;
   left: 0;
-  padding: 10vw 16vw 0 0;
+  padding: 90px 170px 0 0;
   background-color: #fafafa;
   border-top-right-radius: 15px;
   max-width: 80%;
@@ -267,16 +299,67 @@ p {
 .contents .four-section .four-chinese-text {
   position: absolute;
   z-index: 3;
-  bottom: 6vh;
-  left: 5vw;
+  top: 500px;
+  left: 94px;
+  width: 100%;
 }
 
-.contents .four-section .four-chinese-text span {
+.contents .four-section .four-chinese-text .spring-china {
+  color: #f3c72c;
+}
+
+.contents .four-section .four-chinese-text .summer-china {
   color: var(--main-blue);
-  font-size: 14em;
-  font-weight: 800;
-  text-shadow: -2px -2px 0 #f8f8f8, 2px -2px 0 #f8f8f8, -2px 2px 0 #f8f8f8,
-    2px 2px 0 #f8f8f8;
+}
+
+.contents .four-section .four-chinese-text .autumn-china {
+  color: #d0705d;
+}
+
+.contents .four-section .four-chinese-text .winter-china {
+  color: var(--main-blue);
+}
+
+.contents .four-section .four-chinese-text span.up-china {
+  font-size: 12em;
+  font-weight: 600;
+  z-index: 14;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.contents .four-section .four-chinese-text span.behind-china {
+  color: #909495;
+  font-size: 12em;
+  font-weight: 600;
+  -webkit-text-stroke: 10px #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.txt-box {
+  padding: 50px;
+  margin: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.txt-box .black-bar {
+  background-color: #001842;
+  height: 1px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.txt-box p {
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -4%;
 }
 
 /* 푸터 */
