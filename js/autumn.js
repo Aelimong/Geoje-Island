@@ -26,39 +26,51 @@ ScrollTrigger.create({
 // page2
 
 const pins = document.querySelectorAll(".place");
-const buttons = document.querySelectorAll(".button");
+const buttons = document.querySelectorAll(".mainButton");
 
 function hoverIn(event) {
-  gsap.to(event.target, { opacity: 0.75, duration: 0.3 });
+  gsap.to(event.target, { opacity: 0.65, duration: 0.3 });
 }
 
 function hoverOut(event) {
   gsap.to(event.target, { opacity: 1, duration: 0.3 });
 }
 
-// pins.forEach((pin) => {
-//   pin.addEventListener("mouseover", hoverIn);
-//   pin.addEventListener("mouseout", hoverOut);
-// });
+pins.forEach((pin) => {
+  for (let button of buttons) {
+    pin.addEventListener("mouseover", hoverIn);
+    pin.addEventListener("mouseover", () => {
+      button.addEventListener("mouseover", hoverIn);
+    });
 
-pins.forEach((pin, index) => {
-  const button = buttons[index];
-
-  pin.addEventListener("mouseover", () => {
-    hoverIn(pin);
-    hoverIn(button);
-  });
-
-  pin.addEventListener("mouseout", () => {
-    hoverOut(pin);
-    hoverOut(button);
-  });
+    pin.addEventListener("mouseover", hoverOut);
+    pin.addEventListener("mouseover", () => {
+      button.addEventListener("mouseover", hoverOut);
+    });
+  }
 });
+
+
+
+// pins.forEach((pin, index) => {
+
+//   const button = buttons[index];
+
+//   pin.addEventListener("mouseover", () => {
+//     hoverIn(pin);
+//     hoverIn(button);
+//   });
+
+//   pin.addEventListener("mouseout", () => {
+//     hoverOut(pin);
+//     hoverOut(button);
+//   });
+// });
 
 //page3 ~ page5
 
 function initScrollAnimations() {
-  const elementsToAnimate = document.querySelectorAll('.page3, .page4, .page5');
+  const elementsToAnimate = document.querySelectorAll(".page3, .page4, .page5");
 
   elementsToAnimate.forEach((element) => {
     gsap.from(element, {
@@ -67,13 +79,13 @@ function initScrollAnimations() {
       duration: 1,
       scrollTrigger: {
         trigger: element,
-        start: 'top 80%', 
-        end: 'bottom 20%', 
-        toggleActions: 'play none none reverse', 
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse",
       },
     });
   });
 }
 
 // Initialize scroll animations when the DOM is ready
-document.addEventListener('DOMContentLoaded', initScrollAnimations);
+document.addEventListener("DOMContentLoaded", initScrollAnimations);
