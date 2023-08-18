@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="../css/style.css" />
     <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
     <link rel="stylesheet" href="../css/winter.css" />
+    <!-- font awesome: icon -->
     <script
       src="https://kit.fontawesome.com/7226852946.js"
       crossorigin="anonymous"
     ></script>
+   <!-- winter.js -->
+    <script src="/js/winter.js"></script>
   </head>
   <body>
     <main class="container">
@@ -21,51 +24,155 @@
           <header include-html="./header.html"></header>
         </div>
         <!-- header end -->
+        <!-- page 1: main -->
         <div class="contents">
-          <!-- page 1: main -->
-          <div class="main">
-            <p class="text top">거제도의,</p>
-            <img src="/img/camelia.png" alt="camelia.png" />
-            <p class="text middle">冬</p>
-            <p class="text bottom">
-              차가운 겨울, 그 안에서 느껴지는 따뜻함. 거제와 함께하는 특별한
-              여정
-            </p>
-          </div>
-          <!-- page 2: 지도 -->
-          <div class="main">
-            <div class="location">추천명소</div>
-            <img class="map" src="/img/map.png" alt="map.png" />
+          <section class="page page1">
+            <p class="text text1">거제도의</p>
+            <p class="text text2">冬 </p>
+              <img class="image camelia"src="/img/camelia.png" alt="camelia">
+              <br/><br/>
+            <p class="text text3">차가운 겨울, 그 안에서 느껴지는 따뜻함. 바다와 함께하는 특별한 여정 <br/>
+                </p>
+            
+          </section>
+          <!-- page 2: map -->
+          <section class="page page2">
+              <div class="image map">
+                  <div class="mapContainer">
+                      <div class="button">추천 명소</div>
+                      <img src="/img/map.png" alt="map">
+                      <i
+                      class="fa-solid fa-location-dot fa-3x first"
+                      style="color: #8ea84c"
+                    ></i>
+        
+                    <i
+                      class="fa-solid fa-location-dot fa-3x second"
+                      style="color: #6f843b"
+                    ></i>
+        
+                    <i
+                      class="fa-solid fa-location-dot fa-3x third"
+                      style="color: #4f5e2a"
+                    ></i>
+        
+                    <i
+                      class="fa-solid fa-location-dot fa-3x fourth"
+                      style="color: #2f3819"
+                    ></i>
+        
+                     
+                 <div class="buttonContainer">
+                     <div class="button button1">거제 식물원</div>
+                     <div class="button button2">거제 포로수용소</div>
+                     <div class="button button3">고현시장</div>
+                     <div class="button button4">지심도</div>
+                 </div>
 
-            <i
-              class="fa-solid fa-location-dot fa-3x first"
-              style="color: #023793"
-            ></i>
+              </div>
 
-            <i
-              class="fa-solid fa-location-dot fa-3x second"
-              style="color: #023793"
-            ></i>
+          </section>
+          <!-- blank에 공간 더 띄우고 뭐 넣고 싶은데 아이디어가 안 떠오릅니다,, -->
+          <div class="blank"></div>  
 
-            <i
-              class="fa-solid fa-location-dot fa-3x third"
-              style="color: #023793"
-            ></i>
 
-            <i
-              class="fa-solid fa-location-dot fa-3x fourth"
-              style="color: #023793"
-            ></i>
+          <!--page 3: 거제 식물원    -->
+          <section class="page page3">
+              <div class="place">
+                  <div class="button">거제 식물원 </div>
+                  <br/>
+                  <div class="location">
+                    <i
+                      class="fa-solid fa-location-dot fa-2x first"
+                      style="color: #023793"></i>
+                    <p id="locationTxt">경남 거제시 거제면 거제남서로 3595 거제식물원</p>
+                  </div>
+                  <br/>
 
-            <div class="buttons">
-              <div class="button">거제 식물원</div>
+              <div class="imgBox">
+                  <div class="leftimages">
+                      <img src="/img/winter/garden1.jpg" alt="garden1" style="height: 35vh;border-radius: 15px;">
+                      <p>거제식물원은 지역의 식물 생태계를 비롯하여 열대, 난대, 온대 등 다양한 환경의 식물을 한눈에 관찰하고 체험해 볼 수 있는 공간입니다. 추운 겨울에 실내에서 가족 혹은 연인과 식물을 관찰하고 주변을 산책하면서 힐링 여행이 가능합니다. 식물원이 선정한 겨울 식물을 구경해보세요!.
+                      </p><br/><br/>
+                      <img src="/img/winter/garden2.jpg" alt="garden2" style="height:50vh;border-radius:15px";> 
+                      <h1>포인세티아</h1>
+                      <p>포인세티아는 대극과(Euphorbiaceae) 등대풀속(Euphorbia)에 속하는 작은키나무(灌木;Shrub)입니다.빨간색과 녹색잎으로 알려져 주로 성탄절에 이 식물을 주로 이용합니다. 식물에 독성이 강한 것으로 알려져 있지만 애완동물이나 어린이에게 위험하지 않습니다.</p>
+  
+                  </div>
+                  <div class="rightimages">
+                      <img src="/img/winter/garden3.jpg" alt="garden3" style="border-radius: 15px;">
+                      <h1>스도칼림마</h1>                    
+                      <p>스도칼림마는 능소화과(Bignoniaceae) 만소아속(Mansoa)에 속하는 늘푸른덩굴(常綠蔓性; Evergreen Climber)식물입니다.  이 식물은 남아메리카 북부지역의 자생종이며, 중앙 아메리카와 브라질에 분포한다.스도칼림마는 잎이나 꽃에서 마늘냄새가 납니다. 꽃은 깔때기모양꽃부리가 무리지어 피며,  꽃의 색은 라벤더, 연한 라벤더, 흰색 순으로 색이 변한다. 씨앗은 바람에 의해 전파됩니다.</p>
+                      <br/><br/>
+                      <img src="/img/winter/garden4.jpg" alt="garden4"style="height:35vh; border-radius: 15px;">
+                      <h1>옥시카르디움</h1>
+                      <p>옥시카르디움은 천남성과(Araceae) 필로덴드론속(Philodendron)에 속하는 늘푸른덩굴(常綠蔓性; Evergreen Climber)식물입니다.옥시카르디움은 높이3~6m까지 덩굴성으로 자라며, 하트모양 잎이 30cm까지 자라며 잎에 광택이 있습니다. 꽃은 흰색 꽃을 성숙한 식물에서 피우며, 15°C 까지 자라는 식물입니다.</p>
+                  </div>
+                </div>
+           </section>
+        <!-- page 4: 거제 포로수용소 -->
+          <section class="page page4">
+            <div class="place">
               <div class="button">거제 포로수용소</div>
-              <div class="button">고현시장</div>
-              <div class="button">지심도</div>
-            </div>
+              <br/>
+              <div class="location">
+                <i
+                  class="fa-solid fa-location-dot fa-2x first"
+                  style="color: #023793"></i>
+                <p id="locationTxt">경남 거제시 계룡로 61 거제포로수용소유적공원</p>
+              </div>
+              <br/>
+              <div class="imgBox">
+                <img src="../img/winter/prison.jpg" src="prison.jpg">
+                <p>거제 포로수용소는 6.25 당시 가장 큰 포로수용소 유적입니다. 거제 계룡산(554m) 동쪽 자락을 따라, 복원된 옛 고현성과 그 옆 시청 건물을 지나면 고현중학교 담벼락 좌측 언덕에 포로수용소 경비대 건물 잔해가 서 있는 모습을 볼 수 있다. 유적관 내에는 전시실, 영상실, 기념품 판매소가 설치되어 있으며, 전시실에는 포로의 발생, 배경, 생활사, 포로 유품, 폭동, 석방 등이 전시되어 있습니다</p>
+              </div><br/><br/>
+           
+              <div class="sub buttonContainer">              
+                <div class="subButton">운영시간
+                  <p>09:00 - 18:00</p>             
+              </div> 
+                     
+                <div class="subButton">휴관일
+                  <p>매주 화요일, 명절 당일</p>
+                </div>
+                <div class="subButton">입장요금
+                  <p>성인 7000원</p>
+                  <p>청소년/군인 5000원</p>
+                  <p>어린이 3000원</p>
+                </div>
+                <div class="subButton">체험시설 요금
+                  <p>VR체험관 4000원</p>
+                  <p>거울미로 3000원</p> 
+                  <p>착시미술 3000원</p>
+                </div>
+                <div class="subButton">이용수칙
+                  <p>전시관 내 흡연금지</p>
+                   <p>주류 반입 및 음주금지</p>
+                    <p>반려동물 동반입장금지</p>
+                </div>
+              </div>
+           
           </div>
+            </section>
+         <!-- page 5: 고현시장 -->
+         <section class="page page5">
+          <div class="place">
+            <div class="button">고현시장</div>
+          </div>
+         </section>
+         <!-- page 6: 지심도 -->
+         <section class="page page6">
+          <div class="place">
+            <div class="button">지심도</div>
+          </div>
+         </section>
+         <!-- page 7: 제철음식 -->
+         <section class="page page7"></section>
+         <!-- page 8: 지역축제 -->
+         <section class="page page8"></section>
         </div>
       </div>
+
       <!-- footer start -->
       <div class="footer">
         <footer include-html="./footer.html"></footer>
