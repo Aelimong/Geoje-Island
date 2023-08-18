@@ -30,44 +30,29 @@ const buttons = document.querySelectorAll(".mainButton");
 
 function hoverIn(event) {
   gsap.to(event.target, { opacity: 0.65, duration: 0.3 });
-  console.log(event);
+  console.log(event.target.classList.contains(`pin4`));
+  for (let i = 0; i < 4; i++) {
+    if (event.target.classList.contains(`pin${i + 1}`)) {
+      gsap.to(`.bt${i + 1}`, { opacity: 0.65, duration: 0.3 });
+    }
+  }
 }
 
 function hoverOut(event) {
   gsap.to(event.target, { opacity: 1, duration: 0.3 });
+  for (let i = 0; i < 4; i++) {
+    if (event.target.classList.contains(`pin${i + 1}`)) {
+      gsap.to(`.bt${i + 1}`, { opacity: 1, duration: 0.3 });
+    }
+  }
 }
 
 pins.forEach((pin) => {
   pin.addEventListener("mouseover", hoverIn);
-
-  for (let button of buttons) {
-    // pin.addEventListener("mouseover", () => {
-    //   button.mouseover();
-    //   // button.addEventListener("mouseover", hoverIn);
-    // });
-    // pin.addEventListener("mouseover", hoverOut);
-    // pin.addEventListener("mouseover", () => {
-    //   // button.addEventListener("mouseover", hoverOut);
-    // });
-  }
 });
-
-// pins.forEach((pin)
-
-// pins.forEach((pin, index) => {
-
-//   const button = buttons[index];
-
-//   pin.addEventListener("mouseover", () => {
-//     hoverIn(pin);
-//     hoverIn(button);
-//   });
-
-//   pin.addEventListener("mouseout", () => {
-//     hoverOut(pin);
-//     hoverOut(button);
-//   });
-// });
+pins.forEach((pin) => {
+  pin.addEventListener("mouseout", hoverOut);
+});
 
 //page3 ~ page5
 
@@ -89,5 +74,24 @@ function initScrollAnimations() {
   });
 }
 
-// Initialize scroll animations when the DOM is ready
+//초기화
 document.addEventListener("DOMContentLoaded", initScrollAnimations);
+
+//page 6
+function slideLeft() {
+  const images = document.querySelectorAll(".page6 .imgContainer img");
+
+  images.forEach((image) => {
+    gsap.to(image, {
+      x: "-100%", // 왼쪽으로 100% 이동
+      scrollTrigger: {
+        trigger: image,
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: 0.5, // 스크롤 속도에 따라 애니메이션을 조절
+      },
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", slideLeft);
