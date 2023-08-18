@@ -326,7 +326,6 @@ li {
 }
 
 /* 제철 음식 */
-/* 403*25 */
 #food {
   margin: 25rem 0;
 }
@@ -449,7 +448,15 @@ li {
 #food .food2 dl {
   width: 275px;
   height: 350px;
-  margin: 132px 0 0 10px;
+  margin: 132px 10px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+
+  /* width: 275px;
+  height: 350px;
+  margin: 132px 0 0 10px; */
 }
 
 #food .food2 dt {
