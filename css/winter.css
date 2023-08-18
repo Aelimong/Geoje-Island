@@ -130,8 +130,11 @@ i:hover {
 
 /* page 4: 포로수용소 */
 .page4 .buttonContainer {
+  flex-direction: column;
+}
+.page4 .subButton {
 }
 
-.page4 .tableContainer {
-  border: 2px solid #4f5e2a;
+.page4 .subButtonBox {
+  border: 3px solid #4f5e2a;
 }
