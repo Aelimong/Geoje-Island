@@ -5,19 +5,23 @@
   box-sizing: border-box;
 }
 
+/* 전체 배경 - 종이질감 */
+body#index-bg-paper {
+  background-image: url("../img/paper-bg.jpg");
+}
+
 /* header: 날씨 + 온도 */
 header {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 3;
 }
 
-ul {
+.apis {
   display: flex;
   justify-content: space-between;
-}
-
-ul li {
+  position: relative;
+  top: 3vh;
   color: #023793;
   font-size: 20px;
 }
@@ -34,7 +38,7 @@ ul li {
   align-items: center;
 }
 
-/* 로고 설정 */
+/* 로고 이미지 설정 */
 .logo {
   position: absolute;
   z-index: 2;
@@ -44,7 +48,6 @@ ul li {
 
 /* menu+scroll 위치 */
 .bg-video > div {
-  width: 100%;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -52,8 +55,7 @@ ul li {
   align-items: center;
 }
 
-.footer .menu {
-  border: 1px solid black;
+.bottom .menu {
   color: white;
   width: 12vw;
   height: 8vh;
@@ -62,6 +64,7 @@ ul li {
   text-align: center;
   line-height: 8vh;
 }
+
 .scroll {
   color: white;
   font-size: 20px;
