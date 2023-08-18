@@ -194,7 +194,7 @@ p {
 .contents {
   width: calc(100% - 278px);
   padding: 0 20px;
-  height: 2000px;
+  /* height: 2000px; */
 }
 
 /* 사계절 주요 콘텐츠 */

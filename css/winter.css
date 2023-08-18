@@ -3,7 +3,6 @@ section {
 }
 
 .page {
-  border: 3px solid red;
   height: 1000px;
   width: 100%;
 }
@@ -28,6 +27,17 @@ section {
   font-size: 1vw;
 }
 
+.longbutton {
+  height: 3vh;
+  width: 20vw;
+  background-color: #4e74b7;
+  text-align: center;
+  line-height: 3vh;
+  color: white;
+  border-radius: 15px;
+  font-size: 1vw;
+}
+
 .subButton {
   height: 6vh;
   width: 10vw;
@@ -36,8 +46,9 @@ section {
   line-height: 6vh;
   color: white;
   border-radius: 15px;
-  font-size: 1vw;
+  font-size: 2vh;
 }
+
 .container {
   display: flex;
   margin-bottom: 10px;
@@ -67,9 +78,6 @@ section {
   text-decoration: overline;
   font-size: 16px;
   left: 48%;
-}
-
-.image {
 }
 
 /* page2: map  */
@@ -129,12 +137,105 @@ i:hover {
 }
 
 /* page 4: 포로수용소 */
-.page4 .buttonContainer {
-  flex-direction: column;
-}
-.page4 .subButton {
+
+.page4 .tableContainer {
+  border: 3px solid #8ea84c;
 }
 
-.page4 .subButtonBox {
-  border: 3px solid #4f5e2a;
+.buttonContainer {
+  margin: 2vh;
+}
+
+.buttonContainer .buttonText {
+  font-size: 2vh;
+}
+
+/* page 5: 고현시장 */
+
+.page5 .place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page5 .image {
+  width: 50vw;
+  height: 60vh;
+}
+
+/* page 6: 지심도 */
+
+.page6 .imageContainer {
+  display: flex;
+  align-content: space-evenly;
+}
+
+.page6 .image {
+  border-radius: 15px;
+  height: 30vh;
+  width: 20vw;
+}
+
+.page6 .imageText {
+  position: relative;
+  width: 30vw;
+  font-size: 2vh;
+  line-height: 3vh;
+  justify-content: center;
+  left: 4vw;
+}
+
+/* page 7: 제철음식 */
+.page7 {
+  border-radius: 15px;
+  border: 2px solid #4e74b7;
+}
+.page7 .subContainer {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  border: 3px solid black;
+}
+
+.page7 .foodContainer {
+  display: flex;
+}
+
+.page7 .image {
+  position: relative;
+  border-radius: 15px;
+  width: 25vw;
+  height: 60vh;
+}
+
+.page7 .foodContainer {
+  border: 3px blue;
+}
+
+.page7 .foodContainer .buttonContainer {
+  flex-direction: column;
+}
+
+.page7 .subContainer .buttonContainer .button {
+  background-color: #8ea84c;
+  width: 5vw;
+}
+/* page 8: 지역축제 */
+
+.page8 {
+  border-radius: 15px;
+  border: 2px solid #4e74b7;
+}
+
+.page8 .subContainer {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  border: 3px solid black;
 }
