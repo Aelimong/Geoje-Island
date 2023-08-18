@@ -47,6 +47,18 @@ body article#move {
   /* section의 가로너비 body 사이즈보다 크도록 설정, */
 }
 
+#move .wrapper {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  border: 1px solid red;
+}
+
+#move #slider {
+  width: 50%;
+  border: 1px solid blue;
+}
+
 /* 사진생성 */
 #slider div {
   width: 100px;
@@ -168,4 +180,9 @@ body article#move {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: -4%;
+}
+
+.container .move {
+  width: 100%;
+  padding: 100px 0;
 }

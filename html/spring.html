@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="../css/style.css" />
     <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
     <link rel="stylesheet" href="../css/spring.css" />
+
+    <!-- 슬라이더 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="../js/spring.js"></script>
     <!-- font awsome -->
     <script
       src="https://kit.fontawesome.com/d905bc4a07.js"
       crossorigin="anonymous"
     ></script>
+
   </head>
   <body>
     <main class="container">
       <div class="static">
+
         <!-- header start -->
         <div class="header">
           <header include-html="./header.html"></header>
@@ -188,20 +195,34 @@
 
           </section>
           <!-- 봄 축제 -->
-          <section id="springFestival">
-            <div class="imgContainer1">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-            </div>
+          <section id="springFestival swiper">
+            <!-- <div class="imgContainer1">
+              <img src="../img/spring/축제 (1).png" alt="장승포 블라썸">
+              <img src="../img/spring/축제 (2).png" alt="대금산 진달래 축제">
+              <img src="../img/spring/축제 (3).png" alt="거제 맹종 대나무 축제">
+              <img src="../img/spring/축제 (4).png" alt="산방산삼월삼짇날 축제">
+              <img src="../img/spring/축제 (5).png" alt="양지암 축제">
+              <img src="../img/spring/축제 (6).png" alt="옥포대첩 축제">
+            </div> -->
+            <div class="swiper">
+              <div class="imgContainer1 swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+            </body>
             <h1>거제의 봄 축제</h1>
-            <p></p>
+            <p>
+              거제도는 여러 관광명소 뿐만 아니라 다양한 축제도 매 계절마다 진행하고 있습니다.<br/>
+              봄의 거제를 즐기는 방법에서 축제를 빼놓을 순 없습니다.<br/>
+              거제도 곡곡에서 열리는 다양한 축제들을 놓치지 마세요!
+            </p>
             <div class="imgContainer2">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
+              <img src="../img/spring/축제 (4).png" alt="산방산삼월삼짇날 축제">
+              <img src="../img/spring/축제 (5).png" alt="양지암 축제">
+              <img src="../img/spring/축제 (6).png" alt="옥포대첩 축제">
             </div>
-          </section>
+         </section>
           <!-- footer start -->
           <div class="footer">
             <footer include-html="./footer.html"></footer>

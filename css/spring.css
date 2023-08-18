@@ -1,6 +1,7 @@
 * {
   line-height: 150%;
   letter-spacing: -4%;
+  max-width: 1200px;
 }
 
 li {
@@ -488,3 +489,63 @@ li {
 }
 
 /* 봄 축제 */
+/* #springFestival .imgContainer1 {
+  width: 1200px;
+  height: 275px;
+} */
+
+/* .swiper {
+  position: relative;
+  width: 500px;
+  height: 100px;
+  position: relative;
+}
+
+#springFestival .imgContainer1 img {
+  width: 432px;
+  height: 275px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* #springFestival .imgContainer1 img {
+  width: 432px;
+  height: 275px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* #springFestival .imgContainer2 img {
+  width: 432px;
+  height: 275px;
+  border-radius: 15px;
+} */
+
+/* <img src="../img/spring/축제 (1).png" alt="장승포 블라썸">
+<img src="../img/spring/축제 (2).png" alt="대금산 진달래 축제">
+<img src="../img/spring/축제 (3).png" alt="거제 맹종 대나무 축제">
+
+#springFestival .m.imgContainer1 div{
+  width: 432px;
+  height: 275px;
+  border-radius: 15px;
+
+} */
+
+.swiper-wrapper div {
+  width: 432px;
+  height: 275px;
+  border-radius: 15px;
+}
+
+.swiper-wrapper div:nth-of-type(1) {
+  background-image: url(../img/spring/축제1.png);
+}
+.swiper-wrapper div:nth-of-type(2) {
+  background-image: url(../img/spring/축제2.png);
+}
+.swiper-wrapper div:nth-of-type(3) {
+  background-image: url(../img/spring/축제3.png);
+}

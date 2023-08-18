@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+  <style>
+
+    .swiper-wrapper{
+        width: 1200px;
+        background-color: red;
+    }
+    .swiper-wrapper .swiper-slide{
+        width: 432px;
+        height: 275px;
+        border-radius: 15px;
+        border: 3px solid red;
+        background-color: bisque;
+  
+    }
+  </style>
+
+</head>
+<body>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+        </div>
+    </body>
+
+    <script>
+        new Swiper('.swiper', {
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+
+})
+    </script>
+</html>
