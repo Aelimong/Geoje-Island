@@ -20,10 +20,11 @@ header {
 .apis {
   display: flex;
   justify-content: space-between;
-  position: relative;
+   position: relative;
   top: 3vh;
   color: #023793;
   font-size: 20px;
+  padding: 0 20px;
 }
 
 /* 비디오 설정 */
@@ -68,4 +69,5 @@ header {
 .scroll {
   color: white;
   font-size: 20px;
+  padding: 20px;
 }
