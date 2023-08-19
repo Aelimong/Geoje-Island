@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>겨울의 거제도</title>
     <script src="../js/includeHTML.js"></script>
-    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- font awesome: icon -->
     <script
       src="https://kit.fontawesome.com/7226852946.js"
       crossorigin="anonymous"
     ></script>
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- swiper cdn -->
+    <!-- swiper CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- gsap CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
-  <link rel="stylesheet" href="../css/winter.css" />
-   <!-- winter.js -->
-    <script src="/js/winter.js"></script>
+    <link rel="stylesheet" href="../css/winter.css" />
+    <!-- winter.js -->
+    <script defer src="/js/winter.js"></script>
   </head>
   <body>
     <main class="container">
@@ -48,250 +57,502 @@
             <div class="black-bar"></div>
             <p>
               겨울에는 거제도의 자연이 푸근하고 평화로운 분위기로 변합니다.<br />
-              하얀 눈이 내리는 풍경은 동화 속의 세계를 연상시키며, 일출과 일몰이 더욱 선명하게 그려집니다.
+              하얀 눈이 내리는 풍경은 동화 속의 세계를 연상시키며, 일출과 일몰이
+              더욱 선명하게 그려집니다.
             </p>
           </section>
           <!-- page 2: map -->
           <section class="page page2">
-              <div class="image map">
-                  <div class="mapContainer">
-                      <div class="button">추천 명소</div>
-                      <img src="/img/map.png" alt="map">
-                      <i
+            <div class="image map">
+              <div class="mapContainer">
+                <div class="button">추천 명소</div>
+                <img src="/img/map.png" alt="map" />
+                <div class="pins">
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/directions/-/14313258.9496153,4144480.0684331,%EA%B1%B0%EC%A0%9C%EC%8B%9D%EB%AC%BC%EC%9B%90,1421813001,PLACE_POI/-/transit?c=14.00,0,0,0,dh"
+                  >
+                    <i
                       class="fa-solid fa-location-dot fa-3x first"
-                      style="color: #8ea84c"
+                      style="color: #023793"
                     ></i>
-        
+                  </a>
+
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/directions/-/14318493.3145239,4147125.3223532,%EA%B1%B0%EC%A0%9C%ED%8F%AC%EB%A1%9C%EC%88%98%EC%9A%A9%EC%86%8C%EC%9C%A0%EC%A0%81%EA%B3%B5%EC%9B%90%EC%9E%85%EA%B5%AC,15881268,PLACE_POI/-/transit?c=17.00,0,0,0,dh"
+                  >
                     <i
                       class="fa-solid fa-location-dot fa-3x second"
-                      style="color: #6f843b"
-                    ></i>
-        
+                      style="color: #023793"
+                    ></i
+                  ></a>
+
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/directions/-/14318347.3301436,4148438.4611192,%EA%B1%B0%EC%A0%9C%EA%B3%A0%ED%98%84%EC%8B%9C%EC%9E%A5,15568608,PLACE_POI/-/transit?c=12.00,0,0,0,dh"
+                  >
                     <i
                       class="fa-solid fa-location-dot fa-3x third"
-                      style="color: #4f5e2a"
-                    ></i>
-        
+                      style="color: #023793"
+                    ></i
+                  ></a>
+
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/directions/-/14332403.5977183,4139628.0252966,%EC%A7%80%EC%8B%AC%EB%8F%84,13491601,PLACE_POI/-/transit?c=14.00,0,0,0,dh"
+                  >
                     <i
                       class="fa-solid fa-location-dot fa-3x fourth"
-                      style="color: #2f3819"
-                    ></i>
-        
-                     
-                 <div class="buttonContainer">
-                     <div class="button button1">거제 식물원</div>
-                     <div class="button button2">거제 포로수용소</div>
-                     <div class="button button3">고현시장</div>
-                     <div class="button button4">지심도</div>
-                 </div>
-
+                      style="color: #023793"
+                    ></i
+                  ></a>
+                </div>
               </div>
-
+              <div class="mainButtonContainer">
+                <div class="mainButton button1">거제 식물원</div>
+                <div class="mainButton button2">거제 포로수용소</div>
+                <div class="mainButton button3">고현시장</div>
+                <div class="mainButton button4">지심도</div>
+              </div>
+            </div>
           </section>
-          <!-- blank에 공간 더 띄우고 뭐 넣고 싶은데 아이디어가 안 떠오릅니다,, -->
-          <div class="blank"></div>  
-
-
+          <br /><br />
           <!--page 3: 거제 식물원    -->
           <section class="page page3">
-              <div class="place">
-                  <div class="button">거제 식물원 </div>
-                  <br/>
-                  <div class="location">
-                    <i
-                      class="fa-solid fa-location-dot fa-2x first"
-                      style="color: #023793"></i>
-                    <p id="locationTxt">경남 거제시 거제면 거제남서로 3595 거제식물원</p>
-                  </div>
-                  <br/>
-
-              <div class="imgBox">
-                  <div class="leftimages">
-                      <img src="/img/winter/garden1.jpg" alt="garden1" style="height: 35vh;border-radius: 15px;">
-                      <p>거제식물원은 지역의 식물 생태계를 비롯하여 열대, 난대, 온대 등 다양한 환경의 식물을 한눈에 관찰하고 체험해 볼 수 있는 공간입니다. 추운 겨울에 실내에서 가족 혹은 연인과 식물을 관찰하고 주변을 산책하면서 힐링 여행이 가능합니다. 식물원이 선정한 겨울 식물을 구경해보세요!.
-                      </p><br/><br/>
-                      <img src="/img/winter/garden2.jpg" alt="garden2" style="height:50vh;border-radius:15px";> 
-                      <h1>포인세티아</h1>
-                      <p>포인세티아는 대극과(Euphorbiaceae) 등대풀속(Euphorbia)에 속하는 작은키나무(灌木;Shrub)입니다.빨간색과 녹색잎으로 알려져 주로 성탄절에 이 식물을 주로 이용합니다. 식물에 독성이 강한 것으로 알려져 있지만 애완동물이나 어린이에게 위험하지 않습니다.</p>
-  
-                  </div>
-                  <div class="rightimages">
-                      <img src="/img/winter/garden3.jpg" alt="garden3" style="border-radius: 15px;">
-                      <h1>스도칼림마</h1>                    
-                      <p>스도칼림마는 능소화과(Bignoniaceae) 만소아속(Mansoa)에 속하는 늘푸른덩굴(常綠蔓性; Evergreen Climber)식물입니다.  이 식물은 남아메리카 북부지역의 자생종이며, 중앙 아메리카와 브라질에 분포한다.스도칼림마는 잎이나 꽃에서 마늘냄새가 납니다. 꽃은 깔때기모양꽃부리가 무리지어 피며,  꽃의 색은 라벤더, 연한 라벤더, 흰색 순으로 색이 변한다. 씨앗은 바람에 의해 전파됩니다.</p>
-                      <br/><br/>
-                      <img src="/img/winter/garden4.jpg" alt="garden4"style="height:35vh; border-radius: 15px;">
-                      <h1>옥시카르디움</h1>
-                      <p>옥시카르디움은 천남성과(Araceae) 필로덴드론속(Philodendron)에 속하는 늘푸른덩굴(常綠蔓性; Evergreen Climber)식물입니다.옥시카르디움은 높이3~6m까지 덩굴성으로 자라며, 하트모양 잎이 30cm까지 자라며 잎에 광택이 있습니다. 꽃은 흰색 꽃을 성숙한 식물에서 피우며, 15°C 까지 자라는 식물입니다.</p>
-                  </div>
-                </div>
-           </section><br /><br /><br /><br /><br /><br /><br />
-        <!-- page 4: 거제 포로수용소 -->
-          <section class="page page4">
             <div class="place">
-              <div class="button">거제 포로수용소</div>
-              <br/>
+              <div class="button">거제 식물원</div>
+              <br />
               <div class="location">
                 <i
                   class="fa-solid fa-location-dot fa-2x first"
-                  style="color: #023793"></i>
-                <p id="locationTxt">경남 거제시 계룡로 61 거제포로수용소유적공원</p>
+                  style="color: #023793"
+                ></i>
+                <p id="locationTxt">
+                  경남 거제시 거제면 거제남서로 3595 거제식물원
+                </p>
               </div>
-              <br/>
+            </div>
+            <br />
+            <div class="imgBox">
+              <div class="leftimages">
+                <img
+                  src="/img/winter/garden1.jpg"
+                  alt="garden1"
+                  style="height: 30vh; width: 20vw; border-radius: 15px"
+                />
+                <p class="garden-text">
+                  거제식물원은 지역의 식물 생태계를 비롯하여 열대, 난대, 온대 등
+                  다양한 환경의 식물을 한눈에 관찰하고 체험해 볼 수 있는
+                  공간입니다. 추운 겨울에 실내에서 가족 혹은 연인과 식물을
+                  관찰하고 주변을 산책하면서 힐링 여행이 가능합니다. 식물원이
+                  선정한 겨울 식물을 구경해보세요!.
+                </p>
+                <br /><br />
+                <img
+                  src="/img/winter/garden2.jpg"
+                  alt="garden2"
+                  style="height: 40vh; width: 20vw; border-radius: 15px"
+                  ;
+                />
+                <h1>포인세티아</h1>
+                <p class="garden-text">
+                  포인세티아는 대극과(Euphorbiaceae) 등대풀속(Euphorbia)에
+                  속하는 작은키나무(灌木;Shrub)입니다.빨간색과 녹색잎으로 알려져
+                  주로 성탄절에 이 식물을 주로 이용합니다. 식물에 독성이 강한
+                  것으로 알려져 있지만 애완동물이나 어린이에게 위험하지
+                  않습니다.
+                </p>
+              </div>
+              <div class="rightimages">
+                <img
+                  src="/img/winter/garden3.jpg"
+                  alt="garden3"
+                  style="width: 20vw; height: 30vh; border-radius: 15px"
+                />
+                <h1>스도칼림마</h1>
+                <p class="garden-text">
+                  스도칼림마는 능소화과(Bignoniaceae) 만소아속(Mansoa)에 속하는
+                  늘푸른덩굴(常綠蔓性; Evergreen Climber)식물입니다. 이 식물은
+                  남아메리카 북부지역의 자생종이며, 중앙 아메리카와 브라질에
+                  분포한다.스도칼림마는 잎이나 꽃에서 마늘냄새가 납니다. 꽃은
+                  깔때기모양꽃부리가 무리지어 피며, 꽃의 색은 라벤더, 연한
+                  라벤더, 흰색 순으로 색이 변한다. 씨앗은 바람에 의해
+                  전파됩니다.
+                </p>
+                <br /><br />
+                <img
+                  src="/img/winter/garden4.jpg"
+                  alt="garden4"
+                  style="width: 20vw; height: 30vh; border-radius: 15px"
+                />
+                <h1>옥시카르디움</h1>
+                <p class="garden-text">
+                  옥시카르디움은 천남성과(Araceae) 필로덴드론속(Philodendron)에
+                  속하는 늘푸른덩굴(常綠蔓性; Evergreen
+                  Climber)식물입니다.옥시카르디움은 높이3~6m까지 덩굴성으로
+                  자라며, 하트모양 잎이 30cm까지 자라며 잎에 광택이 있습니다.
+                  꽃은 흰색 꽃을 성숙한 식물에서 피우며, 15°C 까지 자라는
+                  식물입니다.
+                </p>
+              </div>
+            </div>
+          </section>
+          <br /><br /><br /><br /><br /><br /><br /><br />
+
+          <!-- page 4: 거제 포로수용소 -->
+          <section class="page page4">
+            <div class="place">
+              <div class="button">거제 포로수용소</div>
+              <br />
+              <div class="location">
+                <i
+                  class="fa-solid fa-location-dot fa-2x first"
+                  style="color: #023793"
+                ></i>
+                <p id="locationTxt">
+                  경남 거제시 계룡로 61 거제포로수용소유적공원
+                </p>
+              </div>
+              <br />
               <div class="imgBox">
-                <img src="../img/winter/prison.jpg" src="prison.jpg">
-                <p>거제 포로수용소는 6.25 당시 가장 큰 포로수용소 유적입니다. 거제 계룡산(554m) 동쪽 자락을 따라, 복원된 옛 고현성과 그 옆 시청 건물을 지나면 고현중학교 담벼락 좌측 언덕에 포로수용소 경비대 건물 잔해가 서 있는 모습을 볼 수 있다. 유적관 내에는 전시실, 영상실, 기념품 판매소가 설치되어 있으며, 전시실에는 포로의 발생, 배경, 생활사, 포로 유품, 폭동, 석방 등이 전시되어 있습니다. 분단의 역사를 기억하고자 하는 분들에게 추천드립니다!</p>
-              </div><br/><br/>
-           
-              <div class="tableContainer">                 
+                <img
+                  class="prision image"
+                  src="../img/winter/prison.jpg"
+                  src="prison.jpg"
+                />
+                <p>
+                  거제 포로수용소는 6.25 당시 가장 큰 포로수용소 유적입니다.
+                  거제 계룡산(554m) 동쪽 자락을 따라, 복원된 옛 고현성과 그 옆
+                  시청 건물을 지나면 고현중학교 담벼락 좌측 언덕에 포로수용소
+                  경비대 건물 잔해가 서 있는 모습을 볼 수 있다. 유적관 내에는
+                  전시실, 영상실, 기념품 판매소가 설치되어 있으며, 전시실에는
+                  포로의 발생, 배경, 생활사, 포로 유품, 폭동, 석방 등이 전시되어
+                  있습니다. 분단의 역사를 기억하고자 하는 분들에게 추천드립니다!
+                </p>
+              </div>
+              <br /><br />
+
+              <div class="tableContainer">
                 <div class="buttonContainer">
                   <div class="subButton">운영시간</div>
                   <div class="buttonText">09:00 - 18:00</div>
                 </div>
-             <div class="buttonContainer"> 
-              <div class="subButton">휴관일</div> 
-              <div class="buttonText">매주 화요일, 설날, 추석 당일</div> 
-            </div>
-            <div class="buttonContainer"> 
-              <div class="subButton">입장요금</div> 
-              <div class="buttonText">성인 7000원 | 청소년/군인 5000원 | 어린이 3000원</div> 
-            </div>
-            <div class="buttonContainer"> 
-              <div class="subButton">체험시설 요금</div> 
-              <div class="buttonText">VR체험관 4000원 | 거울미로 3000원 | 착시미술 3000원</div> 
-            </div>              
-    </section> <br /><br /><br /><br /><br /><br /><br /><br />
-         <!-- page 5: 고현시장 -->
-         <section class="page page5">
-          <div class="place">
-            <div class="button">고현시장</div>
-            <br/>
-            <div class="location">
-              <i
-                class="fa-solid fa-location-dot fa-2x first"
-                style="color: #023793"></i>
-              <p id="locationTxt">경남 거제시 수월동</p></div>
-              <br />
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                  
+                <div class="buttonContainer">
+                  <div class="subButton">휴관일</div>
+                  <div class="buttonText">매주 화요일, 설날, 추석 당일</div>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="market image" src="/img/winter/market1.jpg" class="d-block w-100" alt="market1">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="market image"src="/img/winter/market2.jpg" class="d-block w-100" alt="market2">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="market image"src="/img/winter/market3.jpg" class="d-block w-100" alt="market3">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="market image"src="/img/winter/market4.jpg" class="d-block w-100" alt="market4">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="market image"src="/img/winter/market5.jpg" class="d-block w-100" alt="market5">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="market image"src="/img/winter/market6.jpg" class="d-block w-100" alt="market6">
+                <div class="buttonContainer">
+                  <div class="subButton">입장요금</div>
+                  <div class="buttonText">
+                    성인 7000원 | 청소년/군인 5000원 | 어린이 3000원
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <div class="buttonContainer">
+                  <div class="subButton">체험시설 요금</div>
+                  <div class="buttonText">
+                    VR체험관 4000원 | 거울미로 3000원 | 착시미술 3000원
+                  </div>
+                </div>
               </div>
-              <br /><br /><br /><br /><br />
-
-              <p>고현시장은 거제도의 따뜻한 인심과 푸짐한 먹거리가 넘치는 재래시장입니다. 주변에 대형 마트가 생기면서 전통시장 활성화를 위한 다양한 혜택으로 사람들의 발길을 모으고 있습니다. 전통시장을 아케이드 형으로 되어있어서 품목별로 장을 보기에도 편합니다. 고현시장에서 가장 유명한 곳은 수산물을 파는 어시장인데 광어, 우럭, 도미, 볼락, 고등어 등 신선한 활어를 비롯해 조개류, 소라, 멍게, 문어 등을 저렴하게 구입할 수 있습니다. 이곳에서 회를 뜨거나. 또한, 5일장이 운영되므로 신선한 먹거리를 저렴한 가격에 구매도 하고 푸근한 인심도 느낄 수 있는 곳입니다. 신선한 농수산물과 과일을 비롯하여 분식, 닭강정, 순대국밥 등 다양한 먹거리를 즐겨보세요!</p> 
- 
-         
-            
             </div>
-         </section>
-         <!-- page 6: 지심도 -->
-         <section class="page page6">
-          <div class="place">
-            <div class="button">지심도</div>
-            <br/>
-            <div class="location">
-              <i
-                class="fa-solid fa-location-dot fa-2x first"
-                style="color: #023793"></i>
-              <p id="locationTxt">경남 거제시 일운면 옥림리</p></div>
-              <div class="imageContainer">                 
+          </section>
+          <br /><br /><br />
+
+          <!-- page 5: 고현시장 -->
+          <section class="page page5">
+            <div class="place">
+              <div class="button">고현시장</div>
+              <br />
+              <div class="location">
+                <i
+                  class="fa-solid fa-location-dot fa-2x first"
+                  style="color: #023793"
+                ></i>
+                <p id="locationTxt">경남 거제시 수월동</p>
+              </div>
+              <!-- Slider main container -->
+              <br />
+              <!-- Slider main container -->
+              <div class="swiper swiper1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market1.jpg"
+                      alt="market1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market2.jpg"
+                      alt="market2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market3.jpg"
+                      alt="market3"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market4.jpg"
+                      alt="market4"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market5.jpg"
+                      alt="market5"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market6.jpg"
+                      alt="market6"
+                    />
+                  </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+
+              <br /><br />
+
+              <p class="marketText">
+                고현시장은 거제도의 따뜻한 인심과 푸짐한 먹거리가 넘치는
+                재래시장입니다. 주변에 대형 마트가 생기면서 전통시장 활성화를
+                위한 다양한 혜택으로 사람들의 발길을 모으고 있습니다. 전통시장을
+                아케이드 형으로 되어있어서 품목별로 장을 보기에도 편합니다.
+                고현시장에서 가장 유명한 곳은 수산물을 파는 어시장인데 광어,
+                우럭, 도미, 볼락, 고등어 등 신선한 활어를 비롯해 조개류, 소라,
+                멍게, 문어 등을 저렴하게 구입할 수 있습니다. 이곳에서 회를
+                뜨거나. 또한, 5일장이 운영되므로 신선한 먹거리를 저렴한 가격에
+                구매도 하고 푸근한 인심도 느낄 수 있는 곳입니다. 신선한
+                농수산물과 과일을 비롯하여 분식, 닭강정, 순대국밥 등 다양한
+                먹거리를 즐겨보세요!
+              </p>
+            </div>
+          </section>
+          <br /><br /><br />
+          <!-- page 6: 지심도 -->
+          <section class="page page6">
+            <div class="place">
+              <div class="button">지심도</div>
+              <br />
+              <div class="location">
+                <i
+                  class="fa-solid fa-location-dot fa-2x first"
+                  style="color: #023793"
+                ></i>
+                <p id="locationTxt">경남 거제시 일운면 옥림리</p>
+              </div>
+              <div class="imageContainer">
                 <div class="imageRow">
-                  <img class="island image"src="/img/winter/island1.jpg" alt="island1"></div>
-                  <div class="imageText">지심도는 거제도 본섬의 동쪽 끝 장승포항 앞바다 약 5km 떨어진 곳에 위치하고 있습니다. 지심도(只心島)는 하늘에서 내려다보면 섬의 생긴 모양이 마음 심(心)자를 닮았다 하여 지심도(只心島)라고 불리우고 있습니다.</div>
-                </div><br /><br />
-                <div class="imageContainer">                 
-                  <div class="imageRow">
-                    <img class="island image"src="/img/winter/island2.jpg" alt="island2"></div>
-                    <div class="imageText">지심도로 가는 배편은 거제도 장승포항에 위치한 지심도 터미널에 있습니다. 지심도 터미널은 거제도의 가장 큰 항구인 장승포항에 위치해 있습니다. 터미널 옆에는 외도, 해금강, 매물도노선을 운항하는 거제 최대규모의 장승포유람선이 위치해있습니다.</div>
-                  </div><br /><br />
-                  <div class="imageContainer">                 
-                    <div class="imageRow">
-                      <img class="island image"src="/img/winter/island3.jpg" alt="island3"></div>
-                      <div class="imageText">동백나무의 묘목수나 수령이 무성하여 '동백섬'이란 이름으로도 불리웁니다. 지심도의 동백나무 숲은 현재 국내에서 원시상태가 가장 잘 유지되어 있는 곳입니다. 동백나무의 숲으로 들어하면 한낮에도 그늘진 동백숲동굴로 이어지고, 숲길을 걸을 때 바닥에 무성히 떨어진 꽃들을 발견하실 수도 있습니다!</div>
-                    </div><br /><br />
-                    <div class="imageContainer">                 
-                      <div class="imageRow">
-                        <img class="island image"src="/img/winter/island4.jpg" alt="island4"></div>
-                        <div class="imageText">지심도는 섬의 경치를 즐기는 산책 이외에도 다양한 활동을 할 수 있습니다. 
+                  <img
+                    class="island image"
+                    src="/img/winter/island1.jpg"
+                    alt="island1"
+                  />
+                </div>
+                <div class="imageText">
+                  지심도는 거제도 본섬의 동쪽 끝 장승포항 앞바다 약 5km 떨어진
+                  곳에 위치하고 있습니다. 지심도(只心島)는 하늘에서 내려다보면
+                  섬의 생긴 모양이 마음 심(心)자를 닮았다 하여
+                  지심도(只心島)라고 불리우고 있습니다.
+                </div>
+              </div>
+              <br /><br />
+              <div class="imageContainer">
+                <div class="imageRow">
+                  <img
+                    class="island image"
+                    src="/img/winter/island2.jpg"
+                    alt="island2"
+                  />
+                </div>
+                <div class="imageText">
+                  지심도로 가는 배편은 거제도 장승포항에 위치한 지심도 터미널에
+                  있습니다. 지심도 터미널은 거제도의 가장 큰 항구인 장승포항에
+                  위치해 있습니다. 터미널 옆에는 외도, 해금강, 매물도노선을
+                  운항하는 거제 최대규모의 장승포유람선이 위치해있습니다.
+                </div>
+              </div>
+              <br /><br />
+              <div class="imageContainer">
+                <div class="imageRow">
+                  <img
+                    class="island image"
+                    src="/img/winter/island3.jpg"
+                    alt="island3"
+                  />
+                </div>
+                <div class="imageText">
+                  동백나무의 묘목수나 수령이 무성하여 '동백섬'이란 이름으로도
+                  불리웁니다. 지심도의 동백나무 숲은 현재 국내에서 원시상태가
+                  가장 잘 유지되어 있는 곳입니다. 동백나무의 숲으로 들어하면
+                  한낮에도 그늘진 동백숲동굴로 이어지고, 숲길을 걸을 때 바닥에
+                  무성히 떨어진 꽃들을 발견하실 수도 있습니다!
+                </div>
+              </div>
+              <br /><br />
+              <div class="imageContainer">
+                <div class="imageRow">
+                  <img
+                    class="island image"
+                    src="/img/winter/island4.jpg"
+                    alt="island4"
+                  />
+                </div>
+                <div class="imageText">
+                  지심도는 섬의 경치를 즐기는 산책 이외에도 다양한 활동을 할 수
+                  있습니다. 섬 안의 여러 숙박시설에서 묵으며 지심도의 일몰을
+                  즐길 수 있고, 여름밤에는 반딧불이를 볼 수 있습니다. 또한, 낚시
+                  애호가들에게 다양한 어종의 낚시 포인트를 제공합니다.
+                  여름철에는 선착장 옆 해수풀장이 아이들의 안전한 놀이터를
+                  제공합니다
+                </div>
+              </div>
+            </div>
+          </section>
 
-                          섬 안의 여러 숙박시설에서 묵으며 지심도의 일몰을 즐길 수 있고, 여름밤에는 반딧불이를 볼 수 있습니다.
-                          
-                          또한, 낚시 애호가들에게 다양한 어종의 낚시 포인트를 제공합니다.
-                          
-                          여름철에는 선착장 옆 해수풀장을 운영하여 아이들의 안전한 물놀이터를 제공합니다</div>
-                      </div>
-             
-          
-         
+          <br /><br /><br />
+          <!-- page 7: 제철음식 -->
+          <section class="page page7">
+            <div class="longbutton">거제도의 겨울음식</div>
+            <div class="subContainer">
+              <div class="foodContainer">
+                <img
+                  class="food image"
+                  src="../img/winter/food1.jpg"
+                  alt="food1"
+                />
+                <div class="buttonContainer">
+                  <div class="button">대구탕</div>
+                  <div class="textBox">
+                    대구를 삶아서 그 국물에 대구 토막과 배추, 생굴, 파 등을 넣고
+                    끓인 탕입니다. 국물맛이 칼칼하고 시원하며 부드럽고 담백한
+                    대구살과 함께 즐기실 수 있습니다.
+                  </div>
+                  <div class="button">효능</div>
+                  <div class="textBox">
+                    비타민A, 비타민 B군과 단백질과 아미노산을 풍부하게 함유하고
+                    있어, 위를 튼튼하게 해주어 소화를 촉진 해주며, 신진대사를
+                    원활하게 하고, 에너지생성을 도와주어 피로를 풀어주고, 기력을
+                    회복시켜줍니다.
+                  </div>
+                </div>
+              </div>
+              <div class="restaurant">
+                <h1>↓추천맛집 바로가기↓</h1>
+                <br /><br />
+                <div class="buttonContainer">
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/search/%EC%86%8D%EC%94%A8%EC%9B%90%ED%95%9C%EB%8C%80%EA%B5%AC%ED%83%95%20%EA%B1%B0%EC%A0%9C/place/37774869?c=13.00,0,0,0,dh&isCorrectAnswer=true"
+                    ><div class="button">속씨원한대구탕</div></a
+                  >
+
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/search/%EA%B1%B0%EC%A0%9C%EB%8F%84%EC%8B%A0%EB%8C%80%EA%B5%AC%ED%83%95/place/19381934?c=15.00,0,0,0,dh&isCorrectAnswer=true"
+                  >
+                    <div class="button">거제도신대구탕</div>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/search/%ED%95%B4%EC%86%A1%ED%9A%9F%EC%A7%91/place/35438635?c=12.05,0,0,0,dh"
+                  >
+                    <div class="button">해송횟집</div></a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <br /><br /><br />
+          <!-- page 8: 지역축제 -->
+          <section class="page page8">
+            <div class="longbutton">장승포 신년맞이 행사</div>
+            <div class="subContainer">
+              <!-- Slider main container -->
+              <div class="swiper swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img
+                      class="festival image"
+                      src="/img/winter/festival1.png"
+                      alt="market1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="festival image"
+                      src="/img/winter/festival1.png"
+                      alt="market2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="festival image"
+                      src="/img/winter/festival1.png"
+                      alt="market3"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/festival1.png"
+                      alt="market4"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="festival image"
+                      src="/img/winter/festival1.png"
+                      alt="market5"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="festival image"
+                      src="/img/winter/festival1.png"
+                      alt="market6"
+                    />
+                  </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- footer start -->
+          <div class="footer">
+            <footer include-html="./footer.html"></footer>
           </div>
-         </section><br /><br /><br /><br /><br /><hr/><br /><br /><br /><br /><br /><br />
-         <!-- page 7: 제철음식 -->
-         <section class="page page7">
-          <div class="longbutton">거제도의 겨울음식</div>
-          <div class="subContainer">
-            <div class="foodContainer">
-            <img class="food image"src="../img/winter/food1.jpg" alt="food1">
-            <div class="buttonContainer">
-            <div class="button">대구탕</div>
-            <div class="textBox">대구라는 생선을 삶아서 그 국물에 대구 토막과 배추, 생굴, 파 등을 넣고 끓인 탕이다. 국물맛이 칼칼하고, 시원하다.</div>      
-            <div class="button">맛과 영양</div>
-            <div class="textBox">맛으로는 남해안의 명품, 영양으로는 바다의 황소, 눈오는 겨울철 대구탕의 깊고 담백한 맛은 가히 환상적이라고 말할 수 있다. 흰살 생선의 왕인 대구는 갖은 양념에 버무린 찜 또한 미식가들의 입맛을 돋구운다.
-              특별히 대구뽈찜이 인기가 있는 이유는 산란기에 암수가 서로 사랑을 나눌때 볼을 부벼대는 특성이 있어 살이 각별히 쫄깃 거리고 맛이 한층 더 우수하다고 한다. 올겨울 대구와의 사랑에 빠져봅시다.</div>
-          </div>
-      
-          </div>
-            
-         </section>
-         <!-- page 8: 지역축제 -->
-
-         <section class="page page8">
-          <div class="longbutton">지역축제</div>
-          <div class="subContainer">
-          
-        
-          </div>
-         </section>
-         
-        </div>  
-
-
-
-
+          <!-- footer end -->
+        </div>
+      </div>
     </main>
   </body>
   <script>
