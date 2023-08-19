@@ -547,19 +547,44 @@ li {
   border-radius: 15px;
 
 } */
+/* #springFestival {
+  overflow: visible;
+} */
 
-.swiper-wrapper div {
+#springFestival .swiper {
+  overflow: visible;
+}
+
+#springFestival .swiper-wrapper div {
   width: 432px;
   height: 275px;
   border-radius: 15px;
+  /* margin-right: 10px; */
+  margin: 10px 10px 10px 0;
 }
 
-.swiper-wrapper div:nth-of-type(1) {
+#springFestival .imgContainer1 {
+  width: 1200px;
+}
+
+#springFestival .imgContainer1 div:nth-of-type(1) {
   background-image: url(../img/spring/축제1.png);
 }
-.swiper-wrapper div:nth-of-type(2) {
+#springFestival .imgContainer1 div:nth-of-type(2) {
   background-image: url(../img/spring/축제2.png);
 }
-.swiper-wrapper div:nth-of-type(3) {
+#springFestival .imgContainer1 div:nth-of-type(3) {
   background-image: url(../img/spring/축제3.png);
+}
+
+#springFestival .imgContainer2 div:nth-of-type(1) {
+  background-image: url(../img/spring/축제4.png);
+  background-size: cover;
+}
+#springFestival .imgContainer2 div:nth-of-type(2) {
+  background-image: url(../img/spring/축제5.png);
+}
+#springFestival .imgContainer2 div:nth-of-type(3) {
+  background-image: url(../img/spring/축제6.png);
+  background-size: cover;
 }

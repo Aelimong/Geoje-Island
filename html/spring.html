@@ -6,19 +6,18 @@
     <title>봄의 거제도</title>
     <script src="../js/includeHTML.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
-    <link rel="stylesheet" href="../css/spring.css" />
-
     <!-- 슬라이더 -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-    <script src="../js/spring.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <!-- font awsome -->
-    <script
-      src="https://kit.fontawesome.com/d905bc4a07.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/d905bc4a07.js" crossorigin="anonymous"></script>
+    <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
+    <link rel="stylesheet" href="../css/spring.css" />
+
+    <script defer src="../js/spring.js"></script>
 
   </head>
   <body>
@@ -42,6 +41,7 @@
               <span>春</span>
             </div>
           </section>
+          <!-- 멘트 -->
           <div class="txtBox">
             <div class="blackBar"></div>
             <p>
@@ -50,6 +50,7 @@
               따스한 햇살과 푸른 바다가 있는 거제로 당신을 초대합니다<br />
             </p>
           </div>
+          <!-- 지도 -->
           <section class="mapPage">
             <div class="mapPageInnerContainer">
               <div id="best">
@@ -80,7 +81,6 @@
               </div>
             </div>
           </section>
-
           <!-- 양지암 조각 공원-->
           <section id="ygPage">
             <div class="yg-left">
@@ -109,7 +109,6 @@
               />
             </div>
           </section>
-
           <!-- 공곶이 수목원 -->
           <section id="ggPage">
             <h1>공곶이 수목원</h1>
@@ -208,10 +207,17 @@
               봄의 거제를 즐기는 방법에서 축제를 빼놓을 순 없습니다.<br/>
               거제도 곡곡에서 열리는 다양한 축제들을 놓치지 마세요!
             </p>
-            <div class="imgContainer2">
+            <!-- <div class="imgContainer2">
               <img src="../img/spring/축제 (4).png" alt="산방산삼월삼짇날 축제">
               <img src="../img/spring/축제 (5).png" alt="양지암 축제">
               <img src="../img/spring/축제 (6).png" alt="옥포대첩 축제">
+            </div> -->
+            <div class="swiper">
+              <div class="imgContainer2 swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
             </div>
           </section>
           <!-- footer start -->
