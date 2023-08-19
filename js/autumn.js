@@ -55,7 +55,9 @@ buttons.forEach((button) => {
 // 스크롤에 따라 부드럽게 요소들이 올라온다
 
 function scrollAnimation() {
-  const elemtMoving = document.querySelectorAll(".page3, .page4, .page5, .page7");
+  const elemtMoving = document.querySelectorAll(
+    ".page3, .page4, .page5, .page7"
+  );
 
   elemtMoving.forEach((element) => {
     gsap.from(element, {

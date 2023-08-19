@@ -429,10 +429,6 @@ li {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-end;
-
-  /* width: 275px;
-  height: 350px;
-  margin: 132px 0 0 10px; */
 }
 
 #food .food2 dt {
@@ -477,54 +473,6 @@ li {
   letter-spacing: -4%;
   font-size: 16px;
 }
-
-/* #springFestival .imgContainer1 {
-  width: 1200px;
-  height: 275px;
-} */
-
-/* .swiper {
-  position: relative;
-  width: 500px;
-  height: 100px;
-  position: relative;
-}
-
-#springFestival .imgContainer1 img {
-  width: 432px;
-  height: 275px;
-  border-radius: 15px;
-  display: flex;
-  flex-wrap: wrap;
-} */
-
-/* #springFestival .imgContainer1 img {
-  width: 432px;
-  height: 275px;
-  border-radius: 15px;
-  display: flex;
-  flex-wrap: wrap;
-} */
-
-/* #springFestival .imgContainer2 img {
-  width: 432px;
-  height: 275px;
-  border-radius: 15px;
-} */
-
-/* <img src="../img/spring/축제 (1).png" alt="장승포 블라썸">
-<img src="../img/spring/축제 (2).png" alt="대금산 진달래 축제">
-<img src="../img/spring/축제 (3).png" alt="거제 맹종 대나무 축제">
-
-#springFestival .m.imgContainer1 div{
-  width: 432px;
-  height: 275px;
-  border-radius: 15px;
-
-} */
-/* #springFestival {
-  overflow: visible;
-} */
 
 #springFestival .swiper {
   overflow: visible;
