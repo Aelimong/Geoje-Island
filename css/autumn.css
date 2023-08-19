@@ -56,27 +56,6 @@ p {
   margin-bottom: 10px;
 } */
 
-/* ***** page1 ***** */
-
-.page1 .blackBar {
-  border: 0.5px solid black;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  width: 550px;
-  position: relative;
-  left: 260px;
-}
-
-.page1 .txtBox {
-  position: relative;
-  width: 816px;
-  text-align: right;
-  /* background-color: red; */
-}
-
-.page1 p {
-  line-height: 150%;
-}
 
 /* ***** page2 ***** */
 
@@ -85,8 +64,6 @@ p {
   height: 700px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* background-color: aqua; */
 }
 
 .page2 .imgContainer {
@@ -96,7 +73,6 @@ p {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  /* background-color: blue; */
   position: relative;
 }
 
@@ -104,7 +80,6 @@ p {
   width: 816px;
   margin-top: 20px;
   justify-content: space-between;
-  /* background-color: red; */
 }
 
 .page2 .map .title {
@@ -118,7 +93,6 @@ p {
   position: absolute;
   bottom: 170px;
   left: 290px;
-  /* background-color: yellow; */
 }
 .page2 .pin2 {
   position: absolute;
@@ -130,7 +104,6 @@ p {
   position: absolute;
   top: 420px;
   left: 250px;
-  /* background-color: red; */
 }
 
 .page2 .pin4 {
@@ -224,6 +197,7 @@ p {
 }
 
 /* ***** page5 ***** */
+
 .page5Container {
   display: flex;
   flex-direction: row-reverse;
@@ -246,37 +220,34 @@ p {
 }
 
 /* ***** page6 ***** */
+
 .page6 {
   position: relative;
 }
 .page6 .hanger1 {
-  width: 1000px;
+  width: 100%;
   height: 9px;
   position: absolute;
   top: 30px;
   background-color: #dadada;
-  /* border: 3px solid red; */
 }
 .page6 .hanger2 {
-  width: 1000px;
+  width: 100%;
   height: 9px;
   position: absolute;
   top: 530px;
   background-color: #dadada;
-  /* border: 3px solid red; */
 }
 
 .page6 .imgContainer {
   display: flex;
-  width: 812px;
+  width: 100%;
   margin-bottom: 15px;
-  /* border: 2px solid #02276b; */
-  /* background-color: red; */
+  overflow: hidden;
 }
 
 .page6 .imgContainer .wideScroll {
   margin: 10px;
-  /* background-color: pink; */
 }
 
 .page6 #place #locationTxt {
@@ -284,6 +255,7 @@ p {
 }
 
 /* ***** page7 ***** */
+
 .page7 .p7Container {
   display: flex;
   position: relative;
@@ -302,7 +274,6 @@ p {
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
-  /* background-color: red; */
 }
 .page7 .button {
   margin: 0;
@@ -320,30 +291,25 @@ p {
   height: 800px;
   margin: 10px;
   position: relative;
-  /* border: 3px solid red; */
 }
 .page7 .oyster1 {
   position: absolute;
   left: 60px;
   top: 20px;
-  /* border: 5px solid yellow; */
 }
 .page7 .oyster2 {
   position: absolute;
   top: 200px;
-  /* border: 5px solid blue; */
 }
 .page7 .oyster3 {
   position: absolute;
   top: 400px;
   left: 80px;
-  /* border: 5px solid green; */
 }
 .page7 .oyster4 {
   position: absolute;
   top: 650px;
   left: 20px;
-  /* border: 5px solid purple; */
 }
 
 .page7 .imgbox {
@@ -353,6 +319,7 @@ p {
   margin: 0;
 }
 
+ /* 사진이 호버되면 확대된다 */
 .page7 .p7Container .imgContainer .oyster1 {
   transition: all 0.85s ease 0s;
 }
