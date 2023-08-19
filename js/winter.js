@@ -28,6 +28,8 @@ pins.forEach((pin) => {
   pin.addEventListener("mouseout", hoverOut);
 });
 
+// page3
+
 // page 5: swiper
 const sw = new Swiper(".swiper1", {
   // direction: "vertical",
