@@ -5,6 +5,7 @@ section {
 .page {
   height: 1000px;
   width: 100%;
+  border: 3px solid black;
 }
 
 .location {
@@ -47,11 +48,6 @@ section {
   color: white;
   border-radius: 15px;
   font-size: 2vh;
-}
-
-.container {
-  display: flex;
-  margin-bottom: 10px;
 }
 
 /* page 1 */
@@ -152,18 +148,53 @@ i:hover {
 
 /* page 5: 고현시장 */
 
-.page5 .place {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.swiper {
+  width: 100%;
+  background-color: skyblue;
+  height: 200px;
 }
 
-.page5 .image {
-  width: 50vw;
-  height: 60vh;
+.swiper .swiper-wrapper .swiper-slide {
+  width: 200px;
+  height: 100%;
+  border: 1px solid navy;
+  text-align: center;
+  line-height: 200px;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+/* pagination custom */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border: 1px solid black;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  transition: 0.5s;
+  border-radius: 5px;
+  background-color: yellow;
+  width: 40px;
+  border: 1px solid transparent;
+}
+
+/* 화살표 커스텀 */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #555;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* page 6: 지심도 */
+.page6 {
+  margin-left: auto;
+}
 
 .page6 .imageContainer {
   display: flex;
@@ -197,7 +228,6 @@ i:hover {
   justify-content: center;
   align-items: center;
   margin: 10%;
-  border: 3px solid black;
 }
 
 .page7 .foodContainer {
@@ -208,7 +238,7 @@ i:hover {
   position: relative;
   border-radius: 15px;
   width: 25vw;
-  height: 60vh;
+  height: 50vh;
 }
 
 .page7 .foodContainer {
@@ -221,8 +251,14 @@ i:hover {
 
 .page7 .subContainer .buttonContainer .button {
   background-color: #8ea84c;
-  width: 5vw;
 }
+
+.restaurant {
+  position: relative;
+  top: 20%;
+  margin: 3%;
+}
+
 /* page 8: 지역축제 */
 
 .page8 {
@@ -237,5 +273,8 @@ i:hover {
   justify-content: center;
   align-items: center;
   margin: 10%;
-  border: 3px solid black;
+}
+
+.page7 .textBox {
+  font-size: 2vh;
 }
