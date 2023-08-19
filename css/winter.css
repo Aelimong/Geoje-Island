@@ -1,11 +1,9 @@
-section {
-  margin-bottom: 50px;
-}
-
 .page {
   height: 1000px;
   width: 100%;
-  border: 3px solid black;
+}
+p {
+  font-size: 1.5rem;
 }
 
 .location {
@@ -15,6 +13,8 @@ section {
 
 .buttonContainer {
   display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
 }
 
 .button {
@@ -87,25 +87,46 @@ i:hover {
   transform: scale(1.5);
 }
 
-.buttonContainer {
+.page2 .image {
+  width: 40vw;
+  height: 30vh;
+}
+
+.pins {
+}
+.pins .first {
+  bottom: 200px;
+  left: 35%;
+}
+
+.pins .second {
+  bottom: 250px;
+  left: 46%;
+}
+
+.pins .third {
+  bottom: 330px;
+  left: 54%;
+}
+
+.pins .fourth {
+  bottom: 210px;
+  left: 88%;
+}
+.mainButtonContainer {
   display: flex;
   justify-content: space-between;
 }
 
-.button1 {
-  background-color: #8ea84c;
-}
-
-.button2 {
-  background-color: #6f843b;
-}
-
-.button3 {
-  background-color: #4f5e2a;
-}
-
-.button4 {
-  background-color: #2f3819;
+.mainButtonContainer .mainButton {
+  font-size: 1.5rem;
+  background-color: #023793;
+  color: white;
+  height: 6vh;
+  width: 8vw;
+  line-height: 6vh;
+  text-align: center;
+  border-radius: 15px;
 }
 
 /* page 3: 거제 식물원 */
@@ -138,62 +159,64 @@ i:hover {
   border: 3px solid #8ea84c;
 }
 
-.buttonContainer {
+.page4 .image {
+  border-radius: 15px;
+  height: 50vh;
+  width: 30vw;
+}
+
+.page4 .buttonContainer {
   margin: 2vh;
 }
 
-.buttonContainer .buttonText {
+.page4 .buttonContainer .buttonText {
   font-size: 2vh;
 }
 
 /* page 5: 고현시장 */
-
 .swiper {
-  width: 100%;
-  background-color: skyblue;
-  height: 200px;
+  width: 50vw;
+  height: 60vh;
 }
 
 .swiper .swiper-wrapper .swiper-slide {
   width: 200px;
   height: 100%;
-  border: 1px solid navy;
+  border: #02276b;
   text-align: center;
   line-height: 200px;
   box-sizing: border-box;
   font-size: 25px;
-}
-/* pagination custom */
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: green;
-  border: 1px solid black;
-  opacity: 1;
-}
-.swiper-pagination-bullet-active {
-  transition: 0.5s;
-  border-radius: 5px;
-  background-color: yellow;
-  width: 40px;
-  border: 1px solid transparent;
+  border-radius: 15px;
 }
 
+.swiper .swiper-wrapper .swiper-slide .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+/* pagination custom */
 /* 화살표 커스텀 */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #555;
+  color: #e6efff;
 }
 
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+.marketText {
+  margin: 10vh;
 }
 
 /* page 6: 지심도 */
-.page6 {
+.place {
   margin-left: auto;
+}
+
+.page6 .button {
+  float: right;
+}
+.page6 :nth-child(3) {
+  float: right;
 }
 
 .page6 .imageContainer {
@@ -203,14 +226,14 @@ section {
 
 .page6 .image {
   border-radius: 15px;
-  height: 30vh;
-  width: 20vw;
+  height: 20vh;
+  width: 15vw;
 }
 
 .page6 .imageText {
   position: relative;
   width: 30vw;
-  font-size: 2vh;
+  font-size: 1.5rem;
   line-height: 3vh;
   justify-content: center;
   left: 4vw;
@@ -253,10 +276,17 @@ section {
   background-color: #8ea84c;
 }
 
+.page7 .restaurant .buttonContainer .button {
+  background-color: #2f3819;
+}
+
 .restaurant {
   position: relative;
   top: 20%;
   margin: 3%;
+}
+.page7 .textBox {
+  font-size: 2vh;
 }
 
 /* page 8: 지역축제 */
@@ -273,8 +303,5 @@ section {
   justify-content: center;
   align-items: center;
   margin: 10%;
-}
-
-.page7 .textBox {
-  font-size: 2vh;
+  border: 3px solid green;
 }

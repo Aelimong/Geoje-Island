@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>겨울의 거제도</title>
     <script src="../js/includeHTML.js"></script>
-    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- font awesome: icon -->
     <script
@@ -14,17 +13,21 @@
     ></script>
 
     <!-- swiper cdn -->
+    <!-- swiper CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-
+    <!-- swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- gsap CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
     <link rel="stylesheet" href="../css/winter.css" />
     <!-- winter.js -->
-    <script src="/js/winter.js"></script>
+    <script defer src="/js/winter.js"></script>
   </head>
   <body>
     <main class="container">
@@ -64,34 +67,57 @@
               <div class="mapContainer">
                 <div class="button">추천 명소</div>
                 <img src="/img/map.png" alt="map" />
-                <i
-                  class="fa-solid fa-location-dot fa-3x first"
-                  style="color: #8ea84c"
-                ></i>
+                <div class="pins">
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/directions/-/14313258.9496153,4144480.0684331,%EA%B1%B0%EC%A0%9C%EC%8B%9D%EB%AC%BC%EC%9B%90,1421813001,PLACE_POI/-/transit?c=14.00,0,0,0,dh"
+                  >
+                    <i
+                      class="fa-solid fa-location-dot fa-3x first"
+                      style="color: #023793"
+                    ></i>
+                  </a>
 
-                <i
-                  class="fa-solid fa-location-dot fa-3x second"
-                  style="color: #6f843b"
-                ></i>
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/directions/-/14318493.3145239,4147125.3223532,%EA%B1%B0%EC%A0%9C%ED%8F%AC%EB%A1%9C%EC%88%98%EC%9A%A9%EC%86%8C%EC%9C%A0%EC%A0%81%EA%B3%B5%EC%9B%90%EC%9E%85%EA%B5%AC,15881268,PLACE_POI/-/transit?c=17.00,0,0,0,dh"
+                  >
+                    <i
+                      class="fa-solid fa-location-dot fa-3x second"
+                      style="color: #023793"
+                    ></i
+                  ></a>
 
-                <i
-                  class="fa-solid fa-location-dot fa-3x third"
-                  style="color: #4f5e2a"
-                ></i>
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/directions/-/14318347.3301436,4148438.4611192,%EA%B1%B0%EC%A0%9C%EA%B3%A0%ED%98%84%EC%8B%9C%EC%9E%A5,15568608,PLACE_POI/-/transit?c=12.00,0,0,0,dh"
+                  >
+                    <i
+                      class="fa-solid fa-location-dot fa-3x third"
+                      style="color: #023793"
+                    ></i
+                  ></a>
 
-                <i
-                  class="fa-solid fa-location-dot fa-3x fourth"
-                  style="color: #2f3819"
-                ></i>
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/directions/-/14332403.5977183,4139628.0252966,%EC%A7%80%EC%8B%AC%EB%8F%84,13491601,PLACE_POI/-/transit?c=14.00,0,0,0,dh"
+                  >
+                    <i
+                      class="fa-solid fa-location-dot fa-3x fourth"
+                      style="color: #023793"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+              <div class="mainButtonContainer">
+                <div class="mainButton button1">거제 식물원</div>
+                <div class="mainButton button2">거제 포로수용소</div>
+                <div class="mainButton button3">고현시장</div>
+                <div class="mainButton button4">지심도</div>
               </div>
             </div>
-            <div class="buttonContainer">
-              <div class="button button1">거제 식물원</div>
-              <div class="button button2">거제 포로수용소</div>
-              <div class="button button3">고현시장</div>
-              <div class="button button4">지심도</div>
-            </div>
           </section>
+          <br /><br />
           <!--page 3: 거제 식물원    -->
           <section class="page page3">
             <div class="place">
@@ -113,9 +139,9 @@
                 <img
                   src="/img/winter/garden1.jpg"
                   alt="garden1"
-                  style="height: 35vh; border-radius: 15px"
+                  style="height: 30vh; width: 20vw; border-radius: 15px"
                 />
-                <p>
+                <p class="garden-text">
                   거제식물원은 지역의 식물 생태계를 비롯하여 열대, 난대, 온대 등
                   다양한 환경의 식물을 한눈에 관찰하고 체험해 볼 수 있는
                   공간입니다. 추운 겨울에 실내에서 가족 혹은 연인과 식물을
@@ -126,11 +152,11 @@
                 <img
                   src="/img/winter/garden2.jpg"
                   alt="garden2"
-                  style="height: 50vh; border-radius: 15px"
+                  style="height: 40vh; width: 20vw; border-radius: 15px"
                   ;
                 />
                 <h1>포인세티아</h1>
-                <p>
+                <p class="garden-text">
                   포인세티아는 대극과(Euphorbiaceae) 등대풀속(Euphorbia)에
                   속하는 작은키나무(灌木;Shrub)입니다.빨간색과 녹색잎으로 알려져
                   주로 성탄절에 이 식물을 주로 이용합니다. 식물에 독성이 강한
@@ -142,10 +168,10 @@
                 <img
                   src="/img/winter/garden3.jpg"
                   alt="garden3"
-                  style="border-radius: 15px"
+                  style="width: 20vw; height: 30vh; border-radius: 15px"
                 />
                 <h1>스도칼림마</h1>
-                <p>
+                <p class="garden-text">
                   스도칼림마는 능소화과(Bignoniaceae) 만소아속(Mansoa)에 속하는
                   늘푸른덩굴(常綠蔓性; Evergreen Climber)식물입니다. 이 식물은
                   남아메리카 북부지역의 자생종이며, 중앙 아메리카와 브라질에
@@ -158,10 +184,10 @@
                 <img
                   src="/img/winter/garden4.jpg"
                   alt="garden4"
-                  style="height: 35vh; border-radius: 15px"
+                  style="width: 20vw; height: 30vh; border-radius: 15px"
                 />
                 <h1>옥시카르디움</h1>
-                <p>
+                <p class="garden-text">
                   옥시카르디움은 천남성과(Araceae) 필로덴드론속(Philodendron)에
                   속하는 늘푸른덩굴(常綠蔓性; Evergreen
                   Climber)식물입니다.옥시카르디움은 높이3~6m까지 덩굴성으로
@@ -173,6 +199,7 @@
             </div>
           </section>
           <br /><br /><br /><br /><br /><br /><br /><br />
+
           <!-- page 4: 거제 포로수용소 -->
           <section class="page page4">
             <div class="place">
@@ -189,7 +216,11 @@
               </div>
               <br />
               <div class="imgBox">
-                <img src="../img/winter/prison.jpg" src="prison.jpg" />
+                <img
+                  class="prision image"
+                  src="../img/winter/prison.jpg"
+                  src="prison.jpg"
+                />
                 <p>
                   거제 포로수용소는 6.25 당시 가장 큰 포로수용소 유적입니다.
                   거제 계룡산(554m) 동쪽 자락을 따라, 복원된 옛 고현성과 그 옆
@@ -226,7 +257,8 @@
               </div>
             </div>
           </section>
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <br /><br /><br />
+
           <!-- page 5: 고현시장 -->
           <section class="page page5">
             <div class="place">
@@ -240,19 +272,55 @@
                 <p id="locationTxt">경남 거제시 수월동</p>
               </div>
               <!-- Slider main container -->
+              <br />
+              <!-- Slider main container -->
               <div class="swiper swiper1">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market1.jpg"
+                      alt="market1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market2.jpg"
+                      alt="market2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market3.jpg"
+                      alt="market3"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market4.jpg"
+                      alt="market4"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market5.jpg"
+                      alt="market5"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/market6.jpg"
+                      alt="market6"
+                    />
+                  </div>
                 </div>
-                <!-- 선택사항 -->
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
@@ -262,9 +330,9 @@
                 <div class="swiper-scrollbar"></div>
               </div>
 
-              <br />
+              <br /><br />
 
-              <p>
+              <p class="marketText">
                 고현시장은 거제도의 따뜻한 인심과 푸짐한 먹거리가 넘치는
                 재래시장입니다. 주변에 대형 마트가 생기면서 전통시장 활성화를
                 위한 다양한 혜택으로 사람들의 발길을 모으고 있습니다. 전통시장을
@@ -279,6 +347,7 @@
               </p>
             </div>
           </section>
+          <br /><br /><br />
           <!-- page 6: 지심도 -->
           <section class="page page6">
             <div class="place">
@@ -353,15 +422,14 @@
                   있습니다. 섬 안의 여러 숙박시설에서 묵으며 지심도의 일몰을
                   즐길 수 있고, 여름밤에는 반딧불이를 볼 수 있습니다. 또한, 낚시
                   애호가들에게 다양한 어종의 낚시 포인트를 제공합니다.
-                  여름철에는 선착장 옆 해수풀장이 있어서 아이들에게 안전한
-                  놀이터를 제공합니다
+                  여름철에는 선착장 옆 해수풀장이 아이들의 안전한 놀이터를
+                  제공합니다
                 </div>
               </div>
             </div>
           </section>
-          <br /><br /><br /><br /><br />
-          <hr />
-          <br /><br /><br /><br /><br /><br />
+
+          <br /><br /><br />
           <!-- page 7: 제철음식 -->
           <section class="page page7">
             <div class="longbutton">거제도의 겨울음식</div>
@@ -389,11 +457,27 @@
                 </div>
               </div>
               <div class="restaurant">
-                <h1>추천맛집</h1>
+                <h1>↓추천맛집 바로가기↓</h1>
+                <br /><br />
                 <div class="buttonContainer">
-                  <div class="button">속씨원한대구탕</div>
-                  <div class="button">거제도신대구탕</div>
-                  <div class="button">해송횟집</div>
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/search/%EC%86%8D%EC%94%A8%EC%9B%90%ED%95%9C%EB%8C%80%EA%B5%AC%ED%83%95%20%EA%B1%B0%EC%A0%9C/place/37774869?c=13.00,0,0,0,dh&isCorrectAnswer=true"
+                    ><div class="button">속씨원한대구탕</div></a
+                  >
+
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/search/%EA%B1%B0%EC%A0%9C%EB%8F%84%EC%8B%A0%EB%8C%80%EA%B5%AC%ED%83%95/place/19381934?c=15.00,0,0,0,dh&isCorrectAnswer=true"
+                  >
+                    <div class="button">거제도신대구탕</div>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://map.naver.com/p/search/%ED%95%B4%EC%86%A1%ED%9A%9F%EC%A7%91/place/35438635?c=12.05,0,0,0,dh"
+                  >
+                    <div class="button">해송횟집</div></a
+                  >
                 </div>
               </div>
             </div>
@@ -402,7 +486,64 @@
           <!-- page 8: 지역축제 -->
           <section class="page page8">
             <div class="longbutton">장승포 신년맞이 행사</div>
-            <div class="subContainer"></div>
+            <div class="subContainer">
+              <!-- Slider main container -->
+              <div class="swiper swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img
+                      class="festival image"
+                      src="/img/winter/festival1.png"
+                      alt="market1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="festival image"
+                      src="/img/winter/festival1.png"
+                      alt="market2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="festival image"
+                      src="/img/winter/festival1.png"
+                      alt="market3"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="market image"
+                      src="/img/winter/festival1.png"
+                      alt="market4"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="festival image"
+                      src="/img/winter/festival1.png"
+                      alt="market5"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="festival image"
+                      src="/img/winter/festival1.png"
+                      alt="market6"
+                    />
+                  </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
           </section>
 
           <!-- footer start -->
