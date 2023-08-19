@@ -1,0 +1,423 @@
+/* 공통 */
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  max-width: 1200px;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.button {
+  width: 170px;
+  height: 51px;
+  background-color: #8ea84c;
+  color: #e6efff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 51px;
+  border-radius: 15px;
+}
+
+.summer-p {
+  line-height: 150%;
+  color: #02276b;
+  letter-spacing: -5%;
+  word-break: keep-all;
+}
+
+.summer-h2 {
+  font-size: 2.4em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -5%;
+  word-break: keep-all;
+}
+
+.summer-h4 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -5%;
+  word-break: keep-all;
+}
+
+.summer-h6 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -5%;
+  word-break: keep-all;
+}
+
+.place-title {
+  margin-bottom: 20px;
+}
+
+.place-title .place-addr {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.place-title .place-addr i {
+  font-size: 1.7em;
+  color: #011842;
+  margin-top: 5px;
+}
+
+.place-title .place-addr p {
+  margin-left: 10px;
+}
+
+/* 추천명소 map */
+.summer-map .map:first-child {
+  width: 816px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.summer-map .imgContainer {
+  width: 816px;
+  overflow-y: scroll;
+  border: 1px solid #02276b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+}
+
+.summer-map .buttonContainer {
+  width: 816px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.summer-map .map .title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.summer-map .mainButton {
+  background-color: #02276b;
+  margin-right: 10px;
+}
+
+.summer-map .pin1 {
+  position: absolute;
+  bottom: -168px;
+  left: 300px;
+}
+
+.summer-map .pin2 {
+  position: absolute;
+  top: 510px;
+  left: 150px;
+}
+
+.summer-map .pin3 {
+  position: absolute;
+  top: 238px;
+  left: 280px;
+}
+
+.summer-map .pin4 {
+  position: absolute;
+  top: 504px;
+  left: 157px;
+}
+
+/* 관광지1. 보타니아 */
+.botania {
+  margin-top: 200px;
+}
+
+.botania .botaina-info {
+  margin-bottom: 100px;
+}
+
+.botania .botaina-info .botania-detail .botania-detail-1 {
+  margin-bottom: 40px;
+}
+
+.botania .botaina-info .botania-detail .botania-detail-1 img {
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+.botania .botaina-info .botania-detail .botania-detail-2 {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.botania .botaina-info .botania-detail .botania-detail-2 img {
+  width: 50%;
+  border-radius: 15px;
+}
+
+.botania .botaina-info .botania-detail .botania-detail-2 img:hover {
+  width: 50%;
+  border-radius: 15px;
+}
+
+.botania .botaina-info .botania-detail .botania-detail-2 .detail-2-text {
+  margin-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.botania
+  .botaina-info
+  .botania-detail
+  .botania-detail-2
+  .detail-2-text
+  p:last-child {
+  margin-top: 40px;
+}
+
+.botania .botaina-photos .spot-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.botania .botaina-photos .spot-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.botania .botaina-photos .spot-images img {
+  width: calc(100% / 3);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.botania .botaina-photos .spot-images img:hover {
+  opacity: 0.65;
+  transition: all 0.8s ease 0s;
+}
+
+/* 관광지2. 명사 해수욕장 */
+.myeongsa {
+  margin-top: 200px;
+}
+
+.myeongsa .myeongsa-info {
+  width: 100%;
+}
+
+.myeongsa .myeongsa-info .myeongsa-detail {
+  margin-bottom: 20px;
+}
+
+.myeongsa .myeongsa-info .myeongsa-slide {
+  margin-bottom: 40px;
+}
+
+.myeongsa .myeongsa-info .myeongsa-slide img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.myeongsa-slide .swiper-button-prev {
+  color: var(--main-blue);
+}
+
+.myeongsa-slide .swiper-button-next {
+  color: var(--main-blue);
+}
+
+.myeongsa .myeongsa-info .myeongsa-how {
+  border: 2px dashed #02276b;
+  border-radius: 15px;
+  padding: 30px 80px;
+  margin-bottom: 40px;
+}
+
+.myeongsa .myeongsa-info .myeongsa-how h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.myeongsa .myeongsa-info .myeongsa-how ul {
+  list-style: circle;
+}
+
+.myeongsa .myeongsa-info .myeongsa-around .greenBar {
+  width: 100%;
+  height: 41px;
+  line-height: 41px;
+  border-radius: 10px;
+  background-color: #c2d09c;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.myeongsa .myeongsa-info .myeongsa-around .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.myeongsa .myeongsa-info .myeongsa-around .buttonContainer .button {
+  color: #ffffff;
+  width: 100%;
+}
+
+.myeongsa .myeongsa-info .myeongsa-around .buttonContainer a {
+  width: 25%;
+}
+
+.myeongsa .myeongsa-info .myeongsa-around .buttonContainer a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.myeongsa .myeongsa-info .myeongsa-around .buttonContainer .around-title {
+  background-color: #c2d09c;
+  color: #011842;
+  width: 25%;
+  margin-right: 10px;
+}
+
+/* 관광지3. 보광사 능소화 */
+.bogwang {
+  margin-top: 200px;
+}
+
+.bogwang .bogwang-info {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.bogwang .bogwang-info .place-title {
+  margin-left: 20px;
+}
+
+.bogwang .bogwang-info .bogwang-img {
+  width: 100%;
+}
+
+.bogwang .bogwang-info .bogwang-img .bogwang-img-top {
+  background-image: url(../img/summer/summer-main-img.jpg);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 600px;
+  background-attachment: fixed;
+  border-radius: 15px;
+}
+
+/* 관광지4. 수국축제 */
+.sugug {
+  margin-top: 200px;
+}
+
+.sugug .sugug-info {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.sugug .sugug-info .images-top {
+  display: flex;
+}
+
+.sugug .sugug-info .images-top img {
+  width: 500px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.sugug .sugug-info .images-bottom {
+  display: flex;
+}
+
+.sugug .sugug-info .images-bottom img {
+  width: 500px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.sugug .sugug-info .place-title {
+  margin: 50px 0;
+}
+
+.sugug .sugug-photos {
+}
+
+.sugug .sugug-photos .spot-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sugug .sugug-photos .spot-title .summer-h2 .best-color {
+  color: #6f843b;
+}
+
+.sugug .sugug-photos .spot-images {
+  display: flex;
+}
+
+.sugug .sugug-photos .spot-images .spot-image {
+}
+
+.sugug .sugug-photos .spot-images .spot-image .spot-title {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.sugug .sugug-photos .spot-images .spot-image .spot-title .spot-num {
+  color: #dce4c4;
+  font-size: 5em;
+  font-weight: 600;
+}
+
+.sugug .sugug-photos .spot-images .spot-image .spot-title h4 {
+  margin-bottom: 0;
+  position: absolute;
+  left: 38px;
+}
+
+.sugug .sugug-photos .spot-images .spot-image .spot-img {
+  margin-bottom: 10px;
+}
+
+.sugug .sugug-photos .spot-images .spot-image .spot-img:not(:last-child) {
+  padding-right: 20px;
+}
+
+.sugug .sugug-photos .spot-images .spot-image .spot-img img {
+  border-radius: 15px;
+}
+
+.sugug .sugug-photos .spot-images .spot-image .spot-addr {
+}
+
+.sugug .sugug-photos .spot-images .spot-image .place-addr {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: flex-end;
+}
+
+.sugug .sugug-photos .spot-images .spot-image .place-addr i {
+  font-size: 1.7em;
+  color: #011842;
+}
+
+.sugug .sugug-photos .spot-images .spot-image .place-addr p {
+  margin-left: 10px;
+  font-size: 1.4em;
+}
