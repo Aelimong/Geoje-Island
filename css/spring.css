@@ -8,31 +8,6 @@ li {
   list-style: none;
 }
 
-.contents .four-section .four-img {
-  background-image: url(../img/spring/0a54199c-5131-4361-9ec1-094cba0098d6.jpg);
-}
-
-.txtBox {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  text-align: right;
-  margin: 42px;
-}
-
-.txtBox .blackBar {
-  background-color: #001842;
-  height: 2px;
-  width: 554px;
-  margin-bottom: 10px;
-}
-
-.txtBox p {
-  color: #011842;
-  line-height: 150%;
-  letter-spacing: -4%;
-}
-
 /* 지도 페이지 만들기*/
 .mapPage {
   width: 760px;
