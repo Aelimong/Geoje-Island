@@ -33,15 +33,16 @@ function hoverOut(event) {
 pins.forEach((pin) => {
   pin.addEventListener("mouseover", hoverIn);
 });
+
 pins.forEach((pin) => {
   pin.addEventListener("mouseout", hoverOut);
 });
 
 // button 기능
-
 function hoverIn2(event) {
   gsap.to(event.target, { opacity: 0.75, duration: 0.3 });
 }
+
 function hoverOut2(event) {
   gsap.to(event.target, { opacity: 1, duration: 0.3 });
 }
