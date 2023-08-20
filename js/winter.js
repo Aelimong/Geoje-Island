@@ -1,5 +1,5 @@
-// page 2
-const pins = document.querySelectorAll(".pins");
+// 추천명소 마우스 오버
+const pins = document.querySelectorAll(".place");
 const buttons = document.querySelectorAll(".mainButton");
 
 function hoverIn(event) {
@@ -8,6 +8,7 @@ function hoverIn(event) {
   for (let i = 0; i < 4; i++) {
     if (event.target.classList.contains(`pin${i + 1}`)) {
       gsap.to(`.bt${i + 1}`, { opacity: 0.65, duration: 0.3 });
+      gsap.to(`.pin${i + 1}`, { opacity: 0.65, duration: 0.3 });
     }
   }
 }
@@ -17,6 +18,25 @@ function hoverOut(event) {
   for (let i = 0; i < 4; i++) {
     if (event.target.classList.contains(`pin${i + 1}`)) {
       gsap.to(`.bt${i + 1}`, { opacity: 1, duration: 0.3 });
+      gsap.to(`.pin${i + 1}`, { opacity: 1, duration: 0.3 });
+    }
+  }
+}
+
+function hoverInBtn(event) {
+  gsap.to(event.target, { opacity: 0.65, duration: 0.3 });
+  for (let i = 0; i < 4; i++) {
+    if (event.target.classList.contains(`bt${i + 1}`)) {
+      gsap.to(`.pin${i + 1}`, { opacity: 0.65, duration: 0.3 });
+    }
+  }
+}
+
+function hoverOutBtn(event) {
+  gsap.to(event.target, { opacity: 1, duration: 0.3 });
+  for (let i = 0; i < 4; i++) {
+    if (event.target.classList.contains(`bt${i + 1}`)) {
+      gsap.to(`.pin${i + 1}`, { opacity: 1, duration: 0.3 });
     }
   }
 }
@@ -24,11 +44,18 @@ function hoverOut(event) {
 pins.forEach((pin) => {
   pin.addEventListener("mouseover", hoverIn);
 });
+
 pins.forEach((pin) => {
   pin.addEventListener("mouseout", hoverOut);
 });
 
-// page3
+buttons.forEach((btn) => {
+  btn.addEventListener("mouseover", hoverInBtn);
+});
+
+buttons.forEach((btn) => {
+  btn.addEventListener("mouseout", hoverOutBtn);
+});
 
 // page 5: swiper
 const sw = new Swiper(".swiper1", {

@@ -26,7 +26,7 @@
     <script defer src="../js/spring.js"></script>
   </head>
   <body>
-    <main class="container">
+    <main class="four-container">
       <div class="static">
         <!-- header start -->
         <div class="header">
@@ -35,7 +35,7 @@
         <!-- contents start -->
         <div class="contents">
           <!-- 사계절 공통 섹션 -->
-          <section class="four-section">
+          <article class="four-section">
             <div class="four-img four-img-spring"></div>
             <div class="four-geoje-bg"></div>
             <div class="four-geoje-text">
@@ -47,43 +47,75 @@
               <span class="up-china spring-china">春</span>
               <span class="behind-china spring-china">春</span>
             </div>
-          </section>
-          <section class="txt-box">
+          </article>
+          <article class="txt-box">
             <div class="black-bar"></div>
             <p>
               꽃봉오리가 수줍게 고개를 내미는 계절 봄,<br />
               바람을 타고 꽃 향기가 살랑살랑 스치고 지나가는 날<br />
               따스한 햇살과 푸른 바다가 있는 거제로 당신을 초대합니다<br />
             </p>
-          </section>
-          <!-- 지도 -->
-          <section class="mapPage">
-            <div class="mapPageInnerContainer">
-              <div id="best">
-                <div>추천명소</div>
+          </article>
+          <!-- 0. 추천명소 map -->
+          <section class="spring-map">
+            <div class="map">
+              <div class="mainButton button title">추천 명소</div>
+              <div class="imgContainer">
+                <img src="../img/autumn/autMap.png" alt="봄 추천코스 지도" />
+                <a
+                  target="_blank"
+                  href="https://map.naver.com/v5/directions/-/14331063.878830526,4147636.56597919,%EC%96%91%EC%A7%80%EC%95%94%EC%A1%B0%EA%B0%81%EA%B3%B5%EC%9B%90,1858076250,PLACE_POI/-/transit?c=15,0,0,0,dh"
+                  class="pin1"
+                >
+                  <img
+                    src="../img/autumn/pin.png"
+                    alt="pin"
+                    class="place pin1"
+                    style="width: 24px; height: 32px"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://map.naver.com/v5/directions/-/14328408.842131447,4136039.416760478,%EA%B3%B5%EA%B3%B6%EC%9D%B4,15847443,PLACE_POI/-/transit?c=15,0,0,0,dh"
+                  class="pin2"
+                >
+                  <img
+                    src="../img/autumn/pin.png"
+                    alt="pin"
+                    class="place pin2"
+                    style="width: 24px; height: 32px"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://map.naver.com/v5/directions/-/14319687.950771261,4132201.7370453347,%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84%20%EA%B1%B0%EC%A0%9C%EC%8B%9C%20%EB%8F%99%EB%B6%80%EB%A9%B4%20%ED%95%99%EB%8F%99%EB%A6%AC%20621-4,0331032028,ADDRESS_POI/-/transit?c=14,0,0,0,dh"
+                  class="pin3"
+                >
+                  <img
+                    src="../img/autumn/pin.png"
+                    alt="pin"
+                    class="place pin3"
+                    style="width: 24px; height: 32px"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://map.naver.com/v5/directions/-/14321558.85292523,4128570.9828696717,%ED%95%A8%EB%AA%A9%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5,13491646,PLACE_POI/-/transit?c=12.03,0,0,0,dh"
+                  class="pin4"
+                >
+                  <img
+                    src="../img/autumn/pin.png"
+                    alt="pin"
+                    class="place pin4"
+                    style="width: 24px; height: 32px"
+                  />
+                </a>
               </div>
-              <img src="../img/spring/지도.png" alt="봄 추천코스 지도" />
-              <a
-                href="https://map.naver.com/v5/directions/-/14331063.878830526,4147636.56597919,%EC%96%91%EC%A7%80%EC%95%94%EC%A1%B0%EA%B0%81%EA%B3%B5%EC%9B%90,1858076250,PLACE_POI/-/transit?c=15,0,0,0,dh"
-                ><i class="fa-solid fa-location-dot pin1"></i
-              ></a>
-              <a
-                href="https://map.naver.com/v5/directions/-/14328408.842131447,4136039.416760478,%EA%B3%B5%EA%B3%B6%EC%9D%B4,15847443,PLACE_POI/-/transit?c=15,0,0,0,dh"
-                ><i class="fa-solid fa-location-dot pin2"></i
-              ></a>
-              <a
-                href="https://map.naver.com/v5/directions/-/14319687.950771261,4132201.7370453347,%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84%20%EA%B1%B0%EC%A0%9C%EC%8B%9C%20%EB%8F%99%EB%B6%80%EB%A9%B4%20%ED%95%99%EB%8F%99%EB%A6%AC%20621-4,0331032028,ADDRESS_POI/-/transit?c=14,0,0,0,dh"
-                ><i class="fa-solid fa-location-dot pin3"></i
-              ></a>
-              <a
-                href="https://map.naver.com/v5/directions/-/14321558.85292523,4128570.9828696717,%ED%95%A8%EB%AA%A9%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5,13491646,PLACE_POI/-/transit?c=12.03,0,0,0,dh"
-                ><i class="fa-solid fa-location-dot pin4"></i
-              ></a>
-              <div class="mapButton">
-                <div>양지암 조각 공원</div>
-                <div>공곶이 수목원</div>
-                <div>학동 유채꽃밭</div>
-                <div>함목 해수욕장</div>
+              <div class="buttonContainer">
+                <div class="mainButton button bt1">양지암 조각 공원</div>
+                <div class="mainButton button bt2">공곶이 수목원</div>
+                <div class="mainButton button bt3">학동 유채꽃밭</div>
+                <div class="mainButton button bt4">함목 해수욕장</div>
               </div>
             </div>
           </section>
@@ -215,9 +247,15 @@
           <!-- <section id="springFestival">
             <div class="swiper">
               <div class="imgContainer1 swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
+                <div class="swiper-slide">
+                  <img src="../img/spring/축제1.png" alt="봄 축제" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/spring/축제2.png" alt="봄 축제" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/spring/축제3.png" alt="봄 축제" />
+                </div>
               </div>
             </div>
             <h1>거제의 봄 축제</h1>
@@ -227,11 +265,17 @@
               봄의 거제를 즐기는 방법에서 축제를 빼놓을 순 없습니다.<br />
               거제도 곡곡에서 열리는 다양한 축제들을 놓치지 마세요!
             </p>
-            <div class="swiper">
+            <div class="swiper2">
               <div class="imgContainer2 swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
+                <div class="swiper-slide">
+                  <img src="../img/spring/축제4.png" alt="봄 축제" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/spring/축제5.png" alt="봄 축제" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/spring/축제6.png" alt="봄 축제" />
+                </div>
               </div>
             </div>
           </section> -->
