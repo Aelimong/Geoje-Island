@@ -267,17 +267,18 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
   padding: 100px 0;
 }
 
+/* section 2 move 클래스에 포함되어 있습니다!---- */
 #move .info-summary {
   width: 70vw;
 }
 
 #move .info-summary img {
-  width: 160%;
+  width: 130%;
   height: auto;
   display: block;
-  left: -25%;
+  left: 45%;
   position: relative;
-  height: 800px;
+  /* height: 800px; */
 }
 
 #move .info-summary figure {
@@ -288,10 +289,11 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
 #move .info-summary .summary-title {
   width: 100%;
   position: relative;
-  bottom: 126px;
+  bottom: 100px;
   left: 45px;
   z-index: 9;
   display: flex;
+  margin-left: 60%;
 }
 
 #move .info-summary .summary-title .rectangle {
@@ -325,6 +327,7 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
   width: 35vw;
   float: right;
   margin-bottom: 80px;
+  margin-right: -52%;
 }
 
 #move .info-summary .summary-sub hr {
@@ -354,8 +357,14 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
   z-index: 9;
   left: 110px;
 }
+/* ------------------------------ */
 
-/*  */
+/* seciton3(애림) */
+
+.container .info {
+  margin-top: 400px;
+}
+
 .container .info .info-detail {
   width: 70vw;
   margin-bottom: 100px;
