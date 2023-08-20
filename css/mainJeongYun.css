@@ -72,18 +72,24 @@ body {
 
 /* .svg > path 에 fill 속성을 줘야 하지만
 상속될 수 있으므로 svg (div 태그)에 속성을 한 번에 줘서 처리 */
-.svg {
+.svg svg {
+  fill: #011842;
+  /* stroke: #02276b; */
+  transition: 0.5s;
+}
+
+.svg svg {
   fill: #011842;
   /* stroke: #02276b; */
   transition: 0.5s;
   transform: rotate(-5deg);
+  margin-left: -23px;
 }
 
 /* 숫자 100까지 갔을 때, 비행기 흰색, rotate 0으로 변경 */
 .svg.horizontal {
-  fill: #fff;
   transform: rotate(2deg);
-  /* transform: scale(1.5); */
+  transition: 0.5s;
   opacity: 0;
 }
 
