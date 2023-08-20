@@ -50,7 +50,7 @@ ScrollTrigger.create({
   trigger: "#move", // (move 아이디를 가진 두번째 section을 만나면 gsap 발동)
   start: "top top", // section을 기준으로 맨 위에서 시작
   end: "bottom bottom", // 끝점 설정
-  markers: true, // 배포시 markers 옵션은 false 로 변경해주세요
+  markers: false, // 배포시 markers 옵션은 false 로 변경해주세요
   scrub: 1, // 부드러운 움직임 + 되돌아갈 때도 스크롤 기반 애니메이션 동작하도록
   pin: true, // #move 에서 애니메이션이 동작할 때는 고정된 위치에 있도록
   end: "+=2800", // 3000px 에 해당하는 스크롤 범위만큼 애니메이션이 동작하도록
