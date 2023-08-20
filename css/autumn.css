@@ -25,6 +25,8 @@ p {
 
 #locationTxt {
   margin-bottom: 10px;
+  margin-left: 5px;
+  
 }
 .buttonContainer {
   display: flex;
@@ -189,7 +191,11 @@ p {
   width: 816px;
   height: 51px;
 }
-.page4 .p4Container p {
+.page4 .p4Container1 p {
+  line-height: 51px;
+  margin-left: 10px;
+}
+.page4 .p4Container2 p {
   line-height: 51px;
   margin-left: 10px;
 }
@@ -205,7 +211,7 @@ p {
 
 .page5 .txtContainer {
   width: 412px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 .page5 .txtContainer .content {
   line-height: 150%;
