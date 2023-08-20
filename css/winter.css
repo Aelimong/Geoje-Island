@@ -456,6 +456,7 @@ h6 {
   justify-content: center;
   flex-direction: row;
   padding: 30px 50px;
+  align-items: center;
 }
 
 .festivalImgContainer {
@@ -466,8 +467,8 @@ h6 {
   position: relative;
 }
 
-.festivalNoticeContainer .photo-cell {
-  height: 100%;
+.festivalNoticeContainer {
+  width: 100%;
 }
 
 .hoverText {
