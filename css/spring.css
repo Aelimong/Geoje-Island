@@ -474,9 +474,9 @@ li {
   font-size: 16px;
 }
 
-#springFestival .swiper {
+/* #springFestival .swiper {
   overflow: visible;
-}
+} */
 
 #springFestival .swiper-wrapper div {
   width: 432px;
@@ -484,13 +484,14 @@ li {
   border-radius: 15px;
   /* margin-right: 10px; */
   margin: 10px 10px 10px 0;
+  /* overflow: hidden; */
 }
 
-#springFestival .imgContainer1 {
+/* #springFestival .imgContainer1 {
   width: 1200px;
-}
+} */
 
-#springFestival .imgContainer1 div:nth-of-type(1) {
+/* #springFestival .imgContainer1 div:nth-of-type(1) {
   background-image: url(../img/spring/축제1.png);
 }
 #springFestival .imgContainer1 div:nth-of-type(2) {
@@ -510,4 +511,4 @@ li {
 #springFestival .imgContainer2 div:nth-of-type(3) {
   background-image: url(../img/spring/축제6.png);
   background-size: cover;
-}
+} */
