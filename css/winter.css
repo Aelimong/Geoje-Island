@@ -18,36 +18,36 @@ p {
 }
 
 .button {
-  height: 6vh;
-  width: 10vw;
+  height: 51px;
+  width: 170px;
   background-color: #023793;
   text-align: center;
-  line-height: 6vh;
+  line-height: 51px;
   color: white;
   border-radius: 15px;
-  font-size: 1vw;
+  font-size: 16px;
 }
 
 .longbutton {
-  height: 3vh;
-  width: 20vw;
+  height: 20px;
+  width: 820px;
   background-color: #4e74b7;
   text-align: center;
-  line-height: 3vh;
+  line-height: 16px;
   color: white;
   border-radius: 15px;
-  font-size: 1vw;
+  font-size: 16px;
 }
 
 .subButton {
-  height: 6vh;
-  width: 10vw;
+  height: 51px;
+  width: 170px;
   background-color: #6f843b;
   text-align: center;
-  line-height: 6vh;
+  line-height: 51px;
+  font-size: 16px;
   color: white;
   border-radius: 15px;
-  font-size: 2vh;
 }
 
 /* page 1 */
@@ -79,37 +79,28 @@ p {
 /* page2: map  */
 /* ping */
 
-.page2 .image {
-  width: 100%;
-  height: 30%;
-}
-
-.pins {
+.winter-map .pin1 {
   position: absolute;
+  top: 300px;
+  right: 280px;
 }
 
-.pin1 {
+.winter-map .pin2 {
   position: absolute;
-  bottom: 440px;
-  left: 400px;
+  top: 280px;
+  right: 310px;
 }
 
-.pin2 {
-  position: relative;
-  bottom: 410px;
-  left: 530px;
+.winter-map .pin3 {
+  position: absolute;
+  top: 250px;
+  right: 200px;
 }
 
-.pin3 {
-  position: relative;
-  bottom: 520px;
-  left: 630px;
-}
-
-.pin4 {
-  position: relative;
-  left: 1020px;
-  bottom: 280px;
+.winter-map .pin4 {
+  position: absolute;
+  left: 360px;
+  top: 350px;
 }
 
 .mainButtonContainer {
@@ -211,13 +202,14 @@ p {
   width: 100%;
   justify-content: space-between;
 }
+
 .page3 .leftimages {
-  width: 20vw;
-  height: 15vh;
+  width: 900px;
+  height: 650px;
 }
 .page3 .rightimages {
-  width: 25vw;
-  height: 50vh;
+  width: 900px;
+  height: 650px;
 }
 
 .page3 p {
@@ -236,8 +228,8 @@ p {
 
 .page4 .image {
   border-radius: 15px;
-  height: 50vh;
-  width: 30vw;
+  height: 400px;
+  width: 500px;
 }
 
 .page4 .prisonBox {
@@ -245,7 +237,7 @@ p {
 }
 
 .page4 .image {
-  margin-right: 10vw;
+  margin-right: 50px;
 }
 
 .page4 .prisonExplain {
@@ -254,16 +246,19 @@ p {
 }
 
 .page4 .buttonContainer {
-  margin: 2vh;
+  margin: 10px;
+  line-height: 16px;
 }
 
 .page4 .buttonContainer .buttonText {
-  font-size: 2vh;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
 }
 
 .page4 .prisonBox .button {
-  width: 2vw;
-  height: 30vh;
+  width: 16px;
+  line-height: 16px;
 }
 
 .page4 .prisonExplain {
@@ -277,7 +272,7 @@ p {
 /* page 5: 고현시장 */
 .swiper {
   width: 100%;
-  height: 80vh;
+  height: 700px;
 }
 
 .swiper .swiper-wrapper .swiper-slide {
@@ -324,17 +319,17 @@ p {
 
 .page6 .image {
   border-radius: 15px;
-  height: 40vh;
-  width: 35vw;
+  height: 300px;
+  width: 500px;
 }
 
 .page6 .imageText {
   position: relative;
-  width: 30vw;
-  font-size: 1.5rem;
-  line-height: 3vh;
+  width: 400px;
+  font-size: 16px;
+  line-height: 16px;
   justify-content: center;
-  left: 4vw;
+  left: 30px;
 }
 
 /* page 7: 제철음식 */
@@ -343,12 +338,11 @@ p {
   border: 2px solid #4e74b7;
 }
 .page7 .subContainer {
-  position: relative;
-  width: 80%;
-  height: 80%;
+  width: 800px;
+  height: 800px;
   justify-content: center;
   align-items: center;
-  margin: 10%;
+  margin-top: 150px;
 }
 
 .page7 .foodContainer {
@@ -358,8 +352,8 @@ p {
 .page7 .image {
   position: relative;
   border-radius: 15px;
-  width: 25vw;
-  height: 50vh;
+  width: 400px;
+  height: 400px;
 }
 
 .page7 .foodContainer {
@@ -380,11 +374,10 @@ p {
 
 .restaurant {
   position: relative;
-  top: 20%;
-  margin: 3%;
+  top: 100px;
 }
 .page7 .textBox {
-  font-size: 2vh;
+  font-size: 16px;
 }
 
 /* page 8: 지역축제 */
