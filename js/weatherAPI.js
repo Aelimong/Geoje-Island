@@ -7,8 +7,8 @@ $.getJSON(
     console.log(data);
     console.log(data.response.body.items.item[18].fcstValue);
 
-    let item = data.response.body.items.item[18];
-    let content = "WEATHER " + item.fcstValue;
+    let weather = data.response.body.items.item[18];
+    let content = "WEATHER " + weather.fcstValue;
 
     // 숫자를 아이콘으로
     let sunny =
@@ -31,18 +31,11 @@ $.getJSON(
     } else {
       $(".weather").html(rainy);
     }
-  }
-);
 
-// 현재 기온
-$.getJSON(
-  "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=wyV9inZShxC1nfFEVEWQCao9dPAK1aTTcTnz2MCHQqsEeFkpNglEWFgVqnIE%2BINQr85RFE0VwMR4kpduEc7M9A%3D%3D&pageNo=1&numOfRows=1000&dataType=JSON&base_date=20230820&base_time=0600&nx=90&ny=69",
-  function (data) {
-    console.log(data);
-    console.log(data.response.body.items.item[3].obsrValue);
-
-    let item = data.response.body.items.item[3];
-    let content = "TEMPERATURE " + item.obsrValue + "°C";
-    $(".temp").text(content);
+    // 현재기온
+    console.log(data.response.body.items.item[24].fcstValue);
+    let temp = data.response.body.items.item[24];
+    let content2 = "TEMPERATURE " + temp.fcstValue + "°C";
+    $(".temp").html(content2);
   }
 );

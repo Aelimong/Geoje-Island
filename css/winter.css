@@ -329,11 +329,10 @@ p {
 }
 
 .festivalImgContainer {
-  /* 이전 스타일 유지 */
-  transition: opacity 0.3s, padding-right 0.3s; /* 트랜지션 효과 추가 */
+  transition: opacity 0.3s;
 }
 
-.festivalNoticeContainer {
+.festivalNoticeContainerr {
   flex: 1;
 }
 
@@ -348,32 +347,29 @@ p {
   align-items: center;
   opacity: 0;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  background-color: #6f843b;
+  color: #d4dada;
   font-size: 2rem;
   border-radius: 5px;
   padding: 5px 10px;
   transition: opacity 0.3s, visibility 0.3s;
 }
+
 .festivalImgContainer img:hover + .hoverText {
   opacity: 1;
   visibility: visible; /* 호버 시 텍스트 표시 */
-}
-
-.festivalNoticeContainer:hover .hoverText {
-  opacity: 1; /* 호버 시 텍스트 표시 */
 }
 
 .festivalImgContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 5rem;
 }
 
 .festivalImgContainer img {
   border-radius: 15px;
-  height: 25vh;
+  height: 28vh;
   width: 30vw;
   object-fit: cover;
   transition: opacity 0.3s;
