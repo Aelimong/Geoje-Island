@@ -63,7 +63,7 @@ buttons.forEach((btn) => {
 //스크롤 했을때 나타내기
 function scrollAnimation() {
   const elemtMoving = document.querySelectorAll(
-    "#ygPage, #ggPage, #hdPage, #food, #springFestival"
+    "#ygPage, #ggPage, #hdPage, #food"
   );
 
   elemtMoving.forEach((element) => {
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", scrollAnimation);
 // 축제 섹션 사진 스와이퍼
 const swiper1 = new Swiper(".swiper1", {
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
   loop: true,
   slidesPerView: 2,
@@ -97,13 +97,12 @@ const swiper1 = new Swiper(".swiper1", {
   // loopedSlides: 1,
 });
 
-const swiper2 = new Swiper(".swiper2", {
-  autoplay: {
-    delay: 5000,
-  },
-  loop: true,
-  slidesPerView: 2,
-  spaceBetween: 10,
-  speed: 1000,
-  // loopedSlides: 1,
-});
+// const swiper2 = new Swiper(".swiper2", {
+//   autoplay: {
+//     delay: 3000,
+//   },
+//   loop: true,
+//   slidesPerView: 2,
+//   spaceBetween: 10,
+//   speed: 1000,
+// });

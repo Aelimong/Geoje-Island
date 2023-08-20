@@ -1,19 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* 로딩 페이지 -----------------------------------------------------------*/
+.overflow-hidden {
+  overflow: hidden;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  /* background-color: #6dffaa; */
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+  top: 100%;
+}
+
+.main.show {
+  top: 0%;
+}
+
+/* svg 와  */
+.load {
+  /* 중앙 정렬 */
+  /* 
+  (참고, 아래의 속성으로 가운데 정렬하면
+  .svg 의 z-index 가 적용 안됨. 
+  transform/opacity 와 z-index 같이 사용시 z-index의 버그가 생길 수 있다고 함
+  https://abcdqbbq.tistory.com/84)
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  /* 비행기와 숫자 정렬하기 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* 기본 설정 */
+  width: 200px;
+  height: 150px;
+  font-size: 50px;
+  /* background-color: rgba(153, 205, 50, 0.399); */
+}
+
+.load .svg {
+  /* 밑의 다른 section이 덮더라도 비행기는 앞으로 나와있도록 하기 위해서
+  z-index 크게 줌.
+  만약 header 등 비행기보다 앞에 있어야 하는 요소가 있다면 
+  400보다 크게 줘야 함 */
+  z-index: 400;
+  margin-bottom: 2.5rem;
+}
+
+/* .svg > path 에 fill 속성을 줘야 하지만
+상속될 수 있으므로 svg (div 태그)에 속성을 한 번에 줘서 처리 */
+.svg {
+  fill: #011842;
+  /* stroke: #02276b; */
+  transition: 0.5s;
+  transform: rotate(-5deg);
+}
+
+/* 숫자 100까지 갔을 때, 비행기 흰색, rotate 0으로 변경 */
+.svg.horizontal {
+  fill: #fff;
+  transform: rotate(2deg);
+  /* transform: scale(1.5); */
+  opacity: 0;
+}
+
 body article#move {
   height: 100vh;
   width: 200%;
   /* section의 가로너비 body 사이즈보다 크도록 설정, */
 }
-
+/* ----------  완료 -----------------------------------------------------------*/
 #move .wrapper {
   position: relative;
   left: 25%;
-  width: 50%;
-  border: 1px solid red;
-}
-
-#move #slider {
-  width: 50%;
-  border: 1px solid blue;
+  width: 100%;
 }
 
 /* 사진생성 */

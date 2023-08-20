@@ -267,16 +267,25 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
   padding: 100px 0;
 }
 
-.container .info .info-summary {
+#move .info-summary {
   width: 70vw;
 }
 
-.container .info .info-summary figure {
+#move .info-summary img {
+  width: 160%;
+  height: auto;
+  display: block;
+  left: -25%;
+  position: relative;
+  height: 800px;
+}
+
+#move .info-summary figure {
   width: 100%;
   margin: 0 auto;
 }
 
-.container .info .info-summary .summary-title {
+#move .info-summary .summary-title {
   width: 100%;
   position: relative;
   bottom: 126px;
@@ -285,68 +294,68 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
   display: flex;
 }
 
-.container .info .info-summary .summary-title .rectangle {
+#move .info-summary .summary-title .rectangle {
   width: 15vw;
   height: 30vh;
 }
-
-.container .info .info-summary .summary-title .rec-back {
+#move .info-summary .summary-title .rec-back {
   background-color: #d4d8e0;
 }
 
-.container .info .info-summary .summary-title .rec-front {
+#move .info-summary .summary-title .rec-front {
   position: absolute;
   left: 62px;
   top: 40px;
   background-color: #e6efff;
 }
 
-.container .info .info-summary .summary-title .title-text-area {
+#move .info-summary .summary-title .title-text-area {
   position: absolute;
   top: 74px;
   left: 105px;
 }
 
-.container .info .info-summary .summary-title .title-text-area .title-text {
+#move .info-summary .summary-title .title-text-area .title-text {
   font-size: 8em;
   font-weight: 700;
   line-height: 0.8;
 }
 
-.container .info .info-summary .summary-sub {
+#move .info-summary .summary-sub {
   width: 35vw;
   float: right;
   margin-bottom: 80px;
 }
 
-.container .info .info-summary .summary-sub hr {
+#move .info-summary .summary-sub hr {
   height: 1px;
   background: #023793;
 }
 
-.container .info .info-summary .summary-sub p {
+#move .info-summary .summary-sub p {
   text-align: right;
   margin: 10px 0;
 }
 
-.container .info .info-summary .summary-title .title-text-area .geoje-kor {
+#move.info-summary .summary-title .title-text-area .geoje-kor {
   color: var(--main-blue);
 }
 
-.container .info .info-summary .summary-title .title-text-area .geoje-eng {
+#move .info-summary .summary-title .title-text-area .geoje-eng {
   color: var(--sub-blue-400);
   position: relative;
   z-index: 9;
   left: -36px;
 }
 
-.container .info .info-summary .summary-title .title-text-area .geoje-chi {
+#move .info-summary .summary-title .title-text-area .geoje-chi {
   color: var(--sub-blue-200);
   position: relative;
   z-index: 9;
   left: 110px;
 }
 
+/*  */
 .container .info .info-detail {
   width: 70vw;
   margin-bottom: 100px;
