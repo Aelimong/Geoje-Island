@@ -442,6 +442,9 @@ li {
 /* #springFestival .swiper {
   overflow: visible;
 } */
+#springFestival .swiper1 {
+  overflow: hidden;
+}
 
 #springFestival .swiper-wrapper div {
   width: 432px;
@@ -451,6 +454,8 @@ li {
   margin: 10px 10px 10px 0;
   /* overflow: hidden; */
 }
+<<<<<<< HEAD
+=======
 
 /* #springFestival .imgContainer1 {
   width: 1200px;
@@ -476,3 +481,4 @@ li {
   background-image: url(../img/spring/축제6.png);
   background-size: cover;
 } */
+>>>>>>> main
