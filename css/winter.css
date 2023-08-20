@@ -78,7 +78,7 @@ p {
 
 /* page2: map  */
 /* ping */
-i {
+/* i {
   position: relative;
   bottom: 10px;
   z-index: 222;
@@ -127,6 +127,81 @@ i:hover {
   line-height: 6vh;
   text-align: center;
   border-radius: 15px;
+} */
+
+/* 추천명소 map */
+.winter-map .map:first-child {
+  width: 816px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.winter-map .imgContainer {
+  width: 816px;
+  overflow-y: scroll;
+  border: 1px solid #02276b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+}
+
+.winter-map .buttonContainer {
+  width: 816px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.winter-map .map .title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* .winter-map .map .title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+} */
+
+.winter-map .mainButton {
+  background-color: #02276b;
+  margin-right: 10px;
+}
+
+.winter-map .pin1 {
+  position: absolute;
+  bottom: -32px;
+  left: 97px;
+}
+
+.winter-map .pin2 {
+  position: absolute;
+  bottom: 4px;
+  left: 166px;
+}
+
+.winter-map .pin3 {
+  position: absolute;
+  bottom: 26px;
+  left: 180px;
+}
+
+.winter-map .pin4 {
+  position: absolute;
+  bottom: -84px;
+  left: 353px;
+}
+
+.winter-map .map .button {
+  width: 170px;
+  height: 51px;
+  background-color: #02276b;
+  color: #e6efff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 51px;
+  /* border-radius: 15px; */
 }
 
 /* page 3: 거제 식물원 */

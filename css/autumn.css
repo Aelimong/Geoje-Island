@@ -56,9 +56,7 @@ p {
   margin-bottom: 10px;
 } */
 
-
 /* ***** page2 ***** */
-
 .page2 .map:first-child {
   width: 816px;
   height: 700px;
@@ -255,6 +253,10 @@ p {
 }
 
 /* ***** page7 ***** */
+.page7 {
+  align-content: flex-start;
+  margin-bottom: 300px;
+}
 
 .page7 .p7Container {
   display: flex;
@@ -319,7 +321,7 @@ p {
   margin: 0;
 }
 
- /* 사진이 호버되면 확대된다 */
+/* 사진이 호버되면 확대된다 */
 .page7 .p7Container .imgContainer .oyster1 {
   transition: all 0.85s ease 0s;
 }
