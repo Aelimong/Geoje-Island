@@ -114,3 +114,81 @@ function scrollAnimation() {
 
 //초기화
 document.addEventListener("DOMContentLoaded", scrollAnimation);
+
+// 수국축제
+
+/* 사진들이 스크롤에 따라
+- 왼쪽에서 나타나고(slideLeft)
+- 사진들이 자연스럽게 사라짐(fadeOut)
+*/
+
+function slideLeft() {
+  const images = document.querySelectorAll(".sugug-info .images-top img");
+
+  images.forEach((image) => {
+    gsap.to(image, {
+      x: "-300%",
+      scrollTrigger: {
+        trigger: image,
+        start: "top 60%",
+        end: "bottom 20%",
+        scrub: 2, // 스크롤 속도에 따라 애니메이션을 조절
+      },
+    });
+  });
+}
+
+function slideRight() {
+  const images = document.querySelectorAll(".sugug-info .images-bottom img");
+
+  images.forEach((image) => {
+    gsap.to(image, {
+      x: "300%",
+      scrollTrigger: {
+        trigger: image,
+        start: "top 60%",
+        end: "bottom 20%",
+        scrub: 2, // 스크롤 속도에 따라 애니메이션을 조절
+      },
+    });
+  });
+}
+
+function fadeOut() {
+  const images2 = document.querySelectorAll(".sugug-info .images-top img");
+  const images3 = document.querySelectorAll(".sugug-info .images-bottom img");
+
+  images2.forEach((image) => {
+    gsap.to(image, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: image,
+        start: "top 10%",
+        end: "bottom 20%",
+        scrub: 2,
+      },
+    });
+  });
+
+  images3.forEach((image) => {
+    gsap.to(image, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: image,
+        start: "top 10%",
+        end: "bottom 20%",
+        scrub: 2,
+      },
+    });
+  });
+}
+
+// 두 개의 함수 동시에 작동시킴
+const timeline2 = gsap.timeline();
+
+timeline2.add(slideLeft(), 0);
+timeline2.add(fadeOut(), 0);
+timeline2.add(slideRight(), 0);
+timeline2.add(fadeOut(), 0);
+
+document.addEventListener("DOMContentLoaded", timeline2);

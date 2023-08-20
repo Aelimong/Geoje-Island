@@ -327,6 +327,7 @@ section {
 .sugug .sugug-info {
   width: 100%;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .sugug .sugug-info .images-top {
@@ -341,6 +342,7 @@ section {
 
 .sugug .sugug-info .images-bottom {
   display: flex;
+  justify-content: flex-end;
 }
 
 .sugug .sugug-info .images-bottom img {
