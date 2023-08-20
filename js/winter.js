@@ -4,7 +4,6 @@ const buttons = document.querySelectorAll(".mainButton");
 
 function hoverIn(event) {
   gsap.to(event.target, { opacity: 0.65, duration: 0.3 });
-  console.log(event.target.classList.contains(`pin4`));
   for (let i = 0; i < 4; i++) {
     if (event.target.classList.contains(`pin${i + 1}`)) {
       gsap.to(`.bt${i + 1}`, { opacity: 0.65, duration: 0.3 });
@@ -57,11 +56,30 @@ buttons.forEach((btn) => {
   btn.addEventListener("mouseout", hoverOutBtn);
 });
 
+// page3: 거제식물원 사진들 mouseover
+const page3Images = document.querySelectorAll(".page3 img");
+
+function scaleUp(event) {
+  gsap.to(event.target, { scale: 1.1, opacity: 0.8, duration: 0.3 });
+}
+
+function scaleDown(event) {
+  gsap.to(event.target, { scale: 1, opacity: 1, duration: 0.3 });
+}
+
+page3Images.forEach((img) => {
+  img.addEventListener("mouseover", scaleUp);
+});
+
+page3Images.forEach((img) => {
+  img.addEventListener("mouseout", scaleDown);
+});
+
 // page 5: swiper
 const sw = new Swiper(".swiper1", {
   // direction: "vertical",
   slidesPerView: 1,
-  spaceBetween: 6, //slide 간의 gap (margin)
+  spaceBetween: 10, //slide 간의 gap (margin)
   loop: true,
   autoplay: {
     delay: 1000,
@@ -71,9 +89,6 @@ const sw = new Swiper(".swiper1", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });
 

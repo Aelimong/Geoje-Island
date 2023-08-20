@@ -523,6 +523,10 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
   display: flex;
 }
 
+.container .info .info-detail .detail-bottom .detail-bottom-img {
+  width: 120%;
+}
+
 .container .info .info-detail .detail-bottom .detail-bottom-text {
   padding-left: 50px;
   text-align: right;
