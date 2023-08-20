@@ -96,7 +96,7 @@ body article#move {
 #move .wrapper {
   position: relative;
   left: 25%;
-  width: 100%;
+  width: 1200px;
 }
 
 /* 사진생성 */
