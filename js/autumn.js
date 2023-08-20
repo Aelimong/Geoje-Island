@@ -33,15 +33,16 @@ function hoverOut(event) {
 pins.forEach((pin) => {
   pin.addEventListener("mouseover", hoverIn);
 });
+
 pins.forEach((pin) => {
   pin.addEventListener("mouseout", hoverOut);
 });
 
 // button 기능
-
 function hoverIn2(event) {
   gsap.to(event.target, { opacity: 0.75, duration: 0.3 });
 }
+
 function hoverOut2(event) {
   gsap.to(event.target, { opacity: 1, duration: 0.3 });
 }
@@ -55,7 +56,9 @@ buttons.forEach((button) => {
 // 스크롤에 따라 부드럽게 요소들이 올라온다
 
 function scrollAnimation() {
-  const elemtMoving = document.querySelectorAll(".page3, .page4, .page5, .page7");
+  const elemtMoving = document.querySelectorAll(
+    ".page3, .page4, .page5, .page7"
+  );
 
   elemtMoving.forEach((element) => {
     gsap.from(element, {

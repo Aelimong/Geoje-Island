@@ -9,21 +9,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
     <script defer src="../js/autumn.js"></script>
-    <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
+    <!-- 사계절 공통 JS -->
+    <script defer src="../js/common.js"></script>
+
     <link rel="stylesheet" href="../css/autumn.css" />
   </head>
   <body>
-    <main class="container">
+    <main class="four-container">
       <div class="static">
         <!-- header start -->
         <div class="header">
           <header include-html="./header.html"></header>
         </div>
         <!-- header end -->
-        
         <div class="contents">
           <!-- 사계절 공통 섹션 -->
-          <section class="four-section">
+          <article class="four-section">
             <div class="four-img four-img-autumn"></div>
             <div class="four-geoje-bg"></div>
             <div class="four-geoje-text">
@@ -35,15 +36,16 @@
               <span class="up-china autumn-china">秋</span>
               <span class="behind-china autumn-china">秋</span>
             </div>
-          </section>
-          <section class="txt-box">
-            <div class="black-bar"></div>
-            <p>
-              가을에는 거제도가 황금빛으로 물드는 아름다운 풍경을 선사합니다.<br />
-              단풍이 은은한 빛으로 물들면서 산과 호수는 마치 그림처럼
-              아름다워집니다.<br />
-            </p>
-          </section>
+            <div class="txt-box">
+              <div class="black-bar"></div>
+              <p>
+                가을에는 거제도가 황금빛으로 물드는 아름다운 풍경을
+                선사합니다.<br />
+                단풍이 은은한 빛으로 물들면서 산과 호수는 마치 그림처럼
+                아름다워집니다.<br />
+              </p>
+            </div>
+          </article>
           <section class="page2">
             <div class="map">
               <div class="mainButton button title">추천 명소</div>
@@ -142,9 +144,7 @@
                   alt="pin;"
                   style="width: 13px; height: 17px"
                 />
-                <p id="locationTxt">
-                  &nbsp;&nbsp;경남 거제시 동부면 거제중앙로 288
-                </p>
+                <p id="locationTxt">경남 거제시 동부면 거제중앙로 288</p>
               </div>
             </div>
 
@@ -173,7 +173,7 @@
             </div>
 
             <div class="place1Sub">
-              <p>&nbsp;&nbsp;* 운영 시간 09:00~20:30 (매표 마감 19:30)</p>
+              <p>* 운영 시간 09:00~20:30 (매표 마감 19:30)</p>
               <img
                 src="../img/autumn/autPage3-03.png"
                 alt="cableCar3"
@@ -185,17 +185,26 @@
             <div class="greenBar">주변관광지</div>
 
             <div class="buttonContainer">
-              <a href="http://www.oedobotania.com/" target="_blank">
+              <a
+                href="https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=9719ab29-d06d-4e47-b557-f0698c35a2cd&big_category=A02&mid_category=A0202&big_area=36"
+                target="_blank"
+              >
                 <div class="button">외도보타니아</div>
               </a>
-              <a href="http://www.oedobotania.com/" target="_blank">
-                <div class="button">외도보타니아</div>
+              <a
+                href="https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=b52b8d8b-11bf-44b9-b1b7-06b0f5aa2e88"
+                target="_blank"
+              >
+                <div class="button">공곶이 수목원</div>
               </a>
-              <a href="http://www.oedobotania.com/" target="_blank">
-                <div class="button">외도보타니아</div>
+              <a href="https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=689f30ec-530d-45c5-867a-d124ab7935b8&big_category=A01&mid_category=A0101&big_area=36" target="_blank">
+                <div class="button">지심도</div>
               </a>
-              <a href="http://www.oedobotania.com/" target="_blank">
-                <div class="button">외도보타니아</div>
+              <a
+                href="https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=f013bdd2-ded6-4e28-aba5-e4ce42613480&big_category=A02&mid_category=A0206&big_area=36"
+                target="_blank"
+              >
+                <div class="button">양지암 조각공원</div>
               </a>
             </div>
           </section>
@@ -209,7 +218,7 @@
                   alt="pin;"
                   style="width: 13px; height: 17px"
                 />
-                <p id="locationTxt">&nbsp;&nbsp;경남 거제시 동부면 학동리</p>
+                <p id="locationTxt">경남 거제시 동부면 학동리</p>
               </div>
             </div>
 
@@ -273,8 +282,8 @@
                   <div class="button">가연마을</div></a
                 >
                 <p>
-                  &nbsp;&nbsp;거제의 대표적인 어촌마을 중 하나로, 아름다운 바다
-                  전망을 감상할 수 있습니다.
+                  거제의 대표적인 어촌마을 중 하나로, 아름다운 바다 전망을
+                  감상할 수 있습니다.
                 </p>
               </div>
 
@@ -287,8 +296,8 @@
                   <div class="button">거제아트센터</div></a
                 >
                 <p>
-                  &nbsp;&nbsp;거제의 문화와 예술을 즐길 수 있는 공간으로, 다양한
-                  전시와 공연을 즐길 수 있습니다.
+                  거제의 문화와 예술을 즐길 수 있는 공간으로, 다양한 전시와
+                  공연을 즐길 수 있습니다.
                 </p>
               </div>
             </div>
@@ -305,9 +314,7 @@
                       alt="pin;"
                       style="width: 13px; height: 17px"
                     />
-                    <p id="locationTxt">
-                      &nbsp;&nbsp;경남 거제시 남부면 갈곶리 산14-47
-                    </p>
+                    <p id="locationTxt">경남 거제시 남부면 갈곶리 산14-47</p>
                   </div>
                 </div>
 

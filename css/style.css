@@ -107,8 +107,14 @@ p {
   width: 100%;
 }
 
+.four-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -124,7 +130,8 @@ p {
   position: -webkit-sticky;
   position: sticky;
   width: 278px;
-  height: 929px;
+  height: 100vh;
+  background-color: #fafafa;
   top: 0;
   left: 0;
   z-index: 10;
@@ -192,7 +199,6 @@ p {
   padding-bottom: 20px;
 }
 
-
 /* 사계절 주요 콘텐츠 */
 .contents {
   width: calc(100% - 278px);
@@ -202,11 +208,13 @@ p {
 /* 사계절 공통 섹션 */
 .contents .four-section {
   width: 100%;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 50px 0 50px;
   position: relative;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 0 auto;
 }
 
 .contents .four-section .four-img {
@@ -226,7 +234,7 @@ p {
 }
 
 .contents .four-section .four-img-summer {
-  background-image: url(../img/summer/summer-main.jpg);
+  background-image: url(../img/summer/summer-main-img.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -261,7 +269,7 @@ p {
   position: absolute;
   z-index: 1;
   top: 46px;
-  left: -110px;
+  left: -70px;
   width: 100%;
 }
 
@@ -288,9 +296,9 @@ p {
 .contents .four-section .four-chinese-bg {
   position: absolute;
   z-index: 2;
-  bottom: 0;
+  top: 434px;
   left: 0;
-  padding: 90px 170px 0 0;
+  padding: 120px 170px 0 0;
   background-color: #fafafa;
   border-top-right-radius: 15px;
   max-width: 80%;
@@ -340,13 +348,14 @@ p {
 }
 
 .txt-box {
-  padding: 50px;
+  padding: 50px 0;
   margin: 80px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+  width: 800px;
 }
 
 .txt-box .black-bar {
@@ -363,6 +372,29 @@ p {
 }
 
 /* 푸터 */
-.footer {
-  background-color: aqua;
+footer {
+  margin-top: 45px;
+}
+
+footer .footer-text {
+  font-size: 1.6em;
+  color: var(--main-blue);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+footer .pageTop {
+  display: flex;
+  cursor: pointer;
+}
+
+footer .pageTop p {
+  font-size: 1em;
+  color: var(--main-blue);
+}
+
+footer .pageTop i {
+  margin-top: 4px;
+  margin-right: 4px;
 }

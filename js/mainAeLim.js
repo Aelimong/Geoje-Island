@@ -83,8 +83,8 @@ function changeTicketImages(MM) {
     img.src = springTicket;
     img.alt = "봄 꽃";
 
-    defaultTicket.style.display = "none";
     ticketFlower.append(img);
+    defaultTicket.style.display = "none";
 
     // 6~8 여름
   } else if (month >= 6 && month <= 8) {
@@ -99,8 +99,8 @@ function changeTicketImages(MM) {
     img.src = autumnTicket;
     img.alt = "가을 꽃";
 
-    defaultTicket.style.display = "none";
     ticketFlower.append(img);
+    defaultTicket.style.display = "none";
 
     //나머지 겨울
   } else {
@@ -108,6 +108,7 @@ function changeTicketImages(MM) {
     img.alt = "겨울 꽃";
 
     ticketFlower.append(img);
+    defaultTicket.style.display = "none";
   }
 }
 
@@ -128,10 +129,10 @@ function addPaperAnimation() {
   ticketInfo.classList.toggle("rotate-10-left");
   ticketFlower.classList.toggle("rotate-10-right");
 
-  // 1.5초뒤 페이지 이동
+  // 1초뒤 페이지 이동
   setTimeout(() => {
     moveFourSeosonPage();
-  }, 1500);
+  }, 1000);
 }
 
 function moveFourSeosonPage() {

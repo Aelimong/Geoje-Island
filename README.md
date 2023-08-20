@@ -8,20 +8,22 @@
 
 - vs code
 
+
 ### Library
 
 - Swiper.js
+- GSAP
+
 
 ### Language
 
-- HTML, CSS, Javascript
-
-## Backend
+- HTML, CSS, Javascript, JQuery
+  
 
 ### Data
 
-- OpenWeatherMap API
-- Kakao map API
+- 공공 데이터 포털 Open API
+
 
 ### Deploy Tool
 

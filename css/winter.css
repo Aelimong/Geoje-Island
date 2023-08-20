@@ -1,10 +1,9 @@
-section {
-  margin-bottom: 50px;
-}
-
 .page {
   height: 1000px;
   width: 100%;
+}
+p {
+  font-size: 1.5rem;
 }
 
 .location {
@@ -14,6 +13,8 @@ section {
 
 .buttonContainer {
   display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
 }
 
 .button {
@@ -49,11 +50,6 @@ section {
   font-size: 2vh;
 }
 
-.container {
-  display: flex;
-  margin-bottom: 10px;
-}
-
 /* page 1 */
 .text {
   position: absolute;
@@ -82,46 +78,142 @@ section {
 
 /* page2: map  */
 /* ping */
-i {
-  position: relative;
-  bottom: 10px;
-  z-index: 222;
-}
-i:hover {
-  transform: scale(1.5);
+
+.page2 .image {
+  width: 100%;
+  height: 30%;
 }
 
-.buttonContainer {
+.pins {
+  position: absolute;
+}
+
+.pin1 {
+  position: absolute;
+  bottom: 440px;
+  left: 400px;
+}
+
+.pin2 {
+  position: relative;
+  bottom: 410px;
+  left: 530px;
+}
+
+.pin3 {
+  position: relative;
+  bottom: 520px;
+  left: 630px;
+}
+
+.pin4 {
+  position: relative;
+  left: 1020px;
+  bottom: 280px;
+}
+
+.mainButtonContainer {
   display: flex;
   justify-content: space-between;
 }
 
-.button1 {
-  background-color: #8ea84c;
+.mainButtonContainer .mainButton {
+  font-size: 1.5rem;
+  background-color: #023793;
+  color: white;
+  height: 6vh;
+  width: 8vw;
+  line-height: 6vh;
+  text-align: center;
+  border-radius: 15px;
+}
+*/
+
+/* 추천명소 map */
+.winter-map .map:first-child {
+  width: 816px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
 }
 
-.button2 {
-  background-color: #6f843b;
+.winter-map .imgContainer {
+  width: 816px;
+  overflow-y: scroll;
+  border: 1px solid #02276b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
 }
 
-.button3 {
-  background-color: #4f5e2a;
+.winter-map .buttonContainer {
+  width: 816px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.button4 {
-  background-color: #2f3819;
+.winter-map .map .title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* .winter-map .map .title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+} */
+
+.winter-map .mainButton {
+  background-color: #02276b;
+  margin-right: 10px;
+}
+
+.winter-map .pin1 {
+  position: absolute;
+  bottom: -32px;
+  left: 97px;
+}
+
+.winter-map .pin2 {
+  position: absolute;
+  bottom: 4px;
+  left: 166px;
+}
+
+.winter-map .pin3 {
+  position: absolute;
+  bottom: 26px;
+  left: 180px;
+}
+
+.winter-map .pin4 {
+  position: absolute;
+  bottom: -84px;
+  left: 353px;
+}
+
+.winter-map .map .button {
+  width: 170px;
+  height: 51px;
+  background-color: #02276b;
+  color: #e6efff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 51px;
+  /* border-radius: 15px; */
 }
 
 /* page 3: 거제 식물원 */
 .page3 .imgBox {
   position: relative;
   display: flex;
-  width: 55vw;
+  width: 100%;
   justify-content: space-between;
 }
 .page3 .leftimages {
-  width: 25vw;
-  height: 50vh;
+  width: 20vw;
+  height: 15vh;
 }
 .page3 .rightimages {
   width: 25vw;
@@ -142,44 +234,104 @@ i:hover {
   border: 3px solid #8ea84c;
 }
 
-.buttonContainer {
+.page4 .image {
+  border-radius: 15px;
+  height: 50vh;
+  width: 30vw;
+}
+
+.page4 .prisonBox {
+  display: flex;
+}
+
+.page4 .image {
+  margin-right: 10vw;
+}
+
+.page4 .prisonExplain {
+  text-align: left;
+  line-height: 150%;
+}
+
+.page4 .buttonContainer {
   margin: 2vh;
 }
 
-.buttonContainer .buttonText {
+.page4 .buttonContainer .buttonText {
   font-size: 2vh;
 }
 
-/* page 5: 고현시장 */
-
-.page5 .place {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.page4 .prisonBox .button {
+  width: 2vw;
+  height: 30vh;
 }
 
-.page5 .image {
-  width: 50vw;
-  height: 60vh;
+.page4 .prisonExplain {
+  float: right;
+}
+
+.page4 .prisonTxtBox {
+  text-align: right;
+}
+
+/* page 5: 고현시장 */
+.swiper {
+  width: 100%;
+  height: 80vh;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+  width: 200px;
+  height: 100%;
+  border: #02276b;
+  text-align: center;
+  line-height: 200px;
+  box-sizing: border-box;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+.swiper .swiper-wrapper .swiper-slide .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+/* pagination custom */
+/* 화살표 커스텀 */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #e6efff;
 }
 
 /* page 6: 지심도 */
+.place {
+  margin-left: auto;
+  width: 100%;
+}
+
+.imgContainerBox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
 .page6 .imageContainer {
   display: flex;
   align-content: space-evenly;
+  width: 100%;
 }
 
 .page6 .image {
   border-radius: 15px;
-  height: 30vh;
-  width: 20vw;
+  height: 40vh;
+  width: 35vw;
 }
 
 .page6 .imageText {
   position: relative;
   width: 30vw;
-  font-size: 2vh;
+  font-size: 1.5rem;
   line-height: 3vh;
   justify-content: center;
   left: 4vw;
@@ -197,7 +349,6 @@ i:hover {
   justify-content: center;
   align-items: center;
   margin: 10%;
-  border: 3px solid black;
 }
 
 .page7 .foodContainer {
@@ -208,7 +359,7 @@ i:hover {
   position: relative;
   border-radius: 15px;
   width: 25vw;
-  height: 60vh;
+  height: 50vh;
 }
 
 .page7 .foodContainer {
@@ -221,8 +372,21 @@ i:hover {
 
 .page7 .subContainer .buttonContainer .button {
   background-color: #8ea84c;
-  width: 5vw;
 }
+
+.page7 .restaurant .buttonContainer .button {
+  background-color: #2f3819;
+}
+
+.restaurant {
+  position: relative;
+  top: 20%;
+  margin: 3%;
+}
+.page7 .textBox {
+  font-size: 2vh;
+}
+
 /* page 8: 지역축제 */
 
 .page8 {
@@ -234,8 +398,77 @@ i:hover {
   position: relative;
   width: 80%;
   height: 80%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 10%;
-  border: 3px solid black;
+  display: flex;
+}
+
+.festivalImgContainer {
+  /* 이전 스타일 유지 */
+  transition: opacity 0.3s, padding-right 0.3s; /* 트랜지션 효과 추가 */
+}
+
+.festivalNoticeContainer {
+  flex: 1;
+}
+
+.hoverText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.festivalImgContainer img:hover + .hoverText {
+  opacity: 1;
+  visibility: visible; /* 호버 시 텍스트 표시 */
+}
+
+.festivalNoticeContainer:hover .hoverText {
+  opacity: 1; /* 호버 시 텍스트 표시 */
+}
+
+.festivalImgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.festivalImgContainer img {
+  border-radius: 15px;
+  height: 25vh;
+  width: 30vw;
+  object-fit: cover;
+  transition: opacity 0.3s;
+  position: relative;
+}
+
+.festivalImgContainer img:hover {
+  opacity: 0.8; /* 이미지에 hover 시 투명도 변경 */
+}
+.photo-cell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-cell:hover .hoverText {
+  opacity: 1;
+  visibility: visible;
 }

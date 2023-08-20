@@ -6,8 +6,8 @@
     <title>따스한 사계절 온기 넘치는 섬</title>
     <link rel="icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="/css/style.css" />
-
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/mainChangYong.css" />
+    <link rel="stylesheet" href="./css/mainAelim.css" />
     <link rel="stylesheet" href="./css/mainJeongYun.css" />
 
     <!-- 가로스크롤 js -->
@@ -16,10 +16,8 @@
     <!-- 자신의 커스텀 css를 항상 마지막에!!! -->
     <!-- <link rel="stylesheet" href="../css/spring.css" /> -->
 
-    <link rel="stylesheet" href="./css/mainAelim.css" />
-
-    <!-- <script defer src="./js/mainJeongYun.js"></script> -->
     <script defer src="./js/mainAeLim.js"></script>
+    <script defer src="./js/mainJeongYun.js"></script>
 
     <!-- jquery -->
     <script
@@ -39,19 +37,18 @@
 
     <!-- gsap -->
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script defer src="./js/gsap.js"></script>
-
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./js/gsap.js"></script>
   </head>
   <body id="index-bg-paper">
     <!-- 펼쳐진 메인 메뉴 -->
@@ -90,7 +87,22 @@
       </ul>
     </header>
 
-    <main class="container">
+    <div class="load">
+      <div class="svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="2em"
+          viewBox="0 0 576 512"
+        >
+          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M256 16c0-7 4.5-13.2 11.2-15.3s13.9 .4 17.9 6.1l224 320c3.4 4.9 3.8 11.3 1.1 16.6s-8.2 8.6-14.2 8.6H272c-8.8 0-16-7.2-16-16V16zM212.1 96.5c7 1.9 11.9 8.2 11.9 15.5V336c0 8.8-7.2 16-16 16H80c-5.7 0-11-3-13.8-8s-2.9-11-.1-16l128-224c3.6-6.3 11-9.4 18-7.5zM5.7 404.3C2.8 394.1 10.5 384 21.1 384H554.9c10.6 0 18.3 10.1 15.4 20.3l-4 14.3C550.7 473.9 500.4 512 443 512H133C75.6 512 25.3 473.9 9.7 418.7l-4-14.3z"
+          />
+        </svg>
+      </div>
+      <div class="count" style="color: #011842">15</div>
+    </div>
+    <div class="main hide">
       <!-- 1번째 섹션 (창용) -->
       <article class="main-section">
         <header>
@@ -104,13 +116,21 @@
             <source src="/video/windmill.mp4" />
           </video>
           <img class="logo" src="/img/logo.svg" alt="logo.svg" />
-          <div class="bottom">
-            <div class="menu">MENU</div>
-            <p class="scroll">SCROLL</p>
+        </div>
+
+        <div class="mouse_scroll">
+          <!-- <div class="mouse">
+            <div class="wheel"></div>
+          </div> -->
+          <div>
+            <span class="m_scroll_arrows unu"></span>
+            <span class="m_scroll_arrows doi"></span>
+            <span class="m_scroll_arrows trei"></span>
           </div>
         </div>
       </article>
-
+    </div>
+    <main class="container">
       <!-- 2번째 섹션 (정윤) -->
       <article id="move">
         <div id="slider">
@@ -118,18 +138,18 @@
           <div id="photo2"></div>
           <img src="./img/main/테두리2.png" alt="두번째 이미지 테두리" />
           <div id="photo3"></div>
-          <h1>온기가 넘치는 섬, 거제도<h1>
-          <h2>따스한 사계절과 넉넉한 인심이 가득한 청정의 고장<br/>그 섬으로 당신을 초대합니다</h2>
+          <h1>온기가 넘치는 섬, 거제도</h1>
+          <h2>
+            따스한 사계절과 넉넉한 인심이 가득한 청정의 고장<br />그 섬으로
+            당신을 초대합니다
+          </h2>
           <div id="photo4"></div>
           <img src="./img/main/테두리1.png" alt="네번째 이미지 테두리" />
           <div id="photo5"></div>
           <div id="photo6"></div>
           <img src="./img/main/테두리1.png" alt="여섯번째 이미지 테두리" />
           <div id="photo7"></div>
-      </article>
-
-      <!-- 거제도 소개 섹션 -->
-      <article class="info">
+        </div>
         <div class="wrapper info-summary">
           <figure>
             <img src="./img/main/geoje-info.png" alt="거제도 전경" />
@@ -149,11 +169,34 @@
             <p>The Second Largest Island in South Korea</p>
           </div>
         </div>
+      </article>
+
+      <!-- 거제도 소개 섹션 -->
+      <article class="info">
+        <!-- <div class="wrapper info-summary">
+          <figure>
+            <img src="./img/main/geoje-info.png" alt="거제도 전경" />
+          </figure>
+          <div class="summary-title">
+            <div class="rectangle rec-back"></div>
+            <div class="rectangle rec-front"></div>
+            <div class="title-text-area">
+              <p class="title-text geoje-kor">거제</p>
+              <p class="title-text geoje-eng">GEOJE</p>
+              <p class="title-text geoje-chi">巨濟</p>
+            </div>
+          </div>
+          <div class="summary-sub">
+            <hr />
+            <p>경상남도 거제시</p>
+            <p>The Second Largest Island in South Korea</p>
+          </div>
+        </div> -->
         <div class="wrapper info-detail">
           <div class="detail-top">
             <div class="detail-top-text">
               <span>
-                <h6>01<br />거제도의 지리</h6>
+                <h6>01<br />거제도의 역사</h6>
                 <p>
                   경상남도의 남해안에 있는 시. 거제도와 그 주변의 섬들로
                   이루어지며, 어업과 양식업이 활발합니다. 옥포에는 규모가 큰
@@ -162,7 +205,7 @@
                 </p>
               </span>
               <span>
-                <h6>02<br />거제도의 역사</h6>
+                <h6>02<br />거제도의 보물</h6>
                 <p>
                   경상남도의 남해안에 있는 시. 거제도와 그 주변의 섬들로
                   이루어지며, 어업과 양식업이 활발하다. 옥포에는 규모가 큰 조선
@@ -176,11 +219,11 @@
           </div>
           <div class="detail-bottom">
             <div class="detail-bottom-img">
-              <img src="./img/main/geoje-ship.jpg" alt="거제도 조선업" />
+              <img src="./img/main/geoje-bird.jpg" alt="거제도 천연 기념물" />
             </div>
             <div class="detail-bottom-text">
               <span>
-                <h6>03<br />거제도의 조선업</h6>
+                <h6>03<br />거제도의 천연 기념물</h6>
                 <p>
                   경상남도의 남해안에 있는 시. 거제도와 그 주변의 섬들로
                   이루어지며, 어업과 양식업이 활발하다. 옥포에는 규모가 큰 조선
