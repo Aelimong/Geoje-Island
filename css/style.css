@@ -372,6 +372,29 @@ p {
 }
 
 /* 푸터 */
-.footer {
-  background-color: aqua;
+footer {
+  margin-top: 45px;
+}
+
+footer .footer-text {
+  font-size: 1.6em;
+  color: var(--main-blue);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+footer .pageTop {
+  display: flex;
+  cursor: pointer;
+}
+
+footer .pageTop p {
+  font-size: 1em;
+  color: var(--main-blue);
+}
+
+footer .pageTop i {
+  margin-top: 4px;
+  margin-right: 4px;
 }
