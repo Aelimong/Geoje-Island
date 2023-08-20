@@ -78,41 +78,40 @@ p {
 
 /* page2: map  */
 /* ping */
-i {
-  position: relative;
-  bottom: 10px;
-  z-index: 222;
-}
-i:hover {
-  transform: scale(1.5);
-}
 
 .page2 .image {
-  width: 40vw;
-  height: 30vh;
+  width: 100%;
+  height: 30%;
 }
 
 .pins {
-}
-.pins .first {
-  bottom: 200px;
-  left: 35%;
+  position: absolute;
 }
 
-.pins .second {
-  bottom: 250px;
-  left: 46%;
+.pin1 {
+  position: absolute;
+  bottom: 440px;
+  left: 400px;
 }
 
-.pins .third {
-  bottom: 330px;
-  left: 54%;
+.pin2 {
+  position: relative;
+  bottom: 410px;
+  left: 530px;
 }
 
-.pins .fourth {
-  bottom: 210px;
-  left: 88%;
+.pin3 {
+  position: relative;
+  bottom: 520px;
+  left: 630px;
 }
+
+.pin4 {
+  position: relative;
+  left: 1020px;
+  bottom: 280px;
+}
+
 .mainButtonContainer {
   display: flex;
   justify-content: space-between;
@@ -133,12 +132,12 @@ i:hover {
 .page3 .imgBox {
   position: relative;
   display: flex;
-  width: 55vw;
+  width: 100%;
   justify-content: space-between;
 }
 .page3 .leftimages {
-  width: 25vw;
-  height: 50vh;
+  width: 20vw;
+  height: 15vh;
 }
 .page3 .rightimages {
   width: 25vw;
@@ -165,6 +164,19 @@ i:hover {
   width: 30vw;
 }
 
+.page4 .prisonBox {
+  display: flex;
+}
+
+.page4 .image {
+  margin-right: 10vw;
+}
+
+.page4 .prisonExplain {
+  text-align: left;
+  line-height: 150%;
+}
+
 .page4 .buttonContainer {
   margin: 2vh;
 }
@@ -173,10 +185,23 @@ i:hover {
   font-size: 2vh;
 }
 
+.page4 .prisonBox .button {
+  width: 2vw;
+  height: 30vh;
+}
+
+.page4 .prisonExplain {
+  float: right;
+}
+
+.page4 .prisonTxtBox {
+  text-align: right;
+}
+
 /* page 5: 고현시장 */
 .swiper {
-  width: 50vw;
-  height: 60vh;
+  width: 100%;
+  height: 80vh;
 }
 
 .swiper .swiper-wrapper .swiper-slide {
@@ -203,31 +228,28 @@ i:hover {
   color: #e6efff;
 }
 
-.marketText {
-  margin: 10vh;
-}
-
 /* page 6: 지심도 */
 .place {
   margin-left: auto;
+  width: 100%;
 }
 
-.page6 .button {
-  float: right;
-}
-.page6 :nth-child(3) {
-  float: right;
+.imgContainerBox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .page6 .imageContainer {
   display: flex;
   align-content: space-evenly;
+  width: 100%;
 }
 
 .page6 .image {
   border-radius: 15px;
-  height: 20vh;
-  width: 15vw;
+  height: 40vh;
+  width: 35vw;
 }
 
 .page6 .imageText {
@@ -300,8 +322,77 @@ i:hover {
   position: relative;
   width: 80%;
   height: 80%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 10%;
-  border: 3px solid green;
+  display: flex;
+}
+
+.festivalImgContainer {
+  /* 이전 스타일 유지 */
+  transition: opacity 0.3s, padding-right 0.3s; /* 트랜지션 효과 추가 */
+}
+
+.festivalNoticeContainer {
+  flex: 1;
+}
+
+.hoverText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.festivalImgContainer img:hover + .hoverText {
+  opacity: 1;
+  visibility: visible; /* 호버 시 텍스트 표시 */
+}
+
+.festivalNoticeContainer:hover .hoverText {
+  opacity: 1; /* 호버 시 텍스트 표시 */
+}
+
+.festivalImgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.festivalImgContainer img {
+  border-radius: 15px;
+  height: 25vh;
+  width: 30vw;
+  object-fit: cover;
+  transition: opacity 0.3s;
+  position: relative;
+}
+
+.festivalImgContainer img:hover {
+  opacity: 0.8; /* 이미지에 hover 시 투명도 변경 */
+}
+.photo-cell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-cell:hover .hoverText {
+  opacity: 1;
+  visibility: visible;
 }
