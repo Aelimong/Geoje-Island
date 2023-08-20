@@ -46,28 +46,3 @@ header {
   width: 50vw;
   height: 35vh;
 }
-
-/* menu+scroll 위치 */
-.bg-video > div {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.bottom .menu {
-  color: white;
-  width: 12vw;
-  height: 8vh;
-  font-size: 5vh;
-  border-radius: 15px;
-  text-align: center;
-  line-height: 8vh;
-}
-
-.scroll {
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-}
