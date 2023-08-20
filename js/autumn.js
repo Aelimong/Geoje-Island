@@ -93,7 +93,7 @@ function slideLeft() {
         trigger: image,
         start: "top 60%",
         end: "bottom 20%",
-        scrub: 2, // 스크롤 속도에 따라 애니메이션을 조절
+        scrub: 2, 
       },
     });
   });
@@ -115,10 +115,10 @@ function fadeOut() {
   });
 }
 
-// 두 개의 함수 동시에 작동시킴
 const timeline2 = gsap.timeline();
 
 timeline2.add(slideLeft(), 0);
 timeline2.add(fadeOut(), 0);
 
 document.addEventListener("DOMContentLoaded", timeline2);
+
