@@ -1,114 +1,75 @@
-* {
-  line-height: 150%;
-  letter-spacing: -4%;
-  max-width: 1200px;
-}
-
 li {
   list-style: none;
 }
 
-/* 지도 페이지 만들기*/
-.mapPage {
-  width: 760px;
+/* 추천명소 map */
+.spring-map .map:first-child {
+  width: 816px;
+  height: 700px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.spring-map .imgContainer {
+  width: 816px;
+  overflow-y: scroll;
+  border: 1px solid #02276b;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
   position: relative;
-  margin: 20% auto;
 }
 
-.mapPage #best {
-  width: 100%;
-  height: 45px;
-}
-
-.mapPage #best img {
-  width: 158px;
-  height: 45px;
-}
-.mapPage #best div {
-  position: absolute;
+.spring-map .buttonContainer {
+  width: 816px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 10px;
-  top: 13px;
-  color: white;
-  font-size: 16px;
-  width: 158px;
-  height: 45px;
-  background-image: url(../img/spring/Rectangle\ 127.png);
-}
-
-.mapPage img {
-  width: 760px;
-  height: 500px;
-  margin: 0, auto;
-  /* position: relative; */
-  z-index: 1;
-}
-
-.mapPage i {
-  position: absolute;
-  font-size: 32px;
-  color: #023793;
-  z-index: 10;
-}
-
-/* .mapPage i:hover {
-  color: #8ea84c;
-  font-size: 50px;
-}
-
-.mapPage .pin1:hover {
-  top: 155px;
-  left: 620px;
-  transition: 0.3s;
-} */
-
-.mapPage .pin1 {
-  top: 180px;
-  left: 630px;
-  position: absolute;
-}
-
-.mapPage .pin2 {
-  top: 315px;
-  left: 620px;
-}
-
-.mapPage .pin3 {
-  top: 360px;
-  left: 440px;
-}
-
-.mapPage .pin4 {
-  top: 440px;
-  left: 460px;
-}
-
-.mapPage .mapButton {
-  width: 760px;
-  display: flex;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
   justify-content: space-between;
-  margin-top: 5%;
+  margin-top: 20px;
 }
 
-.mapPage .mapButton div {
+.spring-map .map .title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.spring-map .mainButton {
   background-color: #02276b;
-  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.spring-map .pin1 {
+  position: absolute;
+  bottom: 18px;
+  left: 338px;
+}
+
+.spring-map .pin2 {
+  position: absolute;
+  bottom: -124px;
+  left: 310px;
+}
+
+.spring-map .pin3 {
+  position: absolute;
+  bottom: -166px;
+  left: 196px;
+}
+
+.spring-map .pin4 {
+  position: absolute;
+  bottom: -218px;
+  left: 226px;
+}
+
+.button {
   width: 170px;
   height: 51px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: white;
+  background-color: #8ea84c;
+  color: #e6efff;
   font-size: 16px;
+  text-align: center;
+  line-height: 51px;
+  border-radius: 15px;
 }
 
 /* 양지암 조각 공원 */
@@ -465,6 +426,10 @@ li {
   background-color: red;
 }
 
+#springFestival {
+  overflow: hidden;
+}
+
 #springFestival p {
   margin-top: 1rem;
   color: #02276b;
@@ -499,8 +464,7 @@ li {
 }
 #springFestival .imgContainer1 div:nth-of-type(3) {
   background-image: url(../img/spring/축제3.png);
-}
-
+} 
 #springFestival .imgContainer2 div:nth-of-type(1) {
   background-image: url(../img/spring/축제4.png);
   background-size: cover;
