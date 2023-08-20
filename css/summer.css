@@ -241,7 +241,7 @@ section {
 }
 
 .myeongsa .myeongsa-info .myeongsa-how {
-  border: 2px dashed #02276b;
+  background-color: #ffffff;
   border-radius: 15px;
   padding: 30px 80px;
   margin-bottom: 40px;
@@ -311,7 +311,7 @@ section {
 }
 
 .bogwang .bogwang-info .bogwang-img .bogwang-img-top {
-  background-image: url(../img/summer/summer-main-img.jpg);
+  background-image: url(../img/summer/bogwang-1.png);
   background-repeat: no-repeat;
   width: 500px;
   height: 600px;
@@ -327,6 +327,7 @@ section {
 .sugug .sugug-info {
   width: 100%;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .sugug .sugug-info .images-top {
@@ -341,6 +342,7 @@ section {
 
 .sugug .sugug-info .images-bottom {
   display: flex;
+  justify-content: flex-end;
 }
 
 .sugug .sugug-info .images-bottom img {

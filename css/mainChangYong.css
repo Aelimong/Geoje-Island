@@ -1,0 +1,48 @@
+/* 전체 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 전체 배경 - 종이질감 */
+body#index-bg-paper {
+  background-image: url("../img/paper-bg.jpg");
+}
+
+/* header: 날씨 + 온도 */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.apis {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 3vh;
+  color: #023793;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+/* 비디오 설정 */
+.bg-video {
+  opacity: 85%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 로고 이미지 설정 */
+.logo {
+  position: absolute;
+  z-index: 2;
+  width: 50vw;
+  height: 35vh;
+}

@@ -42,7 +42,7 @@ window.addEventListener("load", () => {
 // 2번째 섹션 가로스크롤
 let tl = gsap.timeline();
 tl.to("#move", {
-  xPercent: -50, // 기본 위치에서 왼쪽으로 40% 만큼 이동 (스크롤 내릴 때 section을 가로로 움직이도록)
+  xPercent: -75, // 기본 위치에서 왼쪽으로 40% 만큼 이동 (스크롤 내릴 때 section을 가로로 움직이도록)
 });
 // 스크롤 Trigger 동작
 ScrollTrigger.create({
