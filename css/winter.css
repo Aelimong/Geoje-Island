@@ -4,6 +4,7 @@
 }
 p {
   font-size: 1.5rem;
+  line-height: 150%;
 }
 
 .location {
@@ -297,6 +298,10 @@ p {
 .swiper-button-prev,
 .swiper-button-next {
   color: #e6efff;
+}
+
+.page6 .p {
+  line-height: 150%;
 }
 
 /* page 6: 지심도 */
