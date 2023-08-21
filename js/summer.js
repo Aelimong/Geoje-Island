@@ -1,6 +1,3 @@
-// Import GSAP library
-const { gsap } = window;
-
 const pins = document.querySelectorAll(".place");
 const buttons = document.querySelectorAll(".mainButton");
 
@@ -27,10 +24,17 @@ pins.forEach((pin) => {
   pin.addEventListener("mouseout", hoverOut);
 });
 
+pins.forEach((pin) => {
+  pin.addEventListener("mouseover", hoverIn);
+});
+
+pins.forEach((pin) => {
+  pin.addEventListener("mouseout", hoverOut);
+});
+
 function hoverInBtn(event) {
   gsap.to(event.target, { opacity: 0.65, duration: 0.3 });
 }
-
 function hoverOutBtn(event) {
   gsap.to(event.target, { opacity: 1, duration: 0.3 });
 }
