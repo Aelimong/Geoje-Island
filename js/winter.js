@@ -3,9 +3,12 @@ const pins = document.querySelectorAll(".place");
 const buttons = document.querySelectorAll(".mainButton");
 
 function hoverIn(event) {
+  // debugger;
+  console.log(event.target);
   gsap.to(event.target, { opacity: 0.65, duration: 0.3 });
   for (let i = 0; i < 4; i++) {
     if (event.target.classList.contains(`pin${i + 1}`)) {
+      console.log(event.target);
       gsap.to(`.bt${i + 1}`, { opacity: 0.65, duration: 0.3 });
       gsap.to(`.pin${i + 1}`, { opacity: 0.65, duration: 0.3 });
     }
@@ -13,6 +16,7 @@ function hoverIn(event) {
 }
 
 function hoverOut(event) {
+  console.log(event.target);
   gsap.to(event.target, { opacity: 1, duration: 0.3 });
   for (let i = 0; i < 4; i++) {
     if (event.target.classList.contains(`pin${i + 1}`)) {
@@ -41,6 +45,7 @@ function hoverOutBtn(event) {
 }
 
 pins.forEach((pin) => {
+  console.log(pin);
   pin.addEventListener("mouseover", hoverIn);
 });
 
