@@ -361,3 +361,12 @@ p {
   transform: translate(-200px, -270px) scale(1.3);
   z-index: 10;
 }
+.page6 #locationTxt{
+  line-height: 23px;
+  margin:0;
+}
+
+.page7 #locationTxt{
+  line-height: 23px;
+  margin:0;
+}
