@@ -478,12 +478,12 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
 /* seciton3(애림) */
 
 .container .info {
-  margin-top: 400px;
 }
 
 .container .info .info-detail {
   width: 70vw;
   margin-bottom: 100px;
+  margin-top: 520px;
 }
 .container .info .info-detail .detail-top {
   width: 100%;
