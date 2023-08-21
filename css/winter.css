@@ -120,25 +120,25 @@ h6 {
 /* page2: map  */
 /* ping */
 
-.winter-map .pin1 {
+.winter-map address.pin1 {
   position: absolute;
-  top: 300px;
-  right: 280px;
+  top: 200px;
+  right: 300px;
 }
 
-.winter-map .pin2 {
+.winter-map address.pin2 {
   position: absolute;
   top: 280px;
   right: 310px;
 }
 
-.winter-map .pin3 {
+.winter-map address.pin3 {
   position: absolute;
   top: 250px;
   right: 200px;
 }
 
-.winter-map .pin4 {
+.winter-map address.pin4 {
   position: absolute;
   left: 360px;
   top: 350px;
@@ -343,6 +343,10 @@ h6 {
 .swiper-button-prev,
 .swiper-button-next {
   color: #e6efff;
+}
+
+.page6 .p {
+  line-height: 150%;
 }
 
 /* page 6: 지심도 */
