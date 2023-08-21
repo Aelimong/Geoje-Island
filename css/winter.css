@@ -1,10 +1,75 @@
-.page {
-  height: 1000px;
-  width: 100%;
+/* ***** 공통 ***** */
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
 }
+
+.page {
+  /* height: 1000px; */
+  width: 100%;
+  margin-top: 200px;
+}
+
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 150%;
+  color: #02276b;
+  letter-spacing: -4%;
+  word-break: keep-all;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -4%;
+  word-break: keep-all;
+}
+
+h4 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -4%;
+  word-break: keep-all;
+}
+
+h6 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -4%;
+  word-break: keep-all;
+}
+
+.button-margin {
+  margin-bottom: 10px;
+}
+
+.place-addr {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.place-addr i {
+  font-size: 1.7em;
+  color: #011842;
+  margin-top: 5px;
+}
+
+.place-addr p {
+  margin-left: 10px;
 }
 
 .location {
@@ -30,14 +95,15 @@ p {
 }
 
 .longbutton {
-  height: 20px;
-  width: 820px;
+  width: 100%;
+  height: 51px;
   background-color: #4e74b7;
-  text-align: center;
-  line-height: 16px;
+  line-height: 51px;
   color: white;
   border-radius: 15px;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .subButton {
@@ -51,54 +117,28 @@ p {
   border-radius: 15px;
 }
 
-/* page 1 */
-.text {
-  position: absolute;
-  color: #02276b;
-  font-weight: bold;
-  z-index: 3;
-}
-
-.text1 {
-  left: 55vw;
-  top: 2vh;
-  font-size: 10vh;
-}
-
-.text2 {
-  left: 25vw;
-  top: 55vh;
-  font-size: 15vh;
-}
-
-.text3 {
-  text-decoration: overline;
-  font-size: 16px;
-  left: 48%;
-}
-
 /* page2: map  */
 /* ping */
 
-.winter-map .pin1 {
+.winter-map address.pin1 {
   position: absolute;
-  top: 300px;
-  right: 280px;
+  top: 200px;
+  right: 300px;
 }
 
-.winter-map .pin2 {
+.winter-map address.pin2 {
   position: absolute;
   top: 280px;
   right: 310px;
 }
 
-.winter-map .pin3 {
+.winter-map address.pin3 {
   position: absolute;
   top: 250px;
   right: 200px;
 }
 
-.winter-map .pin4 {
+.winter-map address.pin4 {
   position: absolute;
   left: 360px;
   top: 350px;
@@ -119,7 +159,6 @@ p {
   text-align: center;
   border-radius: 15px;
 }
-*/
 
 /* 추천명소 map */
 .winter-map .map:first-child {
@@ -150,11 +189,6 @@ p {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-
-/* .winter-map .map .title {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-} */
 
 .winter-map .mainButton {
   background-color: #02276b;
@@ -197,6 +231,10 @@ p {
 }
 
 /* page 3: 거제 식물원 */
+/* .page3 .gardenText {
+  margin: 20px 0;
+} */
+
 .page3 .imgBox {
   position: relative;
   display: flex;
@@ -204,13 +242,27 @@ p {
   justify-content: space-between;
 }
 
-.page3 .leftimages {
-  width: 900px;
-  height: 650px;
+.page3 .imgBox .img-wrapper {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
 }
+
+.page3 .leftimages {
+  padding-right: 15px;
+}
+
+.page3 .garden-text {
+  padding: 15px 0 80px 0;
+}
+
+.page3 .garden-text:last-child {
+  padding: 15px 0 0 0;
+}
+
 .page3 .rightimages {
-  width: 900px;
-  height: 650px;
+  padding-left: 15px;
+  margin-top: 130px;
 }
 
 .page3 p {
@@ -224,21 +276,24 @@ p {
 /* page 4: 포로수용소 */
 
 .page4 .tableContainer {
-  border: 3px solid #8ea84c;
+  border: 1px dashed #8ea84c;
+  border-radius: 15px;
+  padding: 20px 40px;
+}
+
+.page4 .imgBox {
+  margin-bottom: 30px;
 }
 
 .page4 .image {
   border-radius: 15px;
-  height: 400px;
-  width: 500px;
+  width: 60%;
+  margin-right: 30px;
 }
 
 .page4 .prisonBox {
   display: flex;
-}
-
-.page4 .image {
-  margin-right: 50px;
+  align-items: flex-end;
 }
 
 .page4 .prisonExplain {
@@ -249,6 +304,7 @@ p {
 .page4 .buttonContainer {
   margin: 10px;
   line-height: 16px;
+  align-items: center;
 }
 
 .page4 .buttonContainer .buttonText {
@@ -262,29 +318,13 @@ p {
   line-height: 16px;
 }
 
-.page4 .prisonExplain {
-  float: right;
-}
-
-.page4 .prisonTxtBox {
-  text-align: right;
-}
-
 /* page 5: 고현시장 */
+.page5 {
+  flex-wrap: nowrap;
+}
+
 .swiper {
   width: 100%;
-  height: 700px;
-}
-
-.swiper .swiper-wrapper .swiper-slide {
-  width: 200px;
-  height: 100%;
-  border: #02276b;
-  text-align: center;
-  line-height: 200px;
-  box-sizing: border-box;
-  font-size: 25px;
-  border-radius: 15px;
 }
 
 .swiper .swiper-wrapper .swiper-slide .image {
@@ -293,6 +333,11 @@ p {
   height: 100%;
   border-radius: 15px;
 }
+
+.page5 h2 {
+  margin-top: 20px;
+}
+
 /* pagination custom */
 /* 화살표 커스텀 */
 .swiper-button-prev,
@@ -309,6 +354,9 @@ p {
   margin-left: auto;
   width: 100%;
 }
+.page6 .pageContainer {
+  width: 100%;
+}
 
 .imgContainerBox {
   display: flex;
@@ -318,14 +366,18 @@ p {
 
 .page6 .imageContainer {
   display: flex;
-  align-content: space-evenly;
+  align-items: center;
   width: 100%;
 }
 
 .page6 .image {
   border-radius: 15px;
-  height: 300px;
-  width: 500px;
+  width: 630px;
+  transition: width 1s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.page6 .imageContainer:hover .image {
+  width: 400px;
 }
 
 .page6 .imageText {
@@ -338,35 +390,39 @@ p {
 }
 
 /* page 7: 제철음식 */
-.page7 {
-  border-radius: 15px;
-  border: 2px solid #4e74b7;
-}
 .page7 .subContainer {
-  width: 800px;
-  height: 800px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 20px;
 }
 
 .page7 .foodContainer {
   display: flex;
+  align-items: center;
+  padding: 30px 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .page7 .image {
   position: relative;
   border-radius: 15px;
-  width: 400px;
-  height: 400px;
-}
-
-.page7 .foodContainer {
-  border: 3px blue;
+  width: 100%;
 }
 
 .page7 .foodContainer .buttonContainer {
   flex-direction: column;
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+.page7 .foodContainer .buttonContainer .subButton {
+  height: 41px;
+  line-height: 41px;
+  margin-bottom: 10px;
 }
 
 .page7 .subContainer .buttonContainer .button {
@@ -378,36 +434,45 @@ p {
 }
 
 .restaurant {
-  position: relative;
-  top: 100px;
+  padding: 20px 40px 50px;
 }
+
+.restaurant h4 {
+  margin-bottom: 20px;
+}
+
 .page7 .textBox {
   font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.page7 .buttonContainer {
+  justify-content: space-evenly;
 }
 
 /* page 8: 지역축제 */
-
-.page8 {
-  border-radius: 15px;
-  border: 2px solid #4e74b7;
-}
-
 .page8 .subContainer {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10%;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 20px;
   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 30px 50px;
+  align-items: center;
 }
 
 .festivalImgContainer {
+  border-radius: 15px;
+  width: 30vw;
+  object-fit: cover;
   transition: opacity 0.3s;
+  position: relative;
 }
 
-.festivalNoticeContainerr {
-  flex: 1;
+.festivalNoticeContainer {
+  width: 100%;
 }
 
 .hoverText {
@@ -453,6 +518,7 @@ p {
 .festivalImgContainer img:hover {
   opacity: 0.8; /* 이미지에 hover 시 투명도 변경 */
 }
+
 .photo-cell {
   position: relative;
   overflow: hidden;
@@ -460,6 +526,12 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.photo-cell img {
+  width: 100%;
 }
 
 .photo-cell:hover .hoverText {

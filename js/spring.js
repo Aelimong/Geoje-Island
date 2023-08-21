@@ -6,7 +6,7 @@ const pins = document.querySelectorAll(".place");
 const buttons = document.querySelectorAll(".mainButton");
 
 function hoverIn(event) {
-  gsap.to(event.target, { opacity: 0.65, duration: 0.3 });
+  gsap.to(event.target, { color: red, duration: 0.3 });
   console.log(event.target.classList.contains(`pin4`));
   for (let i = 0; i < 4; i++) {
     if (event.target.classList.contains(`pin${i + 1}`)) {
