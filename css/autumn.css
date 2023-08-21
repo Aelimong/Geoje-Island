@@ -14,10 +14,12 @@ section {
   font-weight: 700;
   margin-bottom: 10px;
 }
+
 p {
   margin-bottom: 10px;
   margin-top: 5px;
 }
+
 .location {
   display: flex;
   align-items: center;
@@ -25,7 +27,9 @@ p {
 
 #locationTxt {
   margin-bottom: 10px;
+  margin-left: 5px;
 }
+
 .buttonContainer {
   display: flex;
 }
@@ -40,6 +44,7 @@ p {
   line-height: 51px;
   border-radius: 15px;
 }
+
 .greenBar {
   width: 816px;
   height: 41px;
@@ -51,10 +56,9 @@ p {
   margin-bottom: 10px;
 }
 
-/* .container {
-  display: flex;
-  margin-bottom: 10px;
-} */
+.place {
+  margin-bottom: 20px;
+}
 
 /* ***** page2 ***** */
 .page2 .map:first-child {
@@ -84,14 +88,17 @@ p {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
+
 .page2 .mainButton {
   background-color: #02276b;
 }
+
 .page2 .pin1 {
   position: absolute;
   bottom: 170px;
   left: 290px;
 }
+
 .page2 .pin2 {
   position: absolute;
   top: 400px;
@@ -189,7 +196,11 @@ p {
   width: 816px;
   height: 51px;
 }
-.page4 .p4Container p {
+.page4 .p4Container1 p {
+  line-height: 51px;
+  margin-left: 10px;
+}
+.page4 .p4Container2 p {
   line-height: 51px;
   margin-left: 10px;
 }
@@ -205,7 +216,7 @@ p {
 
 .page5 .txtContainer {
   width: 412px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 .page5 .txtContainer .content {
   line-height: 150%;
