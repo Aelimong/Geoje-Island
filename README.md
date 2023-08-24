@@ -27,22 +27,22 @@ Web (Frontend Page) <br />
 ### 💡 기술 스택
 IDE <br />
 
-<img src="https://img.shields.io/badge/visual%20studio%20code-%23007ACC.svg?&style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+<img src="https://img.shields.io/badge/visual%20studio%20code-%23007ACC.svg?&style=flat&logo=visual%20studio%20code&logoColor=white" />
 
 Library <br />
 
-<img src="https://img.shields.io/badge/greensock-%2388CE02.svg?&style=for-the-badge&logo=greensock&logoColor=black" />
-  <img src="https://img.shields.io/badge/swiper-%236332F6.svg?&style=for-the-badge&logo=swiper&logoColor=white" />
-  <img src="https://img.shields.io/badge/jquery-%230769AD.svg?&style=for-the-badge&logo=jquery&logoColor=white" />
+<img src="https://img.shields.io/badge/greensock-%2388CE02.svg?&style=flat&logo=greensock&logoColor=black" />
+  <img src="https://img.shields.io/badge/swiper-%236332F6.svg?&style=flat&logo=swiper&logoColor=white" />
+  <img src="https://img.shields.io/badge/jquery-%230769AD.svg?&style=flat&logo=jquery&logoColor=white" />
 
 Language <br />
 
-<img src="https://img.shields.io/badge/html5-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/css3-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/html5-%23E34F26.svg?&style=flat&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/css3-%231572B6.svg?&style=flat&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />
 
 Deploy Tool <br />
-<img src="https://img.shields.io/badge/netlify-%2300C7B7.svg?&style=for-the-badge&logo=netlify&logoColor=white" />
+<img src="https://img.shields.io/badge/netlify-%2300C7B7.svg?&style=flat&logo=netlify&logoColor=white" />
 <br /> 
 <br /> 
 
