@@ -53,29 +53,42 @@ Deploy Tool <br />
 <br />
 
 ## 🛠 주요 기능 & 역할 <br />
-1. 정애림      <br />
-<br />
-2. 김은홍 - 메인 페이지 디자인, 가을 페이지 담당 <br />
-메인 페이지 UI 구성 <br />
-계절 페이지 공통 디자인 구성 <br />
-[추천명소] 지도 내 핀과 버튼을 연동시키고 mouseOver와 mouseOut이 gsap과 함께 구현되는 함수 작성 <br /> 
-[사진 슬라이더] 페이지 스크롤에 따라 사진이 자연스럽게 움직이도록 gsap과 scrollTrigger를 이용하여 함수 작성   <br />
-<br />
-3. 유창용  - Main page  1st Section 구현, Winter Page <br />
-Main page 1st Section UI 구현 <br />
-날씨예보 API를 이용하여 거제도의 기상상황과 온도 표시 구현 <br />
-Winter page UI 구성 및 구현 <br />
-Gsap 라이브러리를 통해 scroll시 Winter page의 section에 해당하는 부분이 fadeIn,Out 될수 있도록 구현 <br />
-Swiper를 이용해 갤러리 Carousel 구현 <br />
-<br />                                                                                            
-   4. 한정윤 - loading page, Main page, spring page UI 디자인 및 구현 <br />
-JavaScript를 이용한 loading page 구현 <br />
-mian page 2,3 seciton UI 구성 <br />
-gasap을 사용하여 main page 스크롤시 페이지가 가로로 넘어가는 기능 구현 <br />
-spring page UI 구성 및 구현 <br />
-gsap을 활용해 스크롤 위치에 따라 컨텐츠가 나타나는 현상 구현 <br />
-swiper를 이용해 사진이 자동으로 왼쪽으로 넘어가는 기능 구현  <br />
+**1. 정애림 - Main page, Sub page 구현, Summer page  UI 디자인 및 구현**
 
+- Main page 티켓 섹션, 메인 메뉴 구현
+- 티켓 섹션 - 현재 계절에 따라 티겟 이미지가 바뀌고 클릭시 해당 계절 페이지로 이동하는 기능 구현
+- 메인 메뉴 - Javascript로 스크롤 감지 기능을 구현하여 스크롤 내릴 때 안 보이고 올릴 때 보이도록 구현
+- Sub page 사이드 메뉴, Footer 구현, 최상단 춘하추동 섹션 구현
+- 사이드 메뉴, Footer 구현시 include-html 속성 사용하여 정적 페이지 연결, header/footer.html만 수정하면 모든 서브페이지에 변경사항이 적용 되어 유지보수하기 용이하게 구현
+- Footer - pageTop아이콘을 추가하고 window.scrollTo 메서드를 이용하여 최상단으로 돌아가도록 구현
+- Summer page UI 디자인 및 구현
+- [댕수욕장] Swiper를 이용해 갤러리 슬라이드 구현
+- Winter page 일부 구현
+- [신년행사] 섹션 클릭시 Javascript와 @keyframes을 이용하여 랜덤 색상의 폭죽이 터지는 애니메이션 구현 
+
+**2. 김은홍 - Main page UI 디자인, Sub page 공통 UI 디자인, 가을 페이지 UI 디자인 및 코드 구현**
+
+- Main page 레이아웃 구성 및 UI 디자인
+- Sub page 공통 UI 디자인
+- [추천명소] 지도 내 핀과 버튼을 연동시키고 mouseOver와 mouseOut이 GSAP과 함께 구현되는 함수 작성
+- [사진 슬라이더] 페이지 스크롤에 따라 사진이 자연스럽게 움직이도록 GSAP과 ScrollTrigger를 이용하여 함수 작성  
+
+**3. 유창용  - Main page  1st Section 구현, Winter Page UI 디자인 및 구현**
+
+- Main page 1st Section UI 구현
+- 공공데이터포털 Open API를 이용하여 현재 거제도의 기상 상황과 온도 표시 구현
+- Winter page UI 구성 및 구현
+- [전체] GSAP을 활용하여 scroll시 Winter page의 section에 해당하는 부분이 fade-In, fade-out 될수 있도록 구현
+- [전통시장] Swiper를 이용해 갤러리 Carousel 구현
+
+**4. 한정윤 - Loading page, Main page, Spring page UI 디자인 및 구현**
+
+- JavaScript를 이용한 Loading page 구현
+- Main page 2, 3 seciton UI 구성
+- GSAP을 사용하여 main page 스크롤시 페이지가 가로로 넘어가는 기능 구현
+- Spring page UI 구성 및 구현
+- [전체] GSAP을 활용해 스크롤 위치에 따라 컨텐츠가 나타나는 현상 구현
+- [봄축제] Swiper를 이용해 사진이 자동으로 왼쪽으로 넘어가는 기능 구현 
 
 
 
