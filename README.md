@@ -1,13 +1,23 @@
 # 거제온(溫)섬
 ### 거제도, 따스한 사계절 온기 넘치는 섬
-#### 배포링크: https://geoje-island.netlify.app
+
+> 🏆 SeSAC 주최 강동캠퍼스 웹 퍼블리싱 프로젝트 최우수상
+
+<br/>
+
+###### 배포 링크 : https://geoje-island.netlify.app
 
 <br />
 
-## 프로젝트 설명 <br />
-- 거제도의 계절 별 관광 정보를 편하게 접할 수 있는 관광 홍보 사이트를 제작하였습니다.<br />
-- 프론트엔드 영역과 UI/UX 디자인을 통해 페이지를 구현하였습니다. <br />
-- HTML, CSS, JAVASCRIPT와 GSAP, JQUERY, SWIPER를 사용하여 프로젝트를 완성하였습니다. <br />  
+## 프로젝트 설명
+``` markdown
+- 거제도의 계절 별 관광 정보를 편하게 접할 수 있는 관광 홍보 사이트를 제작하였습니다.
+- 프론트엔드 영역과 UI/UX 디자인을 통해 페이지를 구현하였습니다.
+- HTML, CSS, JAVASCRIPT와 GSAP, JQUERY, SWIPER를 사용하여 프로젝트를 완성하였습니다.
+```
+
+
+
 
 <사진넣기>
 
@@ -19,37 +29,56 @@
 <br /> 
 
 ## 📎 프로젝트 개요
-프로젝트명 : 거제온(溫)섬<br />
-### ⏱ 기간
-2023.08.04 ~ 2023.08.21 <br />
-### 🖥 플랫폼 
-Web (Frontend Page) <br />
-### 💡 기술 스택
+프로젝트명 : 거제온(溫)섬
+<br /><br />
 
-IDE <br />
+## ⏱ 기간
+2023.08.04 ~ 2023.08.21
+<br /><br />
 
-<img src="https://img.shields.io/badge/visual%20studio%20code-%23007ACC.svg?&style=flat&logo=visual%20studio%20code&logoColor=white" />
+## 🖥 플랫폼 
+Web (Frontend Page)
+<br /><br />
 
-Library <br />
+## 💡 기술 스택
 
-<img src="https://img.shields.io/badge/greensock-%2388CE02.svg?&style=flat&logo=greensock&logoColor=black" />
-  <img src="https://img.shields.io/badge/swiper-%236332F6.svg?&style=flat&logo=swiper&logoColor=white" />
-  <img src="https://img.shields.io/badge/jquery-%230769AD.svg?&style=flat&logo=jquery&logoColor=white" />
+**IDE**
+<div style="display: flex; wrap-flex: wrap;">
+ <img src="https://img.shields.io/badge/visual%20studio%20code-%23007ACC.svg?&style=flat&logo=visual%20studio%20code&logoColor=white" />
+</div>
+<br>
 
-Language <br />
+**Library**
+<div style="display: flex; wrap-flex: wrap;">
+ <img src="https://img.shields.io/badge/greensock-%2388CE02.svg?&style=flat&logo=greensock&logoColor=black" />
+ <img src="https://img.shields.io/badge/swiper-%236332F6.svg?&style=flat&logo=swiper&logoColor=white" />
+ <img src="https://img.shields.io/badge/jquery-%230769AD.svg?&style=flat&logo=jquery&logoColor=white" />
+</div>
+<br>
 
-<img src="https://img.shields.io/badge/html5-%23E34F26.svg?&style=flat&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/css3-%231572B6.svg?&style=flat&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />
+**Language**
+<div style="display: flex; wrap-flex: wrap;">
+ <img src="https://img.shields.io/badge/html5-%23E34F26.svg?&style=flat&logo=html5&logoColor=white" />
+ <img src="https://img.shields.io/badge/css3-%231572B6.svg?&style=flat&logo=css3&logoColor=white" />
+ <img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />
+</div>
+<br>
 
-Deploy Tool <br />
-<img src="https://img.shields.io/badge/netlify-%2300C7B7.svg?&style=flat&logo=netlify&logoColor=white" />
+**Deploy Tool**
+<div style="display: flex; wrap-flex: wrap;">
+ <img src="https://img.shields.io/badge/netlify-%2300C7B7.svg?&style=flat&logo=netlify&logoColor=white" />
+</div>
+
 <br />
 <br /> 
 
 ## 👩🏻‍💻 팀원 소개 <br />
-정애림, 김은홍, 유창용, 한정윤
-
+||<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />|<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />|<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />|<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />|
+|:---:|:---:|:---:|:---:|:---:|
+|**Name**|정애림(리더)|한정윤|유창용|한정윤|
+|**Main Page**|코드 개발|디자인|코드 개발|코드 개발|
+|**Sub Page**|Summer|Autumn|Winter|Spring|
+|**Others**|코드 점검|디자인 점검, PPT|발표|리소싱|
 <br />
 
 ## 🛠 주요 기능 & 역할 <br />
@@ -64,14 +93,16 @@ Deploy Tool <br />
 - Summer page UI 디자인 및 구현
 - [댕수욕장] Swiper를 이용해 갤러리 슬라이드 구현
 - Winter page 일부 구현
-- [신년행사] 섹션 클릭시 Javascript와 @keyframes을 이용하여 랜덤 색상의 폭죽이 터지는 애니메이션 구현 
+- [신년행사] 섹션 클릭시 Javascript와 @keyframes을 이용하여 랜덤 색상의 폭죽이 터지는 애니메이션 구현
+<br>
 
 **2. 김은홍 - Main page UI 디자인, Sub page 공통 UI 디자인, 가을 페이지 UI 디자인 및 코드 구현**
 
 - Main page 레이아웃 구성 및 UI 디자인
 - Sub page 공통 UI 디자인
 - [추천명소] 지도 내 핀과 버튼을 연동시키고 mouseOver와 mouseOut이 GSAP과 함께 구현되는 함수 작성
-- [사진 슬라이더] 페이지 스크롤에 따라 사진이 자연스럽게 움직이도록 GSAP과 ScrollTrigger를 이용하여 함수 작성  
+- [사진 슬라이더] 페이지 스크롤에 따라 사진이 자연스럽게 움직이도록 GSAP과 ScrollTrigger를 이용하여 함수 작성
+<br>
 
 **3. 유창용  - Main page  1st Section 구현, Winter Page UI 디자인 및 구현**
 
@@ -80,6 +111,7 @@ Deploy Tool <br />
 - Winter page UI 구성 및 구현
 - [전체] GSAP을 활용하여 scroll시 Winter page의 section에 해당하는 부분이 fade-In, fade-out 될수 있도록 구현
 - [전통시장] Swiper를 이용해 갤러리 Carousel 구현
+<br>
 
 **4. 한정윤 - Loading page, Main page, Spring page UI 디자인 및 구현**
 
@@ -89,6 +121,7 @@ Deploy Tool <br />
 - Spring page UI 구성 및 구현
 - [전체] GSAP을 활용해 스크롤 위치에 따라 컨텐츠가 나타나는 현상 구현
 - [봄축제] Swiper를 이용해 사진이 자동으로 왼쪽으로 넘어가는 기능 구현 
+<br>
 
 
 
