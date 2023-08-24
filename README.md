@@ -25,6 +25,7 @@
 ### 🖥 플랫폼 
 Web (Frontend Page) <br />
 ### 💡 기술 스택
+
 IDE <br />
 
 <img src="https://img.shields.io/badge/visual%20studio%20code-%23007ACC.svg?&style=flat&logo=visual%20studio%20code&logoColor=white" />
@@ -43,7 +44,7 @@ Language <br />
 
 Deploy Tool <br />
 <img src="https://img.shields.io/badge/netlify-%2300C7B7.svg?&style=flat&logo=netlify&logoColor=white" />
-<br /> 
+<br />
 <br /> 
 
 ## 👩🏻‍💻 팀원 소개 <br />
