@@ -17,9 +17,7 @@
 ```
 
 
-
-
-<사진넣기>
+<img width="100%" src="https://geoje-island.netlify.app/img/main/GeogeIntroduce_size.gif" alt="geoje-service"/>
 
  <br /> 
  
