@@ -404,8 +404,16 @@ footer .pageTop i {
   .header {
     display: none;
   }
+
+  .contents {
+    width: 100%;
+    padding: 0 48px;
+  }
 }
 
 /* 모바일 규격 */
 @media screen and (max-width: 767px) {
+  .contents {
+    padding: 0 24px;
+  }
 }
