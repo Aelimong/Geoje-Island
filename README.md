@@ -71,12 +71,12 @@ Web (Frontend Page)
 <br /> 
 
 ## 👩🏻‍💻 팀원 소개 <br />
-||<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />|<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />|<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />|<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat&logo=javascript&logoColor=black" />|
+||<img src="https://github.com/Aelimong/Geoje-On-Sum/assets/136290263/ada39697-01ca-4aa8-8329-7879fea089c5" style="width:100px" />|<img src="https://github.com/Aelimong/Geoje-On-Sum/assets/136290263/3a8baca8-688a-4b1d-97f0-3610d87ddebf" style="width:100px" />|<img src="https://github.com/Aelimong/Geoje-On-Sum/assets/136290263/9c27dfec-37d6-4c0b-8341-e3d36f58630d" style="width:100px" />|<img src="https://github.com/Aelimong/Geoje-On-Sum/assets/136290263/df46849f-b2f3-4ced-853f-ddff5a760314)" style="width:100px" />|
 |:---:|:---:|:---:|:---:|:---:|
-|**Name**|정애림(리더)|한정윤|유창용|한정윤|
+|**Name**|정애림(리더)|김은홍|유창용|한정윤|
 |**Main Page**|코드 개발|디자인|코드 개발|코드 개발|
 |**Sub Page**|Summer|Autumn|Winter|Spring|
-|**Others**|코드 점검|디자인 점검, PPT|발표|리소싱|
+|**Others**|코드 점검|디자인 점검|발표|리소싱|
 <br />
 
 ## 🛠 주요 기능 & 역할 <br />
