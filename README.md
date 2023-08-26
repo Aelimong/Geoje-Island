@@ -8,26 +8,19 @@
 
 - vs code
 
-
 ### Library
 
 - Swiper.js
 - GSAP
 
-
 ### Language
 
 - HTML, CSS, Javascript, JQuery
-  
 
 ### Data
 
 - 공공 데이터 포털 Open API
 
-
 ### Deploy Tool
 
-
-
 - Netlify
-
