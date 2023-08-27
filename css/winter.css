@@ -739,3 +739,60 @@ h6 {
     opacity: 1;
   }
 }
+
+/* responsive tablet */
+@media screen and (max-width: 1023px) {
+  /* 전체 설정 */
+  .page {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 20%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  /* page 3: 거제 식물원 */
+
+  .page3 .imgBox {
+    display: inline-block;
+  }
+
+  /* page 4: 거제 포로수용소 */
+
+  .page4 .imgBox .prisonBox {
+    display: inline-block;
+  }
+  .page4 .buttonText {
+    font-size: 16px;
+  }
+  /* page 6: 지심도 */
+  .page6 .image {
+    width: 250px;
+    transition: none;
+  }
+  .page6 .imageContainer:hover .image {
+    width: 250px;
+  }
+  .page6 .imageText {
+    width: 100%;
+  }
+  /* page 8: 지역축제 */
+}
+
+/* responsive mobile */
+@media screen and (max-width: 767px) {
+  /* 공통설정*/
+
+  p {
+    font-size: 14px;
+  }
+
+  /* page 8: 지역축제 */
+  .page8 .festivalNotice {
+    width: 250px;
+    height: 500px;
+  }
+}
