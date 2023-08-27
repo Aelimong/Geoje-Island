@@ -454,3 +454,77 @@ li {
   margin: 10px 10px 10px 0;
   /* overflow: hidden; */
 }
+
+/* .contents .four-section .four-img {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 0;
+  width: 800px;
+  height: 500px;
+} */
+/*  태블릿 */
+@media screen and (max-width: 1023px) {
+  /* 사계절 공통 섹션 */
+  .contents .four-section {
+    width: 100%;
+  }
+
+  .contents .txt-box {
+    width: 95%;
+  }
+
+  /* 지도 섹션 */
+  .contents .spring-map .map:first-child {
+    margin: auto;
+  }
+
+  /* 양지암 조각 공원 */
+  #ygPage {
+    justify-content: center;
+  }
+
+  /* 공곶이 수목원 */
+  #ggPage img {
+    margin: auto;
+  }
+
+  #ggPage p {
+    margin: auto;
+  }
+
+  #ggPage .flower h1 {
+    margin-left: 1em;
+  }
+
+  #ggPage .flowerButton {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  /* 학동 유채꽃밭 */
+  /* 제철음식 */
+  #food .title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #food .title img {
+    left: 0;
+    margin-left: auto;
+    display: flex;
+  }
+
+  /* 봄축제 */
+  #springFestival h1 {
+    margin-top: 10px;
+  }
+}
+
+/*  핸드폰 */
+@media screen and (max-width: 767px) {
+  /* 사계절 공통 섹션 */
+  .contents .four-section {
+    background-color: pink;
+    width: 100%;
+  }
+}
