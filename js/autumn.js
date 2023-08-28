@@ -125,3 +125,14 @@ timeline2.add(fadeOut(), 0);
 
 document.addEventListener("DOMContentLoaded", timeline2);
 
+// 반응형
+
+// window.addEventListener('resize', function() {
+//   if (window.innerWidth < 768) {
+//       // 화면 너비가 768px 미만인 경우 메뉴 숨기기
+//       document.getElementById('menu').style.display = 'none';
+//   } else {
+//       // 화면 너비가 768px 이상인 경우 메뉴 표시
+//       document.getElementById('menu').style.display = 'block';
+//   }
+// });
