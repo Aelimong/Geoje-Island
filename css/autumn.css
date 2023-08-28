@@ -1,5 +1,4 @@
 /* ***** 공통 ***** */
-
 section {
   display: flex;
   justify-content: center;
@@ -132,14 +131,13 @@ p {
   margin-bottom: 15px;
 }
 
-
 .page3 .buttonContainer {
   display: flex;
   width: 816px;
   justify-content: space-between;
   margin-bottom: 20px;
-} 
-.page3 .place1Sub img{
+}
+.page3 .place1Sub img {
   margin-bottom: 15px;
 }
 .page3 .greenBar {
@@ -174,7 +172,6 @@ p {
 .page4 p {
   line-height: 150%;
 }
-
 
 .page4 .p4Container1 {
   display: flex;
@@ -224,7 +221,9 @@ p {
 .page5 .imgbox img {
   margin-bottom: 18px;
 }
-
+.page5 .page5Res {
+  display: none;
+}
 /* ***** page6 ***** */
 
 .page6 {
@@ -284,47 +283,51 @@ p {
   position: relative;
   overflow: scroll;
 }
+.page7 .imgContainer img {
+  width: 350px;
+  height: 350px;
+}
 
-.oyster1{
+.oyster1 {
   margin-right: 10px;
 }
-.oyster2{
+.oyster2 {
   margin-right: 10px;
 }
-.oyster3{
+.oyster3 {
   margin-right: 10px;
 }
-.page7 .imgContainer img
-
 
 /* 사진이 호버되면 확대된다 */
-.page7 .p7Container .imgContainer .oyster1 {
-  transition: all 0.85s ease 0s;
-}
-.oyster1:hover {
-  transform: translate(50px, 50px) scale(1.3);
-  z-index: 7;
-}
-.page7 .p7Container .imgContainer .oyster2 {
-  transition: all 0.85s ease 0s;
-}
-.oyster2:hover {
-  transform: translate(-200px, 50px) scale(1.3);
-  z-index: 8;
-}
-.page7 .p7Container .imgContainer .oyster3 {
-  transition: all 0.85s ease 0s;
-}
-.oyster3:hover {
-  transform: translate(-200px, 50px) scale(1.3);
-  z-index: 9;
-}
-.page7 .p7Container .imgContainer .oyster4 {
-  transition: all 0.85s ease 0s;
-}
-.oyster4:hover {
-  transform: translate(-200px, 50px) scale(1.3);
-  z-index: 10;
+@media screen and (min-width: 1024px) {
+  .page7 .p7Container .imgContainer .oyster1 {
+    transition: all 0.85s ease 0s;
+  }
+  .oyster1:hover {
+    transform: translate(50px, 50px) scale(1.3);
+    z-index: 7;
+  }
+  .page7 .p7Container .imgContainer .oyster2 {
+    transition: all 0.85s ease 0s;
+  }
+  .oyster2:hover {
+    transform: translate(-200px, 50px) scale(1.3);
+    z-index: 8;
+  }
+  .page7 .p7Container .imgContainer .oyster3 {
+    transition: all 0.85s ease 0s;
+  }
+  .oyster3:hover {
+    transform: translate(-200px, 50px) scale(1.3);
+    z-index: 9;
+  }
+  .page7 .p7Container .imgContainer .oyster4 {
+    transition: all 0.85s ease 0s;
+  }
+  .oyster4:hover {
+    transform: translate(-200px, 50px) scale(1.3);
+    z-index: 10;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -342,7 +345,7 @@ p {
     align-items: center;
     width: 100%;
     /* background-color: pink; */
-    border: 2px solid red;
+    border: 4px solid red;
   }
 
   .content {
@@ -352,17 +355,7 @@ p {
     width: 821px;
   }
   /*  */
-
-  
 }
-
-/* 작은 화면에 대한 스타일 */
-/* @media screen and (max-width: 768px) {
-} */
-
-/* 중간 크기 화면에 대한 스타일 */
-/* @media screen and (min-width: 769px) and (max-width: 1024px) {
-} */
 
 @media screen and (max-width: 767px) {
   .static {
@@ -372,23 +365,23 @@ p {
     align-items: center;
     /* width: 100%; */
     /* background-color: pink; */
-    border: 2px solid blue;
+    border: 4px solid blue;
   }
-  .page3{
+  .page3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
   }
-  .page3 .imgContainer img{
+  .page3 .imgContainer img {
     margin-top: 10px;
   }
   .page3 .imgBox p {
     line-height: 150%;
     width: 400px;
   }
-  
-  .page3 .place1Sub{
+
+  .page3 .place1Sub {
     width: 100%;
     height: 100%;
     display: flex;
@@ -396,22 +389,22 @@ p {
     align-items: center;
     align-content: center;
   }
-  .page3 .place1Sub img{
+  .page3 .place1Sub img {
     width: 400px;
   }
-  .page3 .place1Sub .greenBar{
+  .page3 .place1Sub .greenBar {
     width: 400px;
     margin-top: 10px;
   }
-  .page3 .buttonContainer{
+  .page3 .buttonContainer {
     flex-direction: column;
     width: 400px;
   }
-  .page3 .button{
+  .page3 .button {
     width: 400px;
     margin-top: 10px;
   }
-  .page3 .button1{
+  .page3 .button1 {
     width: 400px;
     margin-top: 0;
   }
@@ -421,12 +414,11 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .page3 p{
+  .page3 p {
     width: 400px;
   }
 
-
-  .page4{
+  .page4 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -434,30 +426,96 @@ p {
     height: 100%;
   }
 
-  .page4 .imgBox{
+  .page4 .imgBox {
     flex-direction: column;
     width: 400px;
     height: 100%;
   }
-  .page4 .imgBox img{
+  .page4 .imgBox img {
     width: 400px;
   }
-  .page4 .imgBox p{
+  .page4 .imgBox p {
     width: 400px;
   }
 
-  .page4 .p4Box{
+  .page4 .p4Box {
     width: 400px;
   }
-  .page4 .greenBar{
+  .page4 .greenBar {
     width: 400px;
   }
-  .page4 .p4Box .button{
-    width:400px;
+  .page4 .p4Box .button {
+    width: 400px;
   }
-  
-  
 
+  .page4 .p4Container1 p {
+    display: none;
+  }
+  .page4 .p4Container1 {
+    background-color: transparent;
+  }
+  .page4 .p4Container2 p {
+    display: none;
+  }
+  .page4 .p4Container2 {
+    background-color: transparent;
+  }
+  .page5 .page5Container {
+    display: none;
+  }
+  .page5 .page5Res {
+    display: block;
+  }
+  .page5 .txtContainer .content {
+    line-height: 150%;
+    width: 412px;
+    height: 150%;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
+  .page6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+  }
+  .page6 #place {
+    width: 400px;
+  }
+
+  .page7 .p7Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+  }
+  .page7 .txtBox {
+    width: 400px;
+  }
+  .page7 .greenBar {
+    width: 400px;
+    margin: 0;
+  }
+  .page7 .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .page7 .imgContainer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page7 .button{
+    margin-top: 5px;
+  }
+
+  .page7 .imgContainer img {
+    width: 400px;
+    margin-top: 10px;
+  }
 }
-
