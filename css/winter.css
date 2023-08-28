@@ -747,6 +747,7 @@ h6 {
     width: 60%;
     display: flex;
     justify-content: center;
+    margin: 20%;
   }
 
   p {
