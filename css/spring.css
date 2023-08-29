@@ -450,14 +450,6 @@ li {
   margin: 10px 10px 10px 0;
 }
 
-/* .contents .four-section .four-img {
-  position: relative;
-  border-radius: 15px;
-  overflow: hidden;
-  z-index: 0;
-  width: 800px;
-  height: 500px;
-} */
 /*  태블릿 */
 @media screen and (max-width: 1023px) {
   /* 사계절 공통 섹션 */
@@ -516,10 +508,160 @@ li {
 }
 
 /*  핸드폰 */
+/*  20/ 14 */
 @media screen and (max-width: 767px) {
+  .contents {
+    width: 100%;
+  }
   /* 사계절 공통 섹션 */
   .contents .four-section {
-    background-color: pink;
     width: 100%;
+  }
+
+  .contents .txt-box {
+    margin-top: 1vw;
+  }
+
+  /* 지도섹션 */
+  .contents .spring-map {
+    width: 100%;
+  }
+
+  /* 양지암 조각 공원 */
+
+  #ygPage .yg-left h1 {
+    font-size: 20px;
+  }
+
+  #ygPage .yg-left p,
+  #ygPage .yg-left h2 {
+    font-size: 12px;
+  }
+
+  #ygPage .yg-right img {
+    height: 100%;
+  }
+
+  /* 공곳이 수목원  */
+
+  #ggPage h1 {
+    font-size: 20px;
+  }
+
+  #ggPage .where h2 {
+    font-size: 14px;
+  }
+
+  #ggPage img {
+    height: auto;
+    width: 100%;
+  }
+
+  #ggPage p {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  /*  */
+  #ggPage .flower h1 {
+    margin-left: 0;
+  }
+
+  #ggPage .flowerBox {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  #ggPage .flower img {
+    width: 100%;
+    height: 30%;
+    margin: 0;
+  }
+
+  #ggPage .flower .flowerImg {
+    margin-left: 100px;
+    height: 100%;
+    width: 50%;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    margin: 10px 0;
+  }
+
+  #ggPage .flower img:nth-of-type(2) {
+    margin: 0;
+  }
+
+  #ggPage .flower h1 {
+    font-size: 20px;
+  }
+
+  #ggPage .flowerButton {
+    left: -0.5vw;
+    flex-direction: column;
+    background-color: red;
+    width: 30%;
+    margin: 10px;
+    position: relative;
+  }
+
+  #ggPage .flowerButton div {
+    font-size: 14px;
+    width: 17rem;
+  }
+
+  #ggPage .flowerButton div:nth-of-type(2) {
+    margin: 0;
+  }
+
+  /* 학동 유채꽃밭 */
+
+  #hdPage img {
+    width: 100vw;
+    height: 80vh;
+  }
+
+  #hdPage h1 {
+    font-size: 20px;
+  }
+
+  #hdPage .where h2 {
+    font-size: 14px;
+  }
+  #hdPage p {
+    font-size: 14px;
+  }
+
+  /* 제철 음식 */
+  #food .title h1 {
+    font-size: 20px;
+  }
+
+  #food .title p {
+    font-size: 14px;
+  }
+
+  #food .food1 dl {
+    margin: 5vw 8vw;
+  }
+
+  #food .food2 dl {
+    margin: 5vw 8vw;
+  }
+  #food .food1 dt,
+  #food .food1 dd,
+  #food .food2 dt,
+  #food .food2 dd {
+    font-size: 14px;
+  }
+
+  /* 봄 축제 */
+  #springFestival h1 {
+    font-size: 20px;
+  }
+
+  #springFestival p {
+    font-size: 14px;
   }
 }
