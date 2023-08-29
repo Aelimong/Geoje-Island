@@ -24,7 +24,6 @@
       href="../img/favicon/favicon-16x16.png"
     />
     <link rel="icon" type="image/png" href="../img/favicon/favicon.ico" />
-    <link rel="manifest" href="../site.webmanifest" />
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
@@ -52,6 +51,22 @@
     <link rel="stylesheet" href="../css/summer.css" />
   </head>
   <body>
+    <!-- tablet & mobile menu -->
+    <div class="mo-header hide">
+      <!-- X 아이콘 -->
+      <div class="mo-nav-icon close-icon">
+        <nav class="mo-menu">
+          <i class="fa-solid fa-xmark" style="color: #02276b"></i>
+        </nav>
+      </div>
+      <header include-html="./mo-header.html"></header>
+    </div>
+    <!-- tablet & mobile menu icon -->
+    <div class="mo-nav-icon open-icon hide">
+      <nav class="mo-menu">
+        <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+      </nav>
+    </div>
     <main class="four-container summer">
       <div class="static">
         <!-- header start -->
@@ -140,10 +155,7 @@
                 </a>
               </div>
               <div class="buttonContainer">
-                <a
-                  href="http://www.oedobotania.com/"
-                  target="_blank"
-                >
+                <a href="http://www.oedobotania.com/" target="_blank">
                   <div class="mainButton button bt1">외도 보타니아</div>
                 </a>
                 <a
@@ -152,18 +164,15 @@
                 >
                   <div class="mainButton button bt2">명사 해수욕장</div>
                 </a>
-                <a
-                  href="https://www.budify.io/place/1189/ko"
-                  target="_blank"
-                >
+                <a href="https://www.budify.io/place/1189/ko" target="_blank">
                   <div class="mainButton button bt3">보광사 능소화</div>
                 </a>
                 <a
                   href="https://xn--ok0b236bp0a.com/place/22097"
                   target="_blank"
                 >
-                <div class="mainButton button bt4">저구항</div>
-              </a>
+                  <div class="mainButton button bt4">저구항</div>
+                </a>
               </div>
             </div>
           </section>
