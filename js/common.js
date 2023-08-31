@@ -27,7 +27,7 @@ function openMenu() {
     openIcon.classList.remove("show");
   }
   openIcon.classList.add("hide");
-  openIcon.setAttribute("style", "opacity: 0");
+  //openIcon.setAttribute("style", "opacity: 0");
 
   //2. 엑스 메뉴 보이게 한다.
   if (closeIcon.classList.contains("hide")) {
@@ -65,7 +65,7 @@ function closeMenu() {
     openIcon.classList.remove("hide");
   }
   openIcon.classList.add("show");
-  openIcon.setAttribute("style", "opacity: 1");
+  //openIcon.setAttribute("style", "opacity: 1");
 
   //body 스크롤 보여주기
   body.style.overflowY = "scroll";

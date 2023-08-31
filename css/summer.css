@@ -355,9 +355,6 @@ section {
   margin: 50px 0;
 }
 
-.sugug .sugug-photos {
-}
-
 .sugug .sugug-photos .spot-title {
   text-align: center;
   margin-bottom: 50px;
@@ -369,9 +366,6 @@ section {
 
 .sugug .sugug-photos .spot-images {
   display: flex;
-}
-
-.sugug .sugug-photos .spot-images .spot-image {
 }
 
 .sugug .sugug-photos .spot-images .spot-image .spot-title {
@@ -405,9 +399,6 @@ section {
   border-radius: 15px;
 }
 
-.sugug .sugug-photos .spot-images .spot-image .spot-addr {
-}
-
 .sugug .sugug-photos .spot-images .spot-image .place-addr {
   display: flex;
   margin-bottom: 10px;
@@ -422,4 +413,165 @@ section {
 .sugug .sugug-photos .spot-images .spot-image .place-addr p {
   margin-left: 10px;
   font-size: 1.4em;
+}
+
+/* 태블릿 규격 */
+@media screen and (max-width: 1023px) {
+  .summer-map .map:first-child {
+    width: 100%;
+    height: 500px;
+  }
+
+  .summer-map .imgContainer {
+    width: 100%;
+  }
+
+  .summer-map .buttonContainer {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .summer-map .buttonContainer a {
+    display: inline;
+    height: fit-content;
+    margin-bottom: 15px;
+  }
+
+  .summer-map .mainButton {
+    width: 120px;
+  }
+}
+
+/* 모바일 규격 */
+@media screen and (max-width: 767px) {
+  /* 공통 */
+  .summer-p {
+    font-size: 1.4em;
+    line-height: 150%;
+    color: #02276b;
+    letter-spacing: -5%;
+    word-break: keep-all;
+  }
+
+  .summer-h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #011842;
+    line-height: 150%;
+    letter-spacing: -5%;
+    word-break: keep-all;
+  }
+
+  .summer-h4 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #011842;
+    line-height: 150%;
+    letter-spacing: -5%;
+    word-break: keep-all;
+  }
+
+  .summer-h6 {
+    font-size: 1.6em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #011842;
+    line-height: 150%;
+    letter-spacing: -5%;
+    word-break: keep-all;
+  }
+
+  .button {
+    font-size: 1.4em;
+  }
+
+  .summer-map .mainButton {
+    width: 130px;
+  }
+
+  .botania {
+    margin-top: 120px;
+  }
+
+  .myeongsa {
+    margin-top: 120px;
+  }
+
+  .bogwang {
+    margin-top: 120px;
+  }
+
+  .sugug {
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+
+  .botania .botaina-info {
+    margin-bottom: 80px;
+  }
+
+  .botania .botaina-info .botania-detail .botania-detail-2 {
+    flex-direction: column;
+  }
+
+  .botania .botaina-info .botania-detail .botania-detail-2 img {
+    width: 100%;
+  }
+
+  .botania .botaina-info .botania-detail .botania-detail-2 .detail-2-text {
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  .botania .botaina-photos .spot-images img {
+    width: calc(100% / 2);
+  }
+
+  .myeongsa .myeongsa-info .myeongsa-how {
+    padding: 30px 30px;
+  }
+
+  .myeongsa .myeongsa-info .myeongsa-around .buttonContainer {
+    display: block;
+  }
+
+  .myeongsa .myeongsa-info .myeongsa-around .buttonContainer .around-title {
+    width: 100%;
+  }
+
+  .myeongsa .myeongsa-info .myeongsa-around .buttonContainer a {
+    width: 100%;
+  }
+
+  .myeongsa .myeongsa-info .myeongsa-around .buttonContainer .button {
+    margin-bottom: 10px;
+  }
+
+  .bogwang .bogwang-info {
+    flex-direction: column-reverse;
+  }
+
+  .bogwang .bogwang-info .place-title {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .bogwang .bogwang-info .bogwang-img .bogwang-img-top {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .sugug .sugug-photos .spot-images {
+    flex-direction: column;
+  }
+
+  .sugug .sugug-photos .spot-images .spot-image {
+    margin-bottom: 20px;
+  }
+
+  .sugug .sugug-photos .spot-images .spot-image .spot-img:not(:last-child) {
+    padding-right: 0;
+  }
 }

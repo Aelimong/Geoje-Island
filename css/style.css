@@ -201,7 +201,7 @@ p {
 
 /* 모바일 메뉴 아이콘 */
 .mo-nav-icon {
-  /* display: none; */
+  display: none;
   width: 50px;
   height: 50px;
   position: fixed;
@@ -221,12 +221,11 @@ p {
 }
 
 .close-icon {
-  display: none;
-  opacity: 0;
+  /* display: none;
+  opacity: 0; */
 }
 
 .open-icon {
-  opacity: 1;
 }
 
 .close-icon nav {
@@ -242,7 +241,7 @@ p {
 }
 
 .show {
-  display: block;
+  display: block !important;
 }
 
 .hide {
@@ -259,6 +258,7 @@ p {
   top: 0;
   z-index: 9999;
   overflow-y: scroll;
+  display: none;
 }
 
 .mo-header header {
@@ -301,6 +301,17 @@ p {
   background-color: #ffffff;
 }
 
+/* .mo-header header .nav-main .nav-home a {
+  width: 100%;
+  height: 100%;
+  color: var(--main-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--main-blue);
+  border-radius: 10px;
+} */
+
 .mo-header header ul.nav-main li a {
   width: 100%;
   height: 100%;
@@ -310,6 +321,17 @@ p {
   justify-content: center;
   border: 1px dashed var(--main-blue);
   border-radius: 10px;
+}
+
+.mo-header header .nav-main .nav-home {
+  background-color: var(--main-blue);
+  border: 1px dashed #ffffff;
+}
+
+.mo-header header .nav-main .nav-home a {
+  color: #ffffff;
+  border: 1px dashed #ffffff;
+  background-color: var(--main-blue);
 }
 
 .mo-header header p {
@@ -535,16 +557,21 @@ footer .pageTop i {
   }
 
   .contents .four-section {
-    width: 100%;
+    width: 85%;
   }
 
   .contents .four-section .four-img {
     width: 100%;
-    height: calc(100vh / 2);
+    height: 400px;
   }
 
   .contents .four-section .four-geoje-bg {
     padding: 10rem 14rem 0 0;
+  }
+
+  .contents .four-section .four-geoje-text {
+    top: 6rem;
+    left: -2rem;
   }
 
   .contents .four-section .four-geoje-text span.up-geoje {
@@ -556,17 +583,57 @@ footer .pageTop i {
   }
 
   .contents .four-section .four-chinese-text span.up-china {
-    font-size: 11em;
+    font-size: 10em;
   }
 
   .contents .four-section .four-chinese-text span.behind-china {
-    font-size: 11em;
+    font-size: 10em;
+  }
+
+  .contents .four-section .four-chinese-bg {
+    top: 37rem;
+    padding: 8rem 12rem 0 0;
+  }
+
+  .contents .four-section .four-chinese-text {
+    top: 43rem;
+    left: 5rem;
   }
 }
 
 /* 모바일 규격 */
 @media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
   .contents {
     padding: 0 24px;
+  }
+
+  .contents .four-section .four-img {
+    height: 300px;
+  }
+
+  .contents .four-section .four-geoje-bg {
+    padding: 10rem 14rem 0 0;
+  }
+
+  .contents .four-section .four-geoje-text {
+    top: 6rem;
+    left: -2rem;
+  }
+
+  .contents .four-section .four-chinese-bg {
+    top: 28rem;
+    padding: 7rem 10rem 0 0;
+  }
+
+  .contents .four-section .four-chinese-text {
+    top: 34rem;
+    left: 3rem;
   }
 }
