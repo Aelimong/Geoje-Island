@@ -604,22 +604,24 @@ li {
     width: 30%;
     margin: 10px;
     position: relative;
+    justify-content: flex-start;
   }
 
   #ggPage .flowerButton div {
     font-size: 14px;
     width: 17rem;
+    margin-top: auto;
   }
 
-  #ggPage .flowerButton div:nth-of-type(2) {
+  /* #ggPage .flowerButton div:nth-of-type(2) {
     margin: 0;
-  }
+  } */
 
   /* 학동 유채꽃밭 */
 
   #hdPage img {
     width: 100vw;
-    height: 80vh;
+    height: 50vh;
   }
 
   #hdPage h1 {
@@ -640,6 +642,17 @@ li {
 
   #food .title p {
     font-size: 14px;
+  }
+
+  #food .food1 div,
+  #food .food2 div {
+    height: 35vh;
+  }
+
+  #food .food1 img,
+  #food .food2 img {
+    width: 70vw;
+    height: 35vh;
   }
 
   #food .food1 dl {
@@ -663,5 +676,9 @@ li {
 
   #springFestival p {
     font-size: 14px;
+  }
+
+  #springFestival .swiper-wrapper div {
+    height: 15vh;
   }
 }
