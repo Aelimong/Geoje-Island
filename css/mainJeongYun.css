@@ -106,13 +106,6 @@ body article#move {
 }
 
 /* 사진생성 */
-#slider div {
-  width: 100px;
-  height: 100px;
-  /* border: solid black; */
-  font-size: 50px;
-}
-
 #slider #photo1 {
   width: 255px;
   height: 207px;
@@ -231,4 +224,178 @@ body article#move {
 .container .move {
   width: 100%;
   padding: 100px 0;
+}
+
+/* 반응형
+    태블릿*/
+@media screen and (max-width: 1023px) {
+  #slider #photo1 {
+    width: 17vw;
+    height: 14vh;
+    left: 9vw;
+    top: 15vh;
+  }
+
+  #slider #photo2 {
+    width: 21vw;
+    height: 12vh;
+    left: 38vw;
+    top: 10vh;
+  }
+
+  #slider img:nth-of-type(1) {
+    width: 23vw;
+    height: 13vh;
+    left: 37vw;
+    top: 11vh;
+  }
+
+  #slider #photo3 {
+    width: 25vw;
+    height: 15vh;
+    left: 70vw;
+    top: 15vh;
+  }
+
+  #slider #photo4 {
+    width: 25vw;
+    height: 15vh;
+    left: 3vw;
+    top: 44vh;
+    background-size: cover;
+  }
+
+  #slider img:nth-of-type(2) {
+    width: 27vw;
+    height: 16vh;
+    left: 4vw;
+    top: 45vh;
+  }
+
+  #slider #photo5 {
+    width: 17vw;
+    height: 13vh;
+    left: 44vw;
+    top: 56vh;
+    background-size: cover;
+  }
+
+  #slider #photo6 {
+    background-size: cover;
+    width: 23vw;
+    height: 14vh;
+    left: 67vw;
+    top: 43vh;
+  }
+
+  #slider img:nth-of-type(3) {
+    width: 25vw;
+    height: 15vh;
+    left: 68vw;
+    top: 43vh;
+  }
+  #slider #photo7 {
+    width: 11vw;
+    height: 11vh;
+    left: 83vw;
+    top: 51vh;
+  }
+
+  #slider h1 {
+    top: 259px;
+    left: 34vw;
+  }
+
+  #slider h2 {
+    top: 312px;
+    left: 28vw;
+  }
+}
+
+/* 핸드폰 */
+@media screen and (max-width: 767px) {
+  #slider #photo1 {
+    width: 12vw;
+    height: 8vh;
+    left: 12vw;
+    top: 15vh;
+  }
+
+  #slider #photo2 {
+    width: 13vw;
+    height: 7vh;
+    left: 38vw;
+    top: 10vh;
+  }
+
+  #slider img:nth-of-type(1) {
+    width: 15vw;
+    height: 7vh;
+    left: 37vw;
+    top: 11vh;
+  }
+
+  #slider #photo3 {
+    background-size: cover;
+    width: 17vw;
+    height: 7vh;
+    left: 61vw;
+    top: 15vh;
+  }
+
+  #slider #photo4 {
+    width: 16vw;
+    height: 7vh;
+    left: 11vw;
+    top: 44vh;
+    background-size: cover;
+  }
+
+  #slider img:nth-of-type(2) {
+    width: 18vw;
+    height: 7vh;
+    left: 11vw;
+    top: 45vh;
+  }
+
+  #slider #photo5 {
+    width: 12vw;
+    height: 8vh;
+    left: 37vw;
+    top: 48vh;
+    background-size: cover;
+  }
+
+  #slider #photo6 {
+    background-size: cover;
+    width: 16vw;
+    height: 7vh;
+    left: 58vw;
+    top: 43vh;
+  }
+
+  #slider img:nth-of-type(3) {
+    width: 18vw;
+    height: 8vh;
+    left: 58vw;
+    top: 43vh;
+  }
+  #slider #photo7 {
+    width: 8vw;
+    height: 7vh;
+    left: 69vw;
+    top: 46vh;
+  }
+
+  #slider h1 {
+    top: 258px;
+    left: 26vw;
+    font-size: 20px;
+  }
+
+  #slider h2 {
+    top: 312px;
+    left: 18vw;
+    font-size: 16px;
+  }
 }

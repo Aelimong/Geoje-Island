@@ -423,7 +423,6 @@ li {
 /* 봄 축제 */
 #swiper h1 {
   color: #011842;
-  background-color: red;
 }
 
 #springFestival {
@@ -600,7 +599,7 @@ li {
   #ggPage .flowerButton {
     left: -0.5vw;
     flex-direction: column;
-    background-color: red;
+    /* background-color: red; */
     width: 30%;
     margin: 10px;
     position: relative;
