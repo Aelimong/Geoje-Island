@@ -1,9 +1,75 @@
-.page {
-  height: 1000px;
-  width: 100%;
+/* ***** 공통 ***** */
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
 }
+
+.page {
+  /* height: 1000px; */
+  width: 100%;
+  margin-top: 200px;
+}
+
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #02276b;
+  letter-spacing: -4%;
+  word-break: keep-all;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -4%;
+  word-break: keep-all;
+}
+
+h4 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -4%;
+  word-break: keep-all;
+}
+
+h6 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #011842;
+  line-height: 150%;
+  letter-spacing: -4%;
+  word-break: keep-all;
+}
+
+.button-margin {
+  margin-bottom: 10px;
+}
+
+.place-addr {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.place-addr i {
+  font-size: 1.7em;
+  color: #011842;
+  margin-top: 5px;
+}
+
+.place-addr p {
+  margin-left: 10px;
 }
 
 .location {
@@ -18,98 +84,64 @@ p {
 }
 
 .button {
-  height: 6vh;
-  width: 10vw;
+  height: 51px;
+  width: 170px;
   background-color: #023793;
   text-align: center;
-  line-height: 6vh;
+  line-height: 51px;
   color: white;
   border-radius: 15px;
-  font-size: 1vw;
+  font-size: 16px;
 }
 
 .longbutton {
-  height: 3vh;
-  width: 20vw;
+  width: 100%;
+  height: 51px;
   background-color: #4e74b7;
-  text-align: center;
-  line-height: 3vh;
+  line-height: 51px;
   color: white;
   border-radius: 15px;
-  font-size: 1vw;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .subButton {
-  height: 6vh;
-  width: 10vw;
+  height: 51px;
+  width: 170px;
   background-color: #6f843b;
   text-align: center;
-  line-height: 6vh;
+  line-height: 51px;
+  font-size: 16px;
   color: white;
   border-radius: 15px;
-  font-size: 2vh;
-}
-
-/* page 1 */
-.text {
-  position: absolute;
-  color: #02276b;
-  font-weight: bold;
-  z-index: 3;
-}
-
-.text1 {
-  left: 55vw;
-  top: 2vh;
-  font-size: 10vh;
-}
-
-.text2 {
-  left: 25vw;
-  top: 55vh;
-  font-size: 15vh;
-}
-
-.text3 {
-  text-decoration: overline;
-  font-size: 16px;
-  left: 48%;
 }
 
 /* page2: map  */
 /* ping */
 
-.page2 .image {
-  width: 100%;
-  height: 30%;
-}
-
-.pins {
+.winter-map address.pin1 {
   position: absolute;
+  top: 200px;
+  right: 300px;
 }
 
-.pin1 {
+.winter-map address.pin2 {
   position: absolute;
-  bottom: 440px;
-  left: 400px;
+  top: 280px;
+  right: 310px;
 }
 
-.pin2 {
-  position: relative;
-  bottom: 410px;
-  left: 530px;
+.winter-map address.pin3 {
+  position: absolute;
+  top: 250px;
+  right: 200px;
 }
 
-.pin3 {
-  position: relative;
-  bottom: 520px;
-  left: 630px;
-}
-
-.pin4 {
-  position: relative;
-  left: 1020px;
-  bottom: 280px;
+.winter-map address.pin4 {
+  position: absolute;
+  left: 360px;
+  top: 350px;
 }
 
 .mainButtonContainer {
@@ -127,7 +159,6 @@ p {
   text-align: center;
   border-radius: 15px;
 }
-*/
 
 /* 추천명소 map */
 .winter-map .map:first-child {
@@ -158,11 +189,6 @@ p {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-
-/* .winter-map .map .title {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-} */
 
 .winter-map .mainButton {
   background-color: #02276b;
@@ -205,19 +231,38 @@ p {
 }
 
 /* page 3: 거제 식물원 */
+/* .page3 .gardenText {
+  margin: 20px 0;
+} */
+
 .page3 .imgBox {
   position: relative;
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.page3 .leftimages {
-  width: 20vw;
-  height: 15vh;
+
+.page3 .imgBox .img-wrapper {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
 }
+
+.page3 .leftimages {
+  padding-right: 15px;
+}
+
+.page3 .garden-text {
+  padding: 15px 0 80px 0;
+}
+
+.page3 .garden-text:last-child {
+  padding: 15px 0 0 0;
+}
+
 .page3 .rightimages {
-  width: 25vw;
-  height: 50vh;
+  padding-left: 15px;
+  margin-top: 130px;
 }
 
 .page3 p {
@@ -231,21 +276,24 @@ p {
 /* page 4: 포로수용소 */
 
 .page4 .tableContainer {
-  border: 3px solid #8ea84c;
+  border: 1px dashed #8ea84c;
+  border-radius: 15px;
+  padding: 20px 40px;
+}
+
+.page4 .imgBox {
+  margin-bottom: 30px;
 }
 
 .page4 .image {
   border-radius: 15px;
-  height: 50vh;
-  width: 30vw;
+  width: 60%;
+  margin-right: 30px;
 }
 
 .page4 .prisonBox {
   display: flex;
-}
-
-.page4 .image {
-  margin-right: 10vw;
+  align-items: flex-end;
 }
 
 .page4 .prisonExplain {
@@ -254,41 +302,29 @@ p {
 }
 
 .page4 .buttonContainer {
-  margin: 2vh;
+  margin: 10px;
+  line-height: 16px;
+  align-items: center;
 }
 
 .page4 .buttonContainer .buttonText {
-  font-size: 2vh;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
 }
 
 .page4 .prisonBox .button {
-  width: 2vw;
-  height: 30vh;
-}
-
-.page4 .prisonExplain {
-  float: right;
-}
-
-.page4 .prisonTxtBox {
-  text-align: right;
+  width: 16px;
+  line-height: 16px;
 }
 
 /* page 5: 고현시장 */
-.swiper {
-  width: 100%;
-  height: 80vh;
+.page5 {
+  flex-wrap: nowrap;
 }
 
-.swiper .swiper-wrapper .swiper-slide {
-  width: 200px;
-  height: 100%;
-  border: #02276b;
-  text-align: center;
-  line-height: 200px;
-  box-sizing: border-box;
-  font-size: 25px;
-  border-radius: 15px;
+.swiper {
+  width: 100%;
 }
 
 .swiper .swiper-wrapper .swiper-slide .image {
@@ -297,6 +333,11 @@ p {
   height: 100%;
   border-radius: 15px;
 }
+
+.page5 h2 {
+  margin-top: 20px;
+}
+
 /* pagination custom */
 /* 화살표 커스텀 */
 .swiper-button-prev,
@@ -304,9 +345,16 @@ p {
   color: #e6efff;
 }
 
+.page6 .p {
+  line-height: 150%;
+}
+
 /* page 6: 지심도 */
 .place {
   margin-left: auto;
+  width: 100%;
+}
+.page6 .pageContainer {
   width: 100%;
 }
 
@@ -318,56 +366,64 @@ p {
 
 .page6 .imageContainer {
   display: flex;
-  align-content: space-evenly;
+  flex-direction: row;
+  align-items: flex-start;
   width: 100%;
 }
 
 .page6 .image {
   border-radius: 15px;
-  height: 40vh;
-  width: 35vw;
+  width: 630px;
+  transition: width 1s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.page6 .imageContainer:hover .image {
+  width: 400px;
 }
 
 .page6 .imageText {
   position: relative;
-  width: 30vw;
-  font-size: 1.5rem;
-  line-height: 3vh;
+  width: 400px;
+  font-size: 16px;
+  line-height: 16px;
   justify-content: center;
-  left: 4vw;
+  left: 30px;
 }
 
 /* page 7: 제철음식 */
-.page7 {
-  border-radius: 15px;
-  border: 2px solid #4e74b7;
-}
 .page7 .subContainer {
-  position: relative;
-  width: 80%;
-  height: 80%;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin: 10%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 20px;
 }
 
 .page7 .foodContainer {
   display: flex;
+  align-items: center;
+  padding: 30px 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .page7 .image {
   position: relative;
   border-radius: 15px;
-  width: 25vw;
-  height: 50vh;
-}
-
-.page7 .foodContainer {
-  border: 3px blue;
+  width: 100%;
 }
 
 .page7 .foodContainer .buttonContainer {
   flex-direction: column;
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+.page7 .foodContainer .buttonContainer .subButton {
+  height: 41px;
+  line-height: 41px;
+  margin-bottom: 10px;
 }
 
 .page7 .subContainer .buttonContainer .button {
@@ -376,41 +432,56 @@ p {
 
 .page7 .restaurant .buttonContainer .button {
   background-color: #2f3819;
+  width: 100%;
 }
 
 .restaurant {
-  position: relative;
-  top: 20%;
-  margin: 3%;
+  padding: 20px 40px 50px;
 }
+
+.restaurant h4 {
+  margin-bottom: 20px;
+}
+
 .page7 .textBox {
-  font-size: 2vh;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.page7 .buttonContainer {
+  justify-content: space-evenly;
 }
 
 /* page 8: 지역축제 */
-
-.page8 {
+.page8 .subContainer {
+  width: 100%;
+  background-color: #ffffff;
   border-radius: 15px;
-  border: 2px solid #4e74b7;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 30px 50px;
+  align-items: center;
 }
 
-.page8 .subContainer {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10%;
-  display: flex;
+.page8 .festivalNotice {
+  height: 800px;
+  width: 400px;
+  border-radius: 15px;
+  object-fit: fill;
 }
 
 .festivalImgContainer {
-  /* 이전 스타일 유지 */
-  transition: opacity 0.3s, padding-right 0.3s; /* 트랜지션 효과 추가 */
+  border-radius: 15px;
+  width: 30vw;
+  object-fit: cover;
+  transition: opacity 0.3s;
+  position: relative;
 }
 
 .festivalNoticeContainer {
-  flex: 1;
+  width: 100%;
 }
 
 .hoverText {
@@ -424,41 +495,40 @@ p {
   align-items: center;
   opacity: 0;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  background-color: #6f843b;
+  color: #d4dada;
   font-size: 2rem;
   border-radius: 5px;
   padding: 5px 10px;
   transition: opacity 0.3s, visibility 0.3s;
 }
+
 .festivalImgContainer img:hover + .hoverText {
   opacity: 1;
   visibility: visible; /* 호버 시 텍스트 표시 */
-}
-
-.festivalNoticeContainer:hover .hoverText {
-  opacity: 1; /* 호버 시 텍스트 표시 */
 }
 
 .festivalImgContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 5rem;
 }
 
 .festivalImgContainer img {
   border-radius: 15px;
-  height: 25vh;
+  height: 28vh;
   width: 30vw;
   object-fit: cover;
   transition: opacity 0.3s;
   position: relative;
+  object-fit: cover;
 }
 
 .festivalImgContainer img:hover {
   opacity: 0.8; /* 이미지에 hover 시 투명도 변경 */
 }
+
 .photo-cell {
   position: relative;
   overflow: hidden;
@@ -466,9 +536,308 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.photo-cell img {
+  width: 100%;
 }
 
 .photo-cell:hover .hoverText {
   opacity: 1;
   visibility: visible;
+}
+
+/* 폭죽 놀이 */
+.background {
+  position: absolute;
+  z-index: 9949;
+  width: 827px;
+  height: 885px;
+  background-color: #ffffff00;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.headline {
+  visibility: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.25rem;
+  -webkit-animation: fadeIn 1s forwards;
+  animation: fadeIn 1s forwards;
+}
+
+.headline svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Pushster", cursive;
+}
+
+.headline .goodbye {
+  font-size: 2.5rem;
+  font-weight: 100;
+  fill: #ffae00;
+  opacity: 0;
+  -webkit-animation: fadeIn 4s forwards 1s;
+  animation: fadeIn 4s forwards 1s;
+}
+
+.headline .newyear {
+  font-size: 3rem;
+  font-weight: 100;
+  stroke-width: 0.2px;
+  stroke: white;
+  stroke-dasharray: 400;
+  opacity: 0;
+  -webkit-animation: revealText 5s forwards 1s;
+  animation: revealText 5s forwards 1s;
+}
+
+.fireworks {
+  position: absolute;
+}
+
+.particle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform-origin: top;
+  transform-origin: top;
+}
+
+.particle__item {
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-animation: fireworks;
+  animation: fireworks;
+  -webkit-animation-timing-function: cubic-bezier(0.69, 0.38, 0.82, 0.46);
+  animation-timing-function: cubic-bezier(0.69, 0.38, 0.82, 0.46);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fireworks {
+  0% {
+    -webkit-transform: translateY(0) scaleY(1);
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translateY(7vh) scaleY(10);
+    transform: translateY(7vh) scaleY(10);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(14vh) scaleY(3);
+    transform: translateY(14vh) scaleY(3);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(21vh) scaleY(1);
+    transform: translateY(21vh) scaleY(1);
+    opacity: 0;
+  }
+}
+
+@keyframes fireworks {
+  0% {
+    -webkit-transform: translateY(0) scaleY(1);
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translateY(5vh) scaleY(10);
+    transform: translateY(7vh) scaleY(10);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(10vh) scaleY(3);
+    transform: translateY(14vh) scaleY(3);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(15vh) scaleY(1);
+    transform: translateY(21vh) scaleY(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes revealText {
+  0% {
+    stroke-dashoffset: 400;
+    fill: transparent;
+    opacity: 0;
+  }
+  50% {
+    stroke-dashoffset: 800;
+    stroke-opacity: 1;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 800;
+    stroke-opacity: 0;
+    fill: white;
+    opacity: 1;
+  }
+}
+
+@keyframes revealText {
+  0% {
+    stroke-dashoffset: 400;
+    fill: transparent;
+    opacity: 0;
+  }
+  50% {
+    stroke-dashoffset: 800;
+    stroke-opacity: 1;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 800;
+    stroke-opacity: 0;
+    fill: white;
+    opacity: 1;
+  }
+}
+
+/* responsive tablet */
+@media screen and (max-width: 1023px) {
+  /* 전체 설정 */
+  .page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  /*  */
+
+  /* page 3: 거제 식물원 */
+
+  .page3 .imgBox {
+    display: inline-block;
+  }
+
+  /* page 4: 거제 포로수용소 */
+
+  .page4 .imgBox .prisonBox {
+    display: inline-block;
+  }
+  .page4 .image {
+    width: 100%;
+  }
+
+  /* page 6: 지심도 */
+  .page6 .image {
+    width: 250px;
+    transition: none;
+  }
+  .page6 .imageContainer:hover .image {
+    width: 250px;
+  }
+  .page6 .imageText {
+    width: 100%;
+  }
+  /* page 8: 지역축제 */
+}
+
+/* responsive mobile */
+@media screen and (max-width: 767px) {
+  /* 공통설정*/
+
+  p {
+    font-size: 14px;
+  }
+
+  /*page 5: 고현시장  */
+  .swiper {
+    height: 500px;
+  }
+  /* page 6: 지심도 */
+  .page6 .imageContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page6 .image {
+    width: 100%;
+  }
+
+  .page6 .imageContainer:hover .image {
+    width: 100%;
+  }
+
+  .page6 .imageText {
+    margin-left: -20px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .page7 .restaurant .buttonContainer .button {
+    font-size: 12px;
+  }
+
+  /* page 8: 지역축제 */
+  .page8 .festivalNoticeContainer {
+    width: 100%;
+  }
+
+  .page8 .festivalNotice {
+    width: 100%;
+  }
+  .page8 .festivalImgContainer {
+    display: none;
+  }
 }

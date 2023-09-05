@@ -1,6 +1,3 @@
-// Import GSAP library
-const { gsap } = window;
-
 const pins = document.querySelectorAll(".place");
 const buttons = document.querySelectorAll(".mainButton");
 
@@ -9,38 +6,23 @@ function hoverIn(event) {
   for (let i = 0; i < 4; i++) {
     if (event.target.classList.contains(`pin${i + 1}`)) {
       gsap.to(`.bt${i + 1}`, { opacity: 0.65, duration: 0.3 });
-      gsap.to(`.pin${i + 1}`, { opacity: 0.65, duration: 0.3 });
     }
   }
 }
-
 function hoverOut(event) {
   gsap.to(event.target, { opacity: 1, duration: 0.3 });
   for (let i = 0; i < 4; i++) {
     if (event.target.classList.contains(`pin${i + 1}`)) {
       gsap.to(`.bt${i + 1}`, { opacity: 1, duration: 0.3 });
-      gsap.to(`.pin${i + 1}`, { opacity: 1, duration: 0.3 });
     }
   }
 }
-
-function hoverInBtn(event) {
-  gsap.to(event.target, { opacity: 0.65, duration: 0.3 });
-  for (let i = 0; i < 4; i++) {
-    if (event.target.classList.contains(`bt${i + 1}`)) {
-      gsap.to(`.pin${i + 1}`, { opacity: 0.65, duration: 0.3 });
-    }
-  }
-}
-
-function hoverOutBtn(event) {
-  gsap.to(event.target, { opacity: 1, duration: 0.3 });
-  for (let i = 0; i < 4; i++) {
-    if (event.target.classList.contains(`bt${i + 1}`)) {
-      gsap.to(`.pin${i + 1}`, { opacity: 1, duration: 0.3 });
-    }
-  }
-}
+pins.forEach((pin) => {
+  pin.addEventListener("mouseover", hoverIn);
+});
+pins.forEach((pin) => {
+  pin.addEventListener("mouseout", hoverOut);
+});
 
 pins.forEach((pin) => {
   pin.addEventListener("mouseover", hoverIn);
@@ -50,11 +32,15 @@ pins.forEach((pin) => {
   pin.addEventListener("mouseout", hoverOut);
 });
 
-buttons.forEach((btn) => {
-  btn.addEventListener("mouseover", hoverInBtn);
-});
+function hoverInBtn(event) {
+  gsap.to(event.target, { opacity: 0.65, duration: 0.3 });
+}
+function hoverOutBtn(event) {
+  gsap.to(event.target, { opacity: 1, duration: 0.3 });
+}
 
 buttons.forEach((btn) => {
+  btn.addEventListener("mouseover", hoverInBtn);
   btn.addEventListener("mouseout", hoverOutBtn);
 });
 
@@ -72,19 +58,23 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 2,
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
     // when window width is >= 640px
     640: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -127,10 +117,10 @@ function slideLeft() {
 
   images.forEach((image) => {
     gsap.to(image, {
-      x: "-300%",
+      x: "-100%",
       scrollTrigger: {
         trigger: image,
-        start: "top 60%",
+        start: "top 20%",
         end: "bottom 20%",
         scrub: 2, // 스크롤 속도에 따라 애니메이션을 조절
       },
@@ -143,10 +133,10 @@ function slideRight() {
 
   images.forEach((image) => {
     gsap.to(image, {
-      x: "300%",
+      x: "100%",
       scrollTrigger: {
         trigger: image,
-        start: "top 60%",
+        start: "top 20%",
         end: "bottom 20%",
         scrub: 2, // 스크롤 속도에 따라 애니메이션을 조절
       },

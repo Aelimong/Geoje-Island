@@ -199,6 +199,148 @@ p {
   padding-bottom: 20px;
 }
 
+/* 모바일 메뉴 아이콘 */
+.mo-nav-icon {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.mo-nav-icon nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.close-icon {
+  /* display: none;
+  opacity: 0; */
+}
+
+.open-icon {
+}
+
+.close-icon nav {
+  background-color: #ffffff;
+}
+
+.open-icon nav {
+  background-color: var(--main-blue);
+}
+
+.mo-nav-icon nav i {
+  font-size: 3em;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none;
+}
+
+/* 모바일 메뉴 */
+.mo-header {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  background: var(--main-blue);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  overflow-y: scroll;
+  display: none;
+}
+
+.mo-header header {
+  padding: 8rem 4rem;
+}
+
+.mo-header header h1 {
+  border-top: 3px solid var(--main-blue);
+}
+
+.mo-header .nav-home .logo a {
+  margin-bottom: 10px;
+  background-image: url(../img/logo.svg);
+  display: block;
+  text-indent: -9999px;
+  height: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.mo-header header nav ul li {
+  position: relative;
+}
+
+.mo-header header nav ul.nav-main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.mo-header header ul.nav-main li {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding: 4px;
+  background-color: #ffffff;
+}
+
+/* .mo-header header .nav-main .nav-home a {
+  width: 100%;
+  height: 100%;
+  color: var(--main-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--main-blue);
+  border-radius: 10px;
+} */
+
+.mo-header header ul.nav-main li a {
+  width: 100%;
+  height: 100%;
+  color: var(--main-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--main-blue);
+  border-radius: 10px;
+}
+
+.mo-header header .nav-main .nav-home {
+  background-color: var(--main-blue);
+  border: 1px dashed #ffffff;
+}
+
+.mo-header header .nav-main .nav-home a {
+  color: #ffffff;
+  border: 1px dashed #ffffff;
+  background-color: var(--main-blue);
+}
+
+.mo-header header p {
+  color: #ffffff;
+  text-align: center;
+  border-bottom: solid 3px var(--main-blue);
+  padding-bottom: 20px;
+}
+
 /* 사계절 주요 콘텐츠 */
 .contents {
   width: calc(100% - 278px);
@@ -397,4 +539,101 @@ footer .pageTop p {
 footer .pageTop i {
   margin-top: 4px;
   margin-right: 4px;
+}
+
+/* 태블릿 규격 */
+@media screen and (max-width: 1023px) {
+  .header {
+    display: none;
+  }
+
+  .open-icon {
+    display: block;
+  }
+
+  .contents {
+    width: 100%;
+    padding: 0 48px;
+  }
+
+  .contents .four-section {
+    width: 85%;
+  }
+
+  .contents .four-section .four-img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .contents .four-section .four-geoje-bg {
+    padding: 10rem 14rem 0 0;
+  }
+
+  .contents .four-section .four-geoje-text {
+    top: 6rem;
+    left: -2rem;
+  }
+
+  .contents .four-section .four-geoje-text span.up-geoje {
+    font-size: 9em;
+  }
+
+  .contents .four-section .four-geoje-text span.behind-geoje {
+    font-size: 9em;
+  }
+
+  .contents .four-section .four-chinese-text span.up-china {
+    font-size: 10em;
+  }
+
+  .contents .four-section .four-chinese-text span.behind-china {
+    font-size: 10em;
+  }
+
+  .contents .four-section .four-chinese-bg {
+    top: 37rem;
+    padding: 8rem 12rem 0 0;
+  }
+
+  .contents .four-section .four-chinese-text {
+    top: 43rem;
+    left: 5rem;
+  }
+}
+
+/* 모바일 규격 */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+  .contents {
+    padding: 0 24px;
+  }
+
+  .contents .four-section .four-img {
+    height: 300px;
+  }
+
+  .contents .four-section .four-geoje-bg {
+    padding: 10rem 14rem 0 0;
+  }
+
+  .contents .four-section .four-geoje-text {
+    top: 6rem;
+    left: -2rem;
+  }
+
+  .contents .four-section .four-chinese-bg {
+    top: 28rem;
+    padding: 7rem 10rem 0 0;
+  }
+
+  .contents .four-section .four-chinese-text {
+    top: 34rem;
+    left: 3rem;
+  }
 }

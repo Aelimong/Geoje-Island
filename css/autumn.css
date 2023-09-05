@@ -18,6 +18,7 @@ p {
   margin-bottom: 10px;
   margin-top: 5px;
 }
+
 .location {
   display: flex;
   align-items: center;
@@ -27,6 +28,7 @@ p {
   margin-bottom: 10px;
   margin-left: 5px;
 }
+
 .buttonContainer {
   display: flex;
 }
@@ -41,6 +43,7 @@ p {
   line-height: 51px;
   border-radius: 15px;
 }
+
 .greenBar {
   width: 816px;
   height: 41px;
@@ -55,6 +58,10 @@ p {
 .container {
   display: flex;
   margin-bottom: 10px;
+}
+
+.place {
+  margin-bottom: 20px;
 }
 
 /* ***** page2 ***** */
@@ -87,14 +94,17 @@ p {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
+
 .page2 .mainButton {
   background-color: #02276b;
 }
+
 .page2 .pin1 {
   position: absolute;
   bottom: 170px;
   left: 290px;
 }
+
 .page2 .pin2 {
   position: absolute;
   top: 400px;
@@ -597,4 +607,13 @@ p {
     width: 400px;
     margin-top: 10px;
   }
+}
+.page6 #locationTxt{
+  line-height: 23px;
+  margin:0;
+}
+
+.page7 #locationTxt{
+  line-height: 23px;
+  margin:0;
 }

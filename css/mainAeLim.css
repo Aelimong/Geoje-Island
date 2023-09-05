@@ -332,6 +332,51 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
   margin-top: -6px;
 }
 
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* 거제도 소개 css */
 .container .info {
   width: 100%;
@@ -433,12 +478,12 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
 /* seciton3(애림) */
 
 .container .info {
-  margin-top: 400px;
 }
 
 .container .info .info-detail {
   width: 70vw;
   margin-bottom: 100px;
+  margin-top: 520px;
 }
 .container .info .info-detail .detail-top {
   width: 100%;
@@ -476,6 +521,10 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
   width: 100%;
   margin: 0 auto;
   display: flex;
+}
+
+.container .info .info-detail .detail-bottom .detail-bottom-img {
+  width: 120%;
 }
 
 .container .info .info-detail .detail-bottom .detail-bottom-text {

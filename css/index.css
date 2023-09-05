@@ -71,3 +71,11 @@ header {
   font-size: 20px;
   padding: 20px;
 }
+
+/* responsive */
+
+@media screen and (max-width: 767px) {
+  .apis {
+    font-size: 14px;
+  }
+}
