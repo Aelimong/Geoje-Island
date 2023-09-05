@@ -1,0 +1,91 @@
+/* seciton3(애림) */
+
+.container .info {
+  margin-top: 400px;
+}
+
+.container .info .info-detail {
+  width: 70vw;
+  margin-bottom: 100px;
+}
+.container .info .info-detail .detail-top {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.container .info .info-detail .detail-top .detail-top-text {
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.container .info .info-detail h6 {
+  font-size: 2.4em;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 15px;
+  color: var(--main-blue);
+}
+
+.container .info .info-detail p {
+  line-height: 150%;
+  color: var(--sub-blue-700);
+}
+
+.container .info .info-detail .detail-top .detail-top-img {
+  width: 100%;
+}
+
+.container .info .info-detail .detail-bottom {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container .info .info-detail .detail-bottom .detail-bottom-text {
+  padding-left: 50px;
+  text-align: right;
+}
+
+/* 포인트 파란선*/
+.container .info .point-line {
+  width: 100%;
+  height: 60px;
+  background-color: var(--main-blue);
+}
+
+@media screen and (max-width: 1024px) {
+  .detail-top-text {
+    width: 80vw;
+  }
+  .detail-bottom-text {
+    width: 80vw;
+  }
+  span p {
+    width: 70vw;
+    margin-bottom: 15px;
+  }
+  .detail-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail-top-img {
+    display: none;
+  }
+
+  .container .info .info-detail .detail-bottom .detail-bottom-text {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .container .info .info-detail .detail-top {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding:0;
+  }
+}
