@@ -423,7 +423,6 @@ li {
 /* 봄 축제 */
 #swiper h1 {
   color: #011842;
-  background-color: red;
 }
 
 #springFestival {
@@ -439,9 +438,6 @@ li {
   font-size: 16px;
 }
 
-/* #springFestival .swiper {
-  overflow: visible;
-} */
 #springFestival .swiper1 {
   overflow: hidden;
 }
@@ -450,7 +446,238 @@ li {
   width: 432px;
   height: 275px;
   border-radius: 15px;
-  /* margin-right: 10px; */
   margin: 10px 10px 10px 0;
-  /* overflow: hidden; */
+}
+
+/*  태블릿 */
+@media screen and (max-width: 1023px) {
+  /* 사계절 공통 섹션 */
+  .contents .four-section {
+    width: 100%;
+  }
+
+  .contents .txt-box {
+    width: 95%;
+  }
+
+  /* 지도 섹션 */
+  .contents .spring-map .map:first-child {
+    margin: auto;
+  }
+
+  /* 양지암 조각 공원 */
+  #ygPage {
+    justify-content: center;
+  }
+
+  /* 공곶이 수목원 */
+  #ggPage img {
+    margin: auto;
+  }
+
+  #ggPage p {
+    margin: auto;
+  }
+
+  #ggPage .flower h1 {
+    margin-left: 1em;
+  }
+
+  #ggPage .flowerButton {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  /* 학동 유채꽃밭 */
+  /* 제철음식 */
+  #food .title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #food .title img {
+    left: 0;
+    margin-left: auto;
+    display: flex;
+  }
+
+  /* 봄축제 */
+  #springFestival h1 {
+    margin-top: 10px;
+  }
+}
+
+/*  핸드폰 */
+/*  20/ 14 */
+@media screen and (max-width: 767px) {
+  .contents {
+    width: 100%;
+  }
+  /* 사계절 공통 섹션 */
+  .contents .four-section {
+    width: 100%;
+  }
+
+  .contents .txt-box {
+    margin-top: 1vw;
+  }
+
+  /* 지도섹션 */
+  .contents .spring-map {
+    width: 100%;
+  }
+
+  /* 양지암 조각 공원 */
+
+  #ygPage .yg-left h1 {
+    font-size: 20px;
+  }
+
+  #ygPage .yg-left p,
+  #ygPage .yg-left h2 {
+    font-size: 12px;
+  }
+
+  #ygPage .yg-right img {
+    height: 100%;
+  }
+
+  /* 공곳이 수목원  */
+
+  #ggPage h1 {
+    font-size: 20px;
+  }
+
+  #ggPage .where h2 {
+    font-size: 14px;
+  }
+
+  #ggPage img {
+    height: auto;
+    width: 100%;
+  }
+
+  #ggPage p {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  /*  */
+  #ggPage .flower h1 {
+    margin-left: 0;
+  }
+
+  #ggPage .flowerBox {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  #ggPage .flower img {
+    width: 100%;
+    height: 30%;
+    margin: 0;
+  }
+
+  #ggPage .flower .flowerImg {
+    margin-left: 100px;
+    height: 100%;
+    width: 50%;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    margin: 10px 0;
+  }
+
+  #ggPage .flower img:nth-of-type(2) {
+    margin: 0;
+  }
+
+  #ggPage .flower h1 {
+    font-size: 20px;
+  }
+
+  #ggPage .flowerButton {
+    left: -0.5vw;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 30%;
+    margin: 10px;
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  #ggPage .flowerButton div {
+    font-size: 14px;
+    width: 17rem;
+    margin-top: auto;
+  }
+
+  #ggPage .flowerButton div:nth-of-type(2) {
+    margin: auot 0;
+  }
+
+  /* 학동 유채꽃밭 */
+
+  #hdPage img {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #hdPage h1 {
+    font-size: 20px;
+  }
+
+  #hdPage .where h2 {
+    font-size: 14px;
+  }
+  #hdPage p {
+    font-size: 14px;
+  }
+
+  /* 제철 음식 */
+  #food .title h1 {
+    font-size: 20px;
+  }
+
+  #food .title p {
+    font-size: 14px;
+  }
+
+  #food .food1 div,
+  #food .food2 div {
+    height: 35vh;
+  }
+
+  #food .food1 img,
+  #food .food2 img {
+    width: 70vw;
+    height: 35vh;
+  }
+
+  #food .food1 dl {
+    margin: 5vw 8vw;
+  }
+
+  #food .food2 dl {
+    margin: 5vw 8vw;
+  }
+  #food .food1 dt,
+  #food .food1 dd,
+  #food .food2 dt,
+  #food .food2 dd {
+    font-size: 14px;
+  }
+
+  /* 봄 축제 */
+  #springFestival h1 {
+    font-size: 20px;
+  }
+
+  #springFestival p {
+    font-size: 14px;
+  }
+
+  #springFestival .swiper-wrapper div {
+    height: 15vh;
+  }
 }
