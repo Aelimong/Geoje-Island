@@ -226,6 +226,11 @@ body article#move {
   padding: 100px 0;
 }
 
+.info .info-summary2 {
+  display: none;
+  background-color: red;
+}
+
 /* 반응형
     태블릿*/
 @media screen and (max-width: 1023px) {
@@ -309,6 +314,10 @@ body article#move {
   #slider h2 {
     top: 312px;
     left: 28vw;
+  }
+
+  #slider .info-summary {
+    display: none;
   }
 }
 
@@ -397,5 +406,9 @@ body article#move {
     top: 312px;
     left: 18vw;
     font-size: 16px;
+  }
+
+  #slider .info-summary {
+    display: none;
   }
 }
