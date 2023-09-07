@@ -3,8 +3,11 @@
 ### 거제도, 따스한 사계절 온기 넘치는 섬
 
 > 🏆 SeSAC 주최 강동캠퍼스 웹 퍼블리싱 프로젝트 최우수상
-
 <br/>
+
+![geoje-resize](https://github.com/Aelimong/Geoje-On-Sum/assets/61133414/e2c3f2fa-c1ef-4bf7-be20-72c7ff0ca46b)
+
+
 
 ###### 배포 링크 : https://geoje-island.netlify.app
 
