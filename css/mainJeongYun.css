@@ -226,9 +226,10 @@ body article#move {
   padding: 100px 0;
 }
 
-.info .info-summary2 {
-  display: none;
-  background-color: red;
+@media screen and (min-width: 1024px) {
+  .info .info-summary2 {
+    display: none;
+  }
 }
 
 /* 반응형
@@ -316,7 +317,7 @@ body article#move {
     left: 28vw;
   }
 
-  #slider .info-summary {
+  #move .info-summary {
     display: none;
   }
 }
@@ -408,7 +409,7 @@ body article#move {
     font-size: 16px;
   }
 
-  #slider .info-summary {
+  #move .info-summary {
     display: none;
   }
 }

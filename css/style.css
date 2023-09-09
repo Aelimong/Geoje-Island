@@ -244,9 +244,9 @@ p {
   display: block !important;
 }
 
-.hide {
+/* .hide {
   display: none;
-}
+} */
 
 /* 모바일 메뉴 */
 .mo-header {
