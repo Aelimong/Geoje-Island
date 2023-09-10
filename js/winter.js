@@ -98,6 +98,21 @@ const sw = new Swiper(".swiper1", {
 });
 
 // page 8 swiper
+const sw2 = new Swiper(".swiper2", {
+  // direction: "vertical",
+  slidesPerView: 2,
+  spaceBetween: 5, //slide 간의 gap (margin)
+  loop: true,
+  autoplay: {
+    delay: 1000,
+  },
+  speed: 2000, //like transition
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 //page total interaction gsap
 batch(".page", {

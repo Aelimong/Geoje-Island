@@ -73,9 +73,3 @@ header {
 }
 
 /* responsive */
-
-@media screen and (max-width: 767px) {
-  .apis {
-    font-size: 14px;
-  }
-}
