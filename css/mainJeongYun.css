@@ -92,13 +92,15 @@ body {
   transition: 0.5s;
   opacity: 0;
 }
-
-body article#move {
-  height: 100vh;
-  width: 200%;
-  /* section의 가로너비 body 사이즈보다 크도록 설정, */
-}
 /* ----------  완료 -----------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  body article#move {
+    height: 100vh;
+    width: 200%;
+    /* section의 가로너비 body 사이즈보다 크도록 설정, */
+  }
+}
+
 #move .wrapper {
   position: relative;
   left: 25%;
@@ -226,6 +228,12 @@ body article#move {
   padding: 100px 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .info .info-summary {
+    display: none;
+  }
+}
+
 /* 반응형
     태블릿*/
 @media screen and (max-width: 1023px) {
@@ -302,13 +310,112 @@ body article#move {
   }
 
   #slider h1 {
-    top: 259px;
+    top: 28vh;
     left: 34vw;
   }
 
   #slider h2 {
-    top: 312px;
+    top: 35vh;
     left: 28vw;
+  }
+
+  body article#move {
+    height: 100vh;
+    width: 100%;
+    /* section의 가로너비 body 사이즈보다 크도록 설정, */
+  }
+  /* 거제도 소개 */
+  #move .info-summary {
+    display: none;
+  }
+
+  .info .info-summary {
+    width: 70vw;
+  }
+
+  .info .info-summary img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* left: 45%; */
+    position: relative;
+    /* height: 800px; */
+  }
+
+  .info .info-summary figure {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .info .info-summary .summary-title {
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    z-index: 9;
+    display: flex;
+    margin-left: 10%;
+  }
+
+  .info .info-summary .summary-title .rectangle {
+    width: 15vw;
+    height: 30vh;
+  }
+  .info .info-summary .summary-title .rec-back {
+    background-color: #d4d8e0;
+  }
+
+  .info .info-summary .summary-title .rec-front {
+    position: absolute;
+    left: 62px;
+    top: 40px;
+    background-color: #e6efff;
+  }
+
+  .info .info-summary .summary-title .title-text-area {
+    position: absolute;
+    top: 74px;
+    left: 105px;
+  }
+
+  .info .info-summary .summary-title .title-text-area .title-text {
+    font-size: 8em;
+    font-weight: 700;
+    line-height: 0.8;
+  }
+
+  .info .info-summary .summary-sub {
+    width: 35vw;
+    float: right;
+    margin-bottom: 80px;
+    margin-right: 5%;
+  }
+
+  .info .info-summary .summary-sub hr {
+    height: 1px;
+    background: #023793;
+  }
+
+  .info .info-summary .summary-sub p {
+    text-align: right;
+    margin: 10px 0;
+  }
+
+  .info.info-summary .summary-title .title-text-area .geoje-kor {
+    color: var(--main-blue);
+  }
+
+  .info .info-summary .summary-title .title-text-area .geoje-eng {
+    color: var(--sub-blue-400);
+    position: relative;
+    z-index: 9;
+    left: -36px;
+  }
+
+  .info .info-summary .summary-title .title-text-area .geoje-chi {
+    color: var(--sub-blue-200);
+    position: relative;
+    z-index: 9;
+    left: 110px;
   }
 }
 
@@ -388,14 +495,18 @@ body article#move {
   }
 
   #slider h1 {
-    top: 258px;
+    /* top: 258px; */
     left: 26vw;
     font-size: 20px;
   }
 
   #slider h2 {
-    top: 312px;
+    /* top: 312px; */
     left: 18vw;
     font-size: 16px;
+  }
+
+  #move .info-summary {
+    display: none;
   }
 }
