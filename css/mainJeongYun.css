@@ -234,8 +234,7 @@ body {
   }
 }
 
-/* 반응형
-    태블릿*/
+/* 태블릿*/
 @media screen and (max-width: 1023px) {
   #slider #photo1 {
     width: 17vw;
