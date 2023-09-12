@@ -68,7 +68,7 @@ currentTime.innerText = `${hour}시 ${mm}분`;
 function changeTicketImages(MM) {
   let ticketFlower = document.querySelector(".ticket-flower");
   let defaultTicket = document.querySelector(".default-ticket");
-  // let ticketFlowerImg = ticketFlower.img;
+
   let month = Number(MM);
 
   let springTicket = "./img/main/ticket-spring.png";

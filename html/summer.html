@@ -24,6 +24,7 @@
       href="../img/favicon/favicon-16x16.png"
     />
     <link rel="icon" type="image/png" href="../img/favicon/favicon.ico" />
+    <link rel="manifest" href="../site.webmanifest" />
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
@@ -99,6 +100,7 @@
               </p>
             </div>
           </article>
+
           <!-- 0. 추천명소 map -->
           <section class="summer-map">
             <div class="map">
@@ -108,7 +110,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/v5/directions/-/14328133.593558509,4132556.739610728,%EC%99%B8%EB%8F%84%20%EB%B3%B4%ED%83%80%EB%8B%88%EC%95%84,11491919,PLACE_POI/-/transit?c=12.03,0,0,0,dh"
-                  class="pin1"
+                  class="pin1 pin1-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -120,7 +122,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/v5/directions/-/14316129.010990854,4126790.253986018,%EB%AA%85%EC%82%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5,13491035,PLACE_POI/-/transit?c=12.03,0,0,0,dh"
-                  class="pin2"
+                  class="pin2 pin2-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -132,7 +134,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/v5/directions/-/14326547.290814709,4149478.96687386,%EB%B3%B4%EA%B4%91%EC%82%AC,15605602,PLACE_POI/-/transit?c=10.99,0,0,0,dh"
-                  class="pin3"
+                  class="pin3 pin3-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -144,7 +146,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/v5/directions/-/14316381.63944326,4127365.74755981,%EC%A0%80%EA%B5%AC%ED%95%AD,92492597,PLACE_POI/-/transit?c=12.03,0,0,0,dh"
-                  class="pin4"
+                  class="pin4 pin4-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -176,87 +178,6 @@
               </div>
             </div>
           </section>
-          <!-- 0. 추천명소 map -->
-          <!-- <section class="summer-map">
-            <div class="map">
-              <div class="mainButton button title">추천 명소</div>
-              <div class="imgContainer">
-                <img src="../img/autumn/autMap.png" alt="map" />
-                <a
-                  target="_blank"
-                  href="https://map.naver.com/v5/directions/-/14328133.593558509,4132556.739610728,%EC%99%B8%EB%8F%84%20%EB%B3%B4%ED%83%80%EB%8B%88%EC%95%84,11491919,PLACE_POI/-/transit?c=12.03,0,0,0,dh"
-                  class="pin1"
-                >
-                  <img
-                    src="../img/autumn/pin.png"
-                    alt="botania"
-                    class="place pin1"
-                    style="width: 24px; height: 32px"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://map.naver.com/v5/directions/-/14316129.010990854,4126790.253986018,%EB%AA%85%EC%82%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5,13491035,PLACE_POI/-/transit?c=12.03,0,0,0,dh"
-                  class="pin2"
-                >
-                  <img
-                    src="../img/autumn/pin.png"
-                    alt="myeonsa-beach"
-                    class="place pin2"
-                    style="width: 24px; height: 32px"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://map.naver.com/v5/directions/-/14326547.290814709,4149478.96687386,%EB%B3%B4%EA%B4%91%EC%82%AC,15605602,PLACE_POI/-/transit?c=10.99,0,0,0,dh"
-                  class="pin3"
-                >
-                  <img
-                    src="../img/autumn/pin.png"
-                    alt="능소화"
-                    class="place pin3"
-                    style="width: 24px; height: 32px"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://map.naver.com/v5/directions/-/14316381.63944326,4127365.74755981,%EC%A0%80%EA%B5%AC%ED%95%AD,92492597,PLACE_POI/-/transit?c=12.03,0,0,0,dh"
-                  class="pin4"
-                >
-                  <img
-                    src="../img/autumn/pin.png"
-                    alt="저구항"
-                    class="place pin4"
-                    style="width: 24px; height: 32px"
-                  />
-                </a>
-              </div>
-              <div class="buttonContainer">
-                <a href="http://www.oedobotania.com/" target="_blank">
-                  <div class="mainButton button bt1">외도 보타니아</div>
-                </a>
-                <a
-                  href="http://www.bbsj.kr/tour/tour_detail.php?tou_idx=1913"
-                  target="_blank"
-                >
-                  <div class="mainButton button hover-btn bt1">
-                    명사 해수욕장
-                  </div>
-                </a>
-                <a href="https://www.budify.io/place/1189/ko" target="_blank">
-                  <div class="mainButton button hover-btn bt1">
-                    보광사 능소화
-                  </div>
-                </a>
-                <a
-                  href="https://xn--ok0b236bp0a.com/place/22097"
-                  target="_blank"
-                >
-                  <div class="mainButton button hover-btn bt1">저구항</div>
-                </a>
-              </div>
-            </div>
-          </section> -->
 
           <!-- 1. 외도 보타니아  -->
           <section class="botania page3">
