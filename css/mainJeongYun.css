@@ -575,4 +575,38 @@ body {
     left: 13vw;
     font-size: 14px;
   }
+
+  .info .info-summary .summary-title .rectangle {
+    width: 16vw;
+    height: 7vh;
+  }
+
+  .info .info-summary .summary-title .rec-back {
+    top: 33px;
+    position: relative;
+    left: -7px;
+  }
+
+  .info .info-summary .summary-title .rec-front {
+    position: absolute;
+    left: 24px;
+    top: 49px;
+    background-color: #e6efff;
+  }
+
+  .info .info-summary .summary-title .title-text-area .title-text {
+    font-size: 4em;
+  }
+
+  .info .info-summary .summary-title .title-text-area {
+    left: 69px;
+  }
+
+  .info .info-summary .summary-title .title-text-area .geoje-chi {
+    left: 78px;
+  }
+
+  .info .info-summary .summary-sub {
+    margin-top: 20px;
+  }
 }
