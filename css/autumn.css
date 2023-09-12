@@ -102,32 +102,32 @@ p {
   position: absolute;
   width: 24px;
   height: 32px;
-  top: 170px;
-  left: 290px;
+  top: 177px;
+  left: 502px;
 }
 
 .page2 .pin2-loca {
   position: absolute;
   width: 24px;
   height: 32px;
-  top: 400px;
-  left: 230px;
+  top: 712px;
+  left: 311px;
 }
 
 .page2 .pin3-loca {
   position: absolute;
   width: 24px;
   height: 32px;
-  top: 420px;
-  left: 250px;
+  top: 750px;
+  left: 344px;
 }
 
 .page2 .pin4-loca {
   position: absolute;
   width: 24px;
   height: 32px;
-  top: 500px;
-  left: 230px;
+  top: 844px;
+  left: 407px;
 }
 
 /* ***** page3 ***** */
@@ -393,28 +393,29 @@ p {
   .page2 .pin1-loca {
     width: 20px;
     height: 32px;
-    top: 100px;
-    left: 30px;
+    top: 114px;
+    left: 343px;
   }
 
   .page2 .pin2-loca {
     width: 20px;
     height: 32px;
-    top: 200px;
-    left: 10px;
+    top: 474px;
+    left: 212px;
   }
 
   .page2 .pin3-loca {
     width: 20px;
     height: 32px;
-    top: 60px;
-    left: 30px;
+    top: 510px;
+    left: 231px;
   }
 
   .page2 .pin4-loca {
     width: 20px;
     height: 32px;
-    top: 420px;
+    top: 573px;
+    left: 278px;
   }
 
   .page2 .button {
@@ -606,23 +607,23 @@ p {
 
   /* 3) 지도맵 이미지 너비 340px일 때 핀 위치 */
   .page2 .pin1-loca {
-    top: 100px;
-    left: 30px;
+    top: 71px;
+    left: 226px;
   }
 
   .page2 .pin2-loca {
-    top: 320px;
-    left: 20px;
+    top: 310px;
+    left: 133px;
   }
 
   .page2 .pin3-loca {
-    top: 340px;
-    left: 20px;
+    top: 330px;
+    left: 150px;
   }
 
   .page2 .pin4-loca {
-    top: 420px;
-    left: 20px;
+    top: 374px;
+    left: 182px;
   }
 
   .page2 .buttonContainer {
