@@ -503,10 +503,6 @@ h6 {
   border-radius: 15px;
 }
 
-.page8 .festivalTxt {
-  margin-top: 50px;
-}
-
 /* 폭죽 놀이 */
 .background {
   position: absolute;
@@ -812,10 +808,10 @@ h6 {
   }
 
   /* page 8: 지역축제 */
-  .page8 .image {
+  .page8 .swiper-wrapper {
     height: 100px;
   }
-  .page8 .festivalTxt {
-    display: visible;
+  .page8 .festivalMain {
+    margin-top: 120px;
   }
 }
