@@ -664,4 +664,8 @@ section {
     width: 340px;
     justify-content: center;
   }
+
+  .summer-map .map .button {
+    margin: 0 5px;
+  }
 }

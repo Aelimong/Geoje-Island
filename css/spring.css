@@ -773,4 +773,8 @@ li {
     width: 340px;
     justify-content: center;
   }
+
+  .spring-map .map .button {
+    margin: 0 5px;
+  }
 }

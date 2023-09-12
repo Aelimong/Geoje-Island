@@ -629,4 +629,8 @@ p {
     width: 340px;
     justify-content: center;
   }
+
+  .page2 .map .button {
+    margin: 0 5px;
+  }
 }
