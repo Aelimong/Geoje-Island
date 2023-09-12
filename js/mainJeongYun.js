@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
 gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline();
 ScrollTrigger.matchMedia({
-  "(min-width:800px)": function () {
+  "(min-width:1024px)": function () {
     tl.to("#move", {
       xPercent: -75, // 기본 위치에서 왼쪽으로 40% 만큼 이동 (스크롤 내릴 때 section을 가로로 움직이도록)
     });
