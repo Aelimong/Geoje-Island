@@ -44,6 +44,22 @@
     <link rel="stylesheet" href="../css/autumn.css" />
   </head>
   <body>
+    <!-- tablet & mobile menu -->
+    <div class="mo-header">
+      <!-- X 아이콘 -->
+      <div class="mo-nav-icon close-icon">
+        <nav class="mo-menu">
+          <i class="fa-solid fa-xmark" style="color: #02276b"></i>
+        </nav>
+      </div>
+      <header include-html="./mo-header.html"></header>
+    </div>
+    <!-- tablet & mobile menu icon -->
+    <div class="mo-nav-icon open-icon">
+      <nav class="mo-menu">
+        <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+      </nav>
+    </div>
     <main class="four-container">
       <div class="static">
         <!-- header start -->
@@ -84,7 +100,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/p/directions/-/14327394.6881745,4159531.5965498,%EB%A7%A4%EB%AF%B8%EC%84%B1,38015249,PLACE_POI/-/transit?c=15.00,0,0,0,dh"
-                  class="pin1"
+                  class="pin1 pin1-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -96,7 +112,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/p/directions/-/14319358.6120581,4134607.4296142,%EA%B1%B0%EC%A0%9C%ED%8C%8C%EB%85%B8%EB%9D%BC%EB%A7%88%20%EC%BC%80%EC%9D%B4%EB%B8%94%EC%B9%B4,1646677831,PLACE_POI/-/transit?c=11.75,0,0,0,dh"
-                  class="pin2"
+                  class="pin2 pin2-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -108,7 +124,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/p/directions/-/14320253.6652918,4133235.8792481,%ED%95%99%EB%8F%99%ED%9D%91%EC%A7%84%EC%A3%BC%EB%AA%BD%EB%8F%8C%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5,11491803,PLACE_POI/-/transit?c=11.75,0,0,0,dh"
-                  class="pin3"
+                  class="pin3 pin3-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -120,7 +136,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/p/directions/-/14322736.0526718,4129049.987055,%EB%B0%94%EB%9E%8C%EC%9D%98%EC%96%B8%EB%8D%95,19796736,PLACE_POI/-/transit?c=12.75,0,0,0,dh"
-                  class="pin4"
+                  class="pin4 pin4-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -233,9 +249,8 @@
                   <div class="button">양지암 조각공원</div>
                 </a>
               </div>
-           
 
-            <div class="greenBar">주변관광지</div>
+              <!-- <div class="greenBar">주변관광지</div>
 
             <div class="buttonContainer">
               <a
@@ -262,6 +277,7 @@
               >
                 <div class="button">양지암 조각공원</div>
               </a>
+            </div> -->
             </div>
           </section>
 
@@ -614,7 +630,6 @@
                 <img
                   src="../img/autumn/autPage7-01.png"
                   alt="oyster"
-                 
                   class="oyster1"
                 />
                 <img

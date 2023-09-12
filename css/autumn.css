@@ -66,26 +66,24 @@ p {
 
 /* ***** page2 ***** */
 .page2 .map {
-  width: 816px;
   height: 700px;
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
+  margin: 0 auto;
 }
 
 .page2 .imgContainer {
-  width: 816px;
+  width: 716px;
   overflow-y: scroll;
   border: 1px solid #02276b;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   position: relative;
-  /* background-color:pink; */
 }
 
 .page2 .buttonContainer {
-  width: 816px;
+  width: 716px;
   margin-top: 20px;
   justify-content: space-between;
 }
@@ -99,26 +97,35 @@ p {
   background-color: #02276b;
 }
 
-.page2 .pin1 {
+/* 1) 지도맵 이미지 너비 716px일때 핀 위치 */
+.page2 .pin1-loca {
   position: absolute;
-  bottom: 170px;
+  width: 24px;
+  height: 32px;
+  top: 170px;
   left: 290px;
 }
 
-.page2 .pin2 {
+.page2 .pin2-loca {
   position: absolute;
+  width: 24px;
+  height: 32px;
   top: 400px;
   left: 230px;
 }
 
-.page2 .pin3 {
+.page2 .pin3-loca {
   position: absolute;
+  width: 24px;
+  height: 32px;
   top: 420px;
   left: 250px;
 }
 
-.page2 .pin4 {
+.page2 .pin4-loca {
   position: absolute;
+  width: 24px;
+  height: 32px;
   top: 500px;
   left: 230px;
 }
@@ -352,108 +359,76 @@ p {
   }
 
   .static {
-    /* display: none; */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* background-color: pink; */
-    border: 4px solid red;
   }
 
   .content {
     display: flex;
   }
+
   .page6 .imgContainer {
     width: 821px;
   }
-  /*  */
 }
 
 @media screen and (max-width: 767px) {
   .static {
-    /* display: none; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
-    /* background-color: pink; */
-    border: 4px solid blue;
   }
 
-  /* .four-section{ */
-    /* background-color: pink; */
-    /* position: relative; */
-    /* right:285px; */
-    /* transform: scale(0.7); */
-  /* } */
   .page2 .map {
-    /* background-color: pink; */
-    width: 400px;
-    /* width: 50vw; */
-    /* width: 20px; */
+    width: 500px;
   }
+
   .page2 .imgContainer {
-    width: 400px;
-    overflow: hidden;
+    width: 500px;
   }
 
-  .page2 .map2 {
-    width: 100%;
-    height: 100%;
+  /* 2) 지도맵 이미지 너비 600px일때 핀 위치 */
+  .page2 .pin1-loca {
+    width: 20px;
+    height: 32px;
+    top: 100px;
+    left: 30px;
   }
 
-  .page2 .imgContainer a{
-    z-index: 10;
-  }
-  .page2 .pin1{
-    background: url(/img/location-dot-solid.svg);
-    background-repeat: no-repeat;
+  .page2 .pin2-loca {
     width: 20px;
-    top: 50px;
-    z-index: 2;
-    /* background-color: red; */
+    height: 32px;
+    top: 200px;
+    left: 10px;
   }
-  .page2 .pin2{
-    background: url(/img/location-dot-solid.svg);
-    background-repeat: no-repeat;
+
+  .page2 .pin3-loca {
     width: 20px;
-    right:20px;
-    top: 320px;
-    z-index: 2;
-    /* background-color: red; */
+    height: 32px;
+    top: 60px;
+    left: 30px;
   }
-  .page2 .pin3{
-    background: url(/img/location-dot-solid.svg);
-    background-repeat: no-repeat;
+
+  .page2 .pin4-loca {
     width: 20px;
-    right:20px;
-    top: 340px;
-    z-index: 2;
-    /* background-color: red; */
+    height: 32px;
+    top: 420px;
   }
-  .page2 .pin4{
-    background: url(/img/location-dot-solid.svg);
-    background-repeat: no-repeat;
-    width: 20px;
-    top: 50px;
-    top:420px;
-    z-index: 2;
-    /* background-color: red; */
-  }
-  .page2 .button{
+
+  .page2 .button {
     width: 195px;
   }
 
   .page2 .buttonContainer {
-    width: 400px;
+    width: 500px;
     display: flex;
     flex-wrap: wrap;
   }
+
   .page2 .buttonContainer a {
     height: 60px;
-    /* width: 200px; */
-    /* width: 100px; */
   }
 
   .page3 {
@@ -571,6 +546,7 @@ p {
     align-content: center;
     height: 100%;
   }
+
   .page6 #place {
     width: 400px;
   }
@@ -608,12 +584,49 @@ p {
     margin-top: 10px;
   }
 }
-.page6 #locationTxt{
+.page6 #locationTxt {
   line-height: 23px;
-  margin:0;
+  margin: 0;
 }
 
-.page7 #locationTxt{
+.page7 #locationTxt {
   line-height: 23px;
-  margin:0;
+  margin: 0;
+}
+
+/* 지도 맵 반응형 */
+@media screen and (max-width: 575px) {
+  .page2 .map {
+    width: 340px;
+  }
+
+  .page2 .imgContainer {
+    width: 340px;
+  }
+
+  /* 3) 지도맵 이미지 너비 340px일 때 핀 위치 */
+  .page2 .pin1-loca {
+    top: 100px;
+    left: 30px;
+  }
+
+  .page2 .pin2-loca {
+    top: 320px;
+    left: 20px;
+  }
+
+  .page2 .pin3-loca {
+    top: 340px;
+    left: 20px;
+  }
+
+  .page2 .pin4-loca {
+    top: 420px;
+    left: 20px;
+  }
+
+  .page2 .buttonContainer {
+    width: 340px;
+    justify-content: center;
+  }
 }

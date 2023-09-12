@@ -60,6 +60,22 @@
     <script defer src="/js/firework.js"></script>
   </head>
   <body>
+    <!-- tablet & mobile menu -->
+    <div class="mo-header">
+      <!-- X 아이콘 -->
+      <div class="mo-nav-icon close-icon">
+        <nav class="mo-menu">
+          <i class="fa-solid fa-xmark" style="color: #02276b"></i>
+        </nav>
+      </div>
+      <header include-html="./mo-header.html"></header>
+    </div>
+    <!-- tablet & mobile menu icon -->
+    <div class="mo-nav-icon open-icon">
+      <nav class="mo-menu">
+        <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+      </nav>
+    </div>
     <main class="four-container">
       <div class="static">
         <!-- header start -->
@@ -95,7 +111,7 @@
           <section class="winter-map">
             <div class="map">
               <div class="mainButton button title">추천 명소</div>
-              <div class="imgContainer" style="width: 816px; height: 700px">
+              <div class="imgContainer">
                 <img
                   class="map-winter"
                   src="../img/autumn/autMap.png"
@@ -104,7 +120,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/p/directions/-/14313258.9496153,4144480.0684331,%EA%B1%B0%EC%A0%9C%EC%8B%9D%EB%AC%BC%EC%9B%90,1421813001,PLACE_POI/-/transit?c=14.00,0,0,0,dh"
-                  class="pin1"
+                  class="pin1 pin1-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -116,7 +132,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/p/directions/-/14318493.3145239,4147125.3223532,%EA%B1%B0%EC%A0%9C%ED%8F%AC%EB%A1%9C%EC%88%98%EC%9A%A9%EC%86%8C%EC%9C%A0%EC%A0%81%EA%B3%B5%EC%9B%90%EC%9E%85%EA%B5%AC,15881268,PLACE_POI/-/transit?c=17.00,0,0,0,dh"
-                  class="pin2"
+                  class="pin2 pin2-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -128,7 +144,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/p/directions/-/14318347.3301436,4148438.4611192,%EA%B1%B0%EC%A0%9C%EA%B3%A0%ED%98%84%EC%8B%9C%EC%9E%A5,15568608,PLACE_POI/-/transit?c=12.00,0,0,0,dh"
-                  class="pin3"
+                  class="pin3 pin3-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -140,7 +156,7 @@
                 <a
                   target="_blank"
                   href="https://map.naver.com/p/directions/-/14332403.5977183,4139628.0252966,%EC%A7%80%EC%8B%AC%EB%8F%84,13491601,PLACE_POI/-/transit?c=14.00,0,0,0,dh"
-                  class="pin4"
+                  class="pin4 pin4-loca"
                 >
                   <img
                     src="../img/autumn/pin.png"
@@ -596,8 +612,8 @@
                   viewBox="0 0 100 100"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <text x="-80" y="30" class="goodbye">GoodBye 2021 &</text>
-                  <text x="-110" y="75" class="new-year">Happy New Year</text>
+                  <!-- <text x="-80" y="30" class="goodbye">GoodBye 2021 &</text>
+                  <text x="-110" y="75" class="new-year">Happy New Year</text> -->
                 </svg>
                 <p>click anywhere</p>
               </div>

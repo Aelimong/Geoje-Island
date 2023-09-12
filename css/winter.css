@@ -117,33 +117,6 @@ h6 {
   border-radius: 15px;
 }
 
-/* page2: map  */
-/* ping */
-
-.winter-map address.pin1 {
-  position: absolute;
-  top: 200px;
-  right: 300px;
-}
-
-.winter-map address.pin2 {
-  position: absolute;
-  top: 280px;
-  right: 310px;
-}
-
-.winter-map address.pin3 {
-  position: absolute;
-  top: 250px;
-  right: 200px;
-}
-
-.winter-map address.pin4 {
-  position: absolute;
-  left: 360px;
-  top: 350px;
-}
-
 .mainButtonContainer {
   display: flex;
   justify-content: space-between;
@@ -161,15 +134,15 @@ h6 {
 }
 
 /* 추천명소 map */
-.winter-map .map:first-child {
-  width: 816px;
+.winter-map .map {
   height: 700px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .winter-map .imgContainer {
-  width: 816px;
+  width: 716px;
   overflow-y: scroll;
   border: 1px solid #02276b;
   border-bottom-left-radius: 15px;
@@ -179,10 +152,9 @@ h6 {
 }
 
 .winter-map .buttonContainer {
-  width: 816px;
-  display: flex;
-  justify-content: space-between;
+  width: 716px;
   margin-top: 20px;
+  justify-content: space-between;
 }
 
 .winter-map .map .title {
@@ -192,31 +164,39 @@ h6 {
 
 .winter-map .mainButton {
   background-color: #02276b;
-  margin-right: 10px;
 }
 
-.winter-map .pin1 {
+/* 1) 지도맵 이미지 너비 716px일때 핀 위치 */
+.winter-map .pin1-loca {
   position: absolute;
-  bottom: -32px;
-  left: 97px;
+  width: 24px;
+  height: 32px;
+  top: 170px;
+  left: 290px;
 }
 
-.winter-map .pin2 {
+.winter-map .pin2-loca {
   position: absolute;
-  bottom: 4px;
-  left: 166px;
+  width: 24px;
+  height: 32px;
+  top: 400px;
+  left: 230px;
 }
 
-.winter-map .pin3 {
+.winter-map .pin3-loca {
   position: absolute;
-  bottom: 26px;
-  left: 180px;
+  width: 24px;
+  height: 32px;
+  top: 420px;
+  left: 250px;
 }
 
-.winter-map .pin4 {
+.winter-map .pin4-loca {
   position: absolute;
-  bottom: -84px;
-  left: 353px;
+  width: 24px;
+  height: 32px;
+  top: 500px;
+  left: 230px;
 }
 
 .winter-map .map .button {
@@ -227,7 +207,6 @@ h6 {
   font-size: 16px;
   text-align: center;
   line-height: 51px;
-  /* border-radius: 15px; */
 }
 
 /* page 3: 거제 식물원 */
@@ -599,7 +578,7 @@ h6 {
   font-family: "Pushster", cursive;
 }
 
-.headline .goodbye {
+/* .headline .goodbye {
   font-size: 2.5rem;
   font-weight: 100;
   fill: #ffae00;
@@ -617,7 +596,7 @@ h6 {
   opacity: 0;
   -webkit-animation: revealText 5s forwards 1s;
   animation: revealText 5s forwards 1s;
-}
+} */
 
 .fireworks {
   position: absolute;
@@ -712,7 +691,7 @@ h6 {
   }
 }
 
-@-webkit-keyframes revealText {
+/* @-webkit-keyframes revealText {
   0% {
     stroke-dashoffset: 400;
     fill: transparent;
@@ -748,7 +727,7 @@ h6 {
     fill: white;
     opacity: 1;
   }
-}
+} */
 
 /* responsive tablet */
 @media screen and (max-width: 1023px) {
@@ -801,10 +780,62 @@ h6 {
     font-size: 14px;
   }
 
+  /* page 2 : 지도 */
+  .winter-map .map {
+    width: 500px;
+  }
+
+  .winter-map .imgContainer {
+    width: 500px;
+  }
+
+  /* 2) 지도맵 이미지 너비 600px일때 핀 위치 */
+  .winter-map .pin1-loca {
+    width: 20px;
+    height: 32px;
+    top: 100px;
+    left: 30px;
+  }
+
+  .winter-map .pin2-loca {
+    width: 20px;
+    height: 32px;
+    top: 200px;
+    left: 10px;
+  }
+
+  .winter-map .pin3-loca {
+    width: 20px;
+    height: 32px;
+    top: 60px;
+    left: 30px;
+  }
+
+  .winter-map .pin4-loca {
+    width: 20px;
+    height: 32px;
+    top: 420px;
+  }
+
+  .winter-map .button {
+    width: 195px;
+  }
+
+  .winter-map .buttonContainer {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .winter-map .buttonContainer a {
+    height: 60px;
+  }
+
   /*page 5: 고현시장  */
   .swiper {
     height: 500px;
   }
+
   /* page 6: 지심도 */
   .page6 .imageContainer {
     flex-direction: column;
@@ -839,5 +870,42 @@ h6 {
   }
   .page8 .festivalImgContainer {
     display: none;
+  }
+}
+
+/* 지도맵 반응형 */
+@media screen and (max-width: 575px) {
+  .winter-map .map {
+    width: 340px;
+  }
+
+  .winter-map .imgContainer {
+    width: 340px;
+  }
+
+  /* 3) 지도맵 이미지 너비 340px일 때 핀 위치 */
+  .winter-map .pin1-loca {
+    top: 100px;
+    left: 30px;
+  }
+
+  .winter-map .pin2-loca {
+    top: 320px;
+    left: 20px;
+  }
+
+  .winter-map .pin3-loca {
+    top: 340px;
+    left: 20px;
+  }
+
+  .winter-map .pin4-loca {
+    top: 420px;
+    left: 20px;
+  }
+
+  .winter-map .buttonContainer {
+    width: 340px;
+    justify-content: center;
   }
 }

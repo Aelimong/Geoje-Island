@@ -3,15 +3,19 @@ li {
 }
 
 /* 추천명소 map */
-.spring-map .map:first-child {
-  width: 816px;
+.spring-map {
+  display: flex;
+}
+
+.spring-map .map {
   height: 700px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .spring-map .imgContainer {
-  width: 816px;
+  width: 716px;
   overflow-y: scroll;
   border: 1px solid #02276b;
   border-bottom-left-radius: 15px;
@@ -21,7 +25,7 @@ li {
 }
 
 .spring-map .buttonContainer {
-  width: 816px;
+  width: 716px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -34,31 +38,39 @@ li {
 
 .spring-map .mainButton {
   background-color: #02276b;
-  margin-right: 10px;
 }
 
-.spring-map .pin1 {
+/* 1) 지도맵 이미지 너비 716px일때 핀 위치 */
+.spring-map .pin1-loca {
   position: absolute;
-  bottom: -33px;
-  left: 328px;
+  width: 24px;
+  height: 32px;
+  top: 170px;
+  left: 290px;
 }
 
-.spring-map .pin2 {
+.spring-map .pin2-loca {
   position: absolute;
-  bottom: -124px;
-  left: 316px;
+  width: 24px;
+  height: 32px;
+  top: 400px;
+  left: 230px;
 }
 
-.spring-map .pin3 {
+.spring-map .pin3-loca {
   position: absolute;
-  bottom: -179px;
-  left: 198px;
+  width: 24px;
+  height: 32px;
+  top: 420px;
+  left: 250px;
 }
 
-.spring-map .pin4 {
+.spring-map .pin4-loca {
   position: absolute;
-  bottom: -218px;
-  left: 209px;
+  width: 24px;
+  height: 32px;
+  top: 500px;
+  left: 230px;
 }
 
 .button {
@@ -462,11 +474,6 @@ li {
     width: 95%;
   }
 
-  /* 지도 섹션 */
-  .contents .spring-map .map:first-child {
-    margin: auto;
-  }
-
   /* 양지암 조각 공원 */
   #ygPage {
     justify-content: center;
@@ -524,8 +531,55 @@ li {
   }
 
   /* 지도섹션 */
-  .contents .spring-map {
-    width: 100%;
+
+  .spring-map .map {
+    width: 500px;
+  }
+
+  .spring-map .imgContainer {
+    width: 500px;
+  }
+
+  /* 2) 지도맵 이미지 너비 600px일때 핀 위치 */
+  .spring-map .pin1-loca {
+    width: 20px;
+    height: 32px;
+    top: 100px;
+    left: 30px;
+  }
+
+  .spring-map .pin2-loca {
+    width: 20px;
+    height: 32px;
+    top: 200px;
+    left: 10px;
+  }
+
+  .spring-map .pin3-loca {
+    width: 20px;
+    height: 32px;
+    top: 60px;
+    left: 30px;
+  }
+
+  .spring-map .pin4-loca {
+    width: 20px;
+    height: 32px;
+    top: 420px;
+  }
+
+  .spring-map .button {
+    width: 195px;
+  }
+
+  .spring-map .buttonContainer {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .spring-map .buttonContainer a {
+    height: 60px;
   }
 
   /* 양지암 조각 공원 */
@@ -681,5 +735,42 @@ li {
 
   #springFestival .swiper-wrapper div {
     height: 15vh;
+  }
+}
+
+/* 지도 맵 반응형 */
+@media screen and (max-width: 575px) {
+  .spring-map .map {
+    width: 340px;
+  }
+
+  .spring-map .imgContainer {
+    width: 340px;
+  }
+
+  /* 3) 지도맵 이미지 너비 340px일 때 핀 위치 */
+  .spring-map .pin1-loca {
+    top: 100px;
+    left: 30px;
+  }
+
+  .spring-map .pin2-loca {
+    top: 320px;
+    left: 20px;
+  }
+
+  .spring-map .pin3-loca {
+    top: 340px;
+    left: 20px;
+  }
+
+  .spring-map .pin4-loca {
+    top: 420px;
+    left: 20px;
+  }
+
+  .spring-map .buttonContainer {
+    width: 340px;
+    justify-content: center;
   }
 }
