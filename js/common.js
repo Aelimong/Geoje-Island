@@ -48,7 +48,6 @@ function openMenu() {
 function closeMenu() {
   if (moHeader.classList.contains("show")) {
     moHeader.classList.remove("show");
-    //fourContainer.classList.remove("close");
   }
 
   moHeader.classList.add("hide");
@@ -65,7 +64,6 @@ function closeMenu() {
     openIcon.classList.remove("hide");
   }
   openIcon.classList.add("show");
-  //openIcon.setAttribute("style", "opacity: 1");
 
   //body 스크롤 보여주기
   body.style.overflowY = "scroll";
@@ -76,12 +74,27 @@ function changeActiveMenuColor() {
   //1. 현재 링크 가져와서 루트 제외한 링크 확인
   let currentUrl = window.location.href;
   let currentPage = currentUrl.split("/").reverse()[0];
+  let currentNav = "";
+  let activeColor = "#9AB1DB";
+
   console.log(currentPage);
 
   //2. switch로
-  if (currentPage === "summer.html") {
-    const summerColor = document.querySelector(".nav-summer");
-    summerColor.style.backgroundColor = "#9AB1DB";
+  if (currentPage === "spring.html") {
+    currentNav = document.querySelector(".nav-spring");
+    currentNav.style.backgroundColor = activeColor;
+  } else if (currentPage === "summer.html") {
+    currentNav = document.querySelector(".nav-summer");
+    currentNav.style.backgroundColor = activeColor;
+  } else if (currentPage === "autumn.html") {
+    currentNav = document.querySelector(".nav-autumn");
+    currentNav.style.backgroundColor = activeColor;
+  } else if (currentPage === "winter.html") {
+    currentNav = document.querySelector(".nav-winter");
+    currentNav.style.backgroundColor = activeColor;
+  } else {
+    currentNav = document.querySelector(".nav-home");
+    currentNav.style.backgroundColor = "f5f5f5";
   }
   //3.
 }

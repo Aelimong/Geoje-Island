@@ -81,15 +81,15 @@ section {
 }
 
 /* 추천명소 map */
-.summer-map .map:first-child {
-  width: 816px;
+.summer-map .map {
   height: 700px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .summer-map .imgContainer {
-  width: 816px;
+  width: 716px;
   overflow-y: scroll;
   border: 1px solid #02276b;
   border-bottom-left-radius: 15px;
@@ -99,10 +99,9 @@ section {
 }
 
 .summer-map .buttonContainer {
-  width: 816px;
-  display: flex;
-  justify-content: space-between;
+  width: 716px;
   margin-top: 20px;
+  justify-content: space-between;
 }
 
 .summer-map .map .title {
@@ -112,31 +111,39 @@ section {
 
 .summer-map .mainButton {
   background-color: #02276b;
-  margin-right: 10px;
 }
 
-.summer-map .pin1 {
+/* 1) 지도맵 이미지 너비 716px일때 핀 위치 */
+.summer-map .pin1-loca {
   position: absolute;
-  bottom: -168px;
-  left: 300px;
+  width: 24px;
+  height: 32px;
+  top: 170px;
+  left: 290px;
 }
 
-.summer-map .pin2 {
+.summer-map .pin2-loca {
   position: absolute;
-  top: 510px;
-  left: 150px;
+  width: 24px;
+  height: 32px;
+  top: 400px;
+  left: 230px;
 }
 
-.summer-map .pin3 {
+.summer-map .pin3-loca {
   position: absolute;
-  top: 238px;
-  left: 280px;
+  width: 24px;
+  height: 32px;
+  top: 420px;
+  left: 250px;
 }
 
-.summer-map .pin4 {
+.summer-map .pin4-loca {
   position: absolute;
-  top: 504px;
-  left: 157px;
+  width: 24px;
+  height: 32px;
+  top: 500px;
+  left: 230px;
 }
 
 /* 관광지1. 보타니아 */
@@ -417,7 +424,7 @@ section {
 
 /* 태블릿 규격 */
 @media screen and (max-width: 1023px) {
-  .summer-map .map:first-child {
+  /* .summer-map .map:first-child {
     width: 100%;
     height: 500px;
   }
@@ -440,7 +447,7 @@ section {
 
   .summer-map .mainButton {
     width: 120px;
-  }
+  } */
 }
 
 /* 모바일 규격 */
@@ -488,8 +495,54 @@ section {
     font-size: 1.4em;
   }
 
-  .summer-map .mainButton {
-    width: 130px;
+  .summer-map .map {
+    width: 500px;
+  }
+
+  .summer-map .imgContainer {
+    width: 500px;
+  }
+
+  /* 2) 지도맵 이미지 너비 600px일때 핀 위치 */
+  .summer-map .pin1-loca {
+    width: 20px;
+    height: 32px;
+    top: 100px;
+    left: 30px;
+  }
+
+  .summer-map .pin2-loca {
+    width: 20px;
+    height: 32px;
+    top: 200px;
+    left: 10px;
+  }
+
+  .summer-map .pin3-loca {
+    width: 20px;
+    height: 32px;
+    top: 60px;
+    left: 30px;
+  }
+
+  .summer-map .pin4-loca {
+    width: 20px;
+    height: 32px;
+    top: 420px;
+  }
+
+  .summer-map .button {
+    width: 195px;
+  }
+
+  .summer-map .buttonContainer {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .summer-map .buttonContainer a {
+    height: 60px;
   }
 
   .botania {
@@ -573,5 +626,46 @@ section {
 
   .sugug .sugug-photos .spot-images .spot-image .spot-img:not(:last-child) {
     padding-right: 0;
+  }
+}
+
+/* 지도 맵 반응형 */
+@media screen and (max-width: 575px) {
+  .summer-map .map {
+    width: 340px;
+  }
+
+  .summer-map .imgContainer {
+    width: 340px;
+  }
+
+  /* 3) 지도맵 이미지 너비 340px일 때 핀 위치 */
+  .summer-map .pin1-loca {
+    top: 100px;
+    left: 30px;
+  }
+
+  .summer-map .pin2-loca {
+    top: 320px;
+    left: 20px;
+  }
+
+  .summer-map .pin3-loca {
+    top: 340px;
+    left: 20px;
+  }
+
+  .summer-map .pin4-loca {
+    top: 420px;
+    left: 20px;
+  }
+
+  .summer-map .buttonContainer {
+    width: 340px;
+    justify-content: center;
+  }
+
+  .summer-map .map .button {
+    margin: 0 5px;
   }
 }
