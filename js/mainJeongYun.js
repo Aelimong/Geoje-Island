@@ -40,6 +40,7 @@ window.addEventListener("load", () => {
 });
 
 // 2번째 섹션 가로스크롤
+gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline();
 ScrollTrigger.matchMedia({
   "(min-width:800px)": function () {
