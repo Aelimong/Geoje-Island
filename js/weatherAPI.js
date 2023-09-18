@@ -17,8 +17,8 @@ function fetchWeatherData() {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      console.log(data.response.body.items.item[18].fcstValue);
+      // console.log(data);
+      // console.log(data.response.body.items.item[18].fcstValue);
 
       let weather = data.response.body.items.item[18];
       let content = "WEATHER " + weather.fcstValue;
@@ -40,7 +40,7 @@ function fetchWeatherData() {
       document.querySelector(".weather").innerHTML = weatherHtml;
 
       // 온도
-      console.log(data.response.body.items.item[24].f);
+      // console.log(data.response.body.items.item[24].f);
       let temp = data.response.body.items.item[24];
       let content2 = "TEMPERATURE " + temp.fcstValue + "°C";
       document.querySelector(".temp").innerHTML = content2;

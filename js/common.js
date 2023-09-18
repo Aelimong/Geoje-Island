@@ -12,8 +12,13 @@ const closeIcon = document.querySelector(".close-icon");
 const fourContainer = document.querySelector(".four-container");
 const body = document.querySelector("body");
 
-openIcon.addEventListener("click", openMenu);
-closeIcon.addEventListener("click", closeMenu);
+if (openIcon !== null) {
+  openIcon.addEventListener("click", openMenu);
+}
+
+if (closeIcon !== null) {
+  closeIcon.addEventListener("click", closeMenu);
+}
 
 // 메뉴 펼칠 때
 function openMenu() {
