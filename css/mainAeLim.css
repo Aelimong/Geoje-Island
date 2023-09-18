@@ -443,7 +443,7 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
   width: 35vw;
   float: right;
   margin-bottom: 80px;
-  margin-right: -52%;
+  margin-right: -40%;
 }
 
 #move .info-summary .summary-sub hr {
@@ -511,7 +511,7 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
 }
 
 .container .info .info-detail .detail-top .detail-top-img {
-  width: 100%;
+  height: 100%;
 }
 
 .container .info .info-detail .detail-bottom {
@@ -597,6 +597,10 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
     font-size: 1.4em;
     margin-bottom: 1.6rem;
   }
+
+  .container .info .info-detail p {
+    font-size: 1.4em;
+  }
 }
 
 /*  모바일 */
@@ -612,6 +616,42 @@ nav.main-nav .nav-area .nav-area-text ul li a:hover {
     flex-direction: column;
     font-size: 2.4em;
     line-height: 2.4em;
+  }
+
+  .container .info .info-detail .detail-top {
+    flex-direction: column-reverse;
+  }
+
+  .container .info .info-detail .detail-top .detail-top-text {
+    margin-top: 30px;
+    padding-right: 0;
+  }
+
+  .container .info .info-detail .detail-top .detail-top-text span:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  .container .info .info-detail .detail-bottom {
+    flex-direction: column;
+  }
+
+  .container .info .info-detail .detail-bottom .detail-bottom-img {
+    width: 100%;
+  }
+
+  .container .info .info-detail .detail-bottom .detail-bottom-text {
+    margin-top: 30px;
+    padding-left: 0;
+  }
+
+  .container .info .point-line {
+    height: 40px;
+  }
+
+  .container .ticket h1 {
+    font-size: 4.8rem;
+  }
+  .container .ticket-area {
+    padding: 0 50px;
   }
   .container .ticket .ticket-area .ticket-info {
     display: none;
